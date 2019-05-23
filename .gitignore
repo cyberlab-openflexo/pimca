@@ -14,4 +14,4 @@
 .settings
 .metadata
 .gradle/
-/.DS_Store
+**/.DS_Store
