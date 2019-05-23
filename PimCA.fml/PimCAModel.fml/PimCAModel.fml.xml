@@ -130,5 +130,95 @@
       <GenericBehaviourParameter id="SYL-125" widget="TEXT_FIELD" name="name" type="java.lang.String" userID="SYL" flexoID="125" />
     </CreationScheme>
   </FlexoConcept>
+  <FlexoConcept id="SYL-160" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#PieceOfKnowledge" name="Relation" userID="SYL" flexoID="160">
+    <Inspector id="SYL-159" inspectorTitle="Relation" userID="SYL" flexoID="159">
+      <InspectorEntry id="SYL-161" widget="TEXT_FIELD" data="multiplex" name="multiplex" label="multiplex" type="java.lang.String" userID="SYL" flexoID="161" />
+      <InspectorEntry id="SYL-162" widget="TEXT_FIELD" data="comSec" name="comSec" label="comSec" type="java.lang.String" userID="SYL" flexoID="162" />
+      <InspectorEntry id="SYL-163" widget="TEXT_FIELD" data="protocol" name="protocol" label="protocol" type="java.lang.String" userID="SYL" flexoID="163" />
+    </Inspector>
+    <PrimitiveRole id="SYL-164" primitiveType="String" cloningStrategy="Clone" cardinality="ZeroOne" name="multiplex" userID="SYL" flexoID="164" />
+    <PrimitiveRole id="SYL-165" primitiveType="String" cloningStrategy="Clone" cardinality="ZeroOne" name="comSec" userID="SYL" flexoID="165" />
+    <PrimitiveRole id="SYL-166" primitiveType="String" cloningStrategy="Clone" cardinality="ZeroOne" name="protocol" userID="SYL" flexoID="166" />
+    <FlexoConceptInstanceRole id="SYL-257" virtualModelInstance="container" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#PieceOfKnowledge" cloningStrategy="Reference" cardinality="One" name="source" userID="SYL" flexoID="257" />
+    <FlexoConceptInstanceRole id="SYL-258" virtualModelInstance="container" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#PieceOfKnowledge" cloningStrategy="Reference" cardinality="One" name="target" userID="SYL" flexoID="258" />
+    <ActionScheme id="SYL-259" name="init" width="800" label="init" height="600" userID="SYL" flexoID="259">
+      <BehaviourControlGraph_Sequence id="SYL-267" userID="SYL" flexoID="267">
+        <ControlGraph2_AssignationAction id="SYL-265" assign="target" ownerContext="controlGraph2" userID="SYL" flexoID="265">
+          <AssignableAction_ExpressionAction id="SYL-264" expression="parameters.target" userID="SYL" flexoID="264" />
+        </ControlGraph2_AssignationAction>
+        <ControlGraph1_AssignationAction id="SYL-263" assign="source" ownerContext="controlGraph1" userID="SYL" flexoID="263">
+          <AssignableAction_ExpressionAction id="SYL-262" expression="parameters.source" userID="SYL" flexoID="262" />
+        </ControlGraph1_AssignationAction>
+      </BehaviourControlGraph_Sequence>
+      <GenericBehaviourParameter id="SYL-260" isRequired="true" widget="CUSTOM_WIDGET" name="source" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#PieceOfKnowledge&gt;" userID="SYL" flexoID="260" />
+      <GenericBehaviourParameter id="SYL-261" isRequired="true" widget="CUSTOM_WIDGET" name="target" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#PieceOfKnowledge&gt;" userID="SYL" flexoID="261" />
+    </ActionScheme>
+  </FlexoConcept>
+  <FlexoConcept id="SYL-167" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Relation" name="Use" userID="SYL" flexoID="167">
+    <Inspector id="SYL-168" inspectorTitle="Use" userID="SYL" flexoID="168" />
+    <DeletionScheme id="SYL-171" name="delete" width="800" label="delete" height="600" userID="SYL" flexoID="171">
+      <BehaviourControlGraph_EmptyControlGraph id="SYL-172" userID="SYL" flexoID="172" />
+    </DeletionScheme>
+    <CreationScheme id="SYL-270" name="create" width="800" label="create" height="600" userID="SYL" flexoID="270">
+      <BehaviourControlGraph_ExpressionAction id="SYL-271" expression="this.init(parameters.source,parameters.target)" userID="SYL" flexoID="271" />
+      <GenericBehaviourParameter id="SYL-272" widget="CUSTOM_WIDGET" name="source" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#PieceOfKnowledge&gt;" userID="SYL" flexoID="272" />
+      <GenericBehaviourParameter id="SYL-273" widget="CUSTOM_WIDGET" name="target" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#PieceOfKnowledge&gt;" userID="SYL" flexoID="273" />
+    </CreationScheme>
+  </FlexoConcept>
+  <FlexoConcept id="SYL-173" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Relation" name="Control" userID="SYL" flexoID="173">
+    <Inspector id="SYL-174" inspectorTitle="Control" userID="SYL" flexoID="174" />
+    <DeletionScheme id="SYL-177" name="delete" width="800" label="delete" height="600" userID="SYL" flexoID="177">
+      <BehaviourControlGraph_EmptyControlGraph id="SYL-178" userID="SYL" flexoID="178" />
+    </DeletionScheme>
+    <CreationScheme id="SYL-274" name="create" width="800" label="create" height="600" userID="SYL" flexoID="274">
+      <BehaviourControlGraph_ExpressionAction id="SYL-275" expression="this.init(parameters.source,parameters.target)" userID="SYL" flexoID="275" />
+      <GenericBehaviourParameter id="SYL-276" widget="CUSTOM_WIDGET" name="source" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#PieceOfKnowledge&gt;" userID="SYL" flexoID="276" />
+      <GenericBehaviourParameter id="SYL-277" widget="CUSTOM_WIDGET" name="target" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#PieceOfKnowledge&gt;" userID="SYL" flexoID="277" />
+    </CreationScheme>
+  </FlexoConcept>
+  <FlexoConcept id="SYL-179" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Relation" name="Maintain" userID="SYL" flexoID="179">
+    <Inspector id="SYL-180" inspectorTitle="Maintain" userID="SYL" flexoID="180" />
+    <DeletionScheme id="SYL-183" name="delete" width="800" label="delete" height="600" userID="SYL" flexoID="183">
+      <BehaviourControlGraph_EmptyControlGraph id="SYL-184" userID="SYL" flexoID="184" />
+    </DeletionScheme>
+    <CreationScheme id="SYL-278" name="create" width="800" label="create" height="600" userID="SYL" flexoID="278">
+      <BehaviourControlGraph_ExpressionAction id="SYL-279" expression="this.init(parameters.source,parameters.target)" userID="SYL" flexoID="279" />
+      <GenericBehaviourParameter id="SYL-280" widget="CUSTOM_WIDGET" name="source" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#PieceOfKnowledge&gt;" userID="SYL" flexoID="280" />
+      <GenericBehaviourParameter id="SYL-281" widget="CUSTOM_WIDGET" name="target" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#PieceOfKnowledge&gt;" userID="SYL" flexoID="281" />
+    </CreationScheme>
+  </FlexoConcept>
+  <FlexoConcept id="SYL-185" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Relation" name="Swap" userID="SYL" flexoID="185">
+    <Inspector id="SYL-186" inspectorTitle="Swap" userID="SYL" flexoID="186" />
+    <CreationScheme id="SYL-187" name="create" width="800" label="create" height="600" userID="SYL" flexoID="187">
+      <BehaviourControlGraph_ExpressionAction id="SYL-266" expression="this.init(parameters.source,parameters.target)" userID="SYL" flexoID="266" />
+      <GenericBehaviourParameter id="SYL-268" widget="CUSTOM_WIDGET" name="source" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#PieceOfKnowledge&gt;" userID="SYL" flexoID="268" />
+      <GenericBehaviourParameter id="SYL-269" widget="CUSTOM_WIDGET" name="target" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#PieceOfKnowledge&gt;" userID="SYL" flexoID="269" />
+    </CreationScheme>
+    <DeletionScheme id="SYL-189" name="delete" width="800" label="delete" height="600" userID="SYL" flexoID="189">
+      <BehaviourControlGraph_EmptyControlGraph id="SYL-190" userID="SYL" flexoID="190" />
+    </DeletionScheme>
+  </FlexoConcept>
+  <FlexoConcept id="SYL-191" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Relation" name="Check" userID="SYL" flexoID="191">
+    <Inspector id="SYL-192" inspectorTitle="Check" userID="SYL" flexoID="192" />
+    <DeletionScheme id="SYL-195" name="delete" width="800" label="delete" height="600" userID="SYL" flexoID="195">
+      <BehaviourControlGraph_EmptyControlGraph id="SYL-196" userID="SYL" flexoID="196" />
+    </DeletionScheme>
+    <CreationScheme id="SYL-286" name="create" width="800" label="create" height="600" userID="SYL" flexoID="286">
+      <BehaviourControlGraph_ExpressionAction id="SYL-287" expression="this.init(parameters.source,parameters.target)" userID="SYL" flexoID="287" />
+      <GenericBehaviourParameter id="SYL-288" widget="CUSTOM_WIDGET" name="source" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#PieceOfKnowledge&gt;" userID="SYL" flexoID="288" />
+      <GenericBehaviourParameter id="SYL-289" widget="CUSTOM_WIDGET" name="target" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#PieceOfKnowledge&gt;" userID="SYL" flexoID="289" />
+    </CreationScheme>
+  </FlexoConcept>
+  <FlexoConcept id="SYL-197" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Relation" name="Produce" userID="SYL" flexoID="197">
+    <Inspector id="SYL-198" inspectorTitle="Produce" userID="SYL" flexoID="198" />
+    <DeletionScheme id="SYL-201" name="delete" width="800" label="delete" height="600" userID="SYL" flexoID="201">
+      <BehaviourControlGraph_EmptyControlGraph id="SYL-202" userID="SYL" flexoID="202" />
+    </DeletionScheme>
+    <CreationScheme id="SYL-290" name="create" width="800" label="create" height="600" userID="SYL" flexoID="290">
+      <BehaviourControlGraph_ExpressionAction id="SYL-291" expression="this.init(parameters.source,parameters.target)" userID="SYL" flexoID="291" />
+      <GenericBehaviourParameter id="SYL-292" widget="CUSTOM_WIDGET" name="source" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#PieceOfKnowledge&gt;" userID="SYL" flexoID="292" />
+      <GenericBehaviourParameter id="SYL-293" widget="CUSTOM_WIDGET" name="target" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#PieceOfKnowledge&gt;" userID="SYL" flexoID="293" />
+    </CreationScheme>
+  </FlexoConcept>
   <Inspector id="SYL-1" inspectorTitle="PimCAModel" userID="SYL" flexoID="1" />
 </VirtualModel>

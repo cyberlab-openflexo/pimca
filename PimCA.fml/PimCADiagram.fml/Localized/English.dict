@@ -1,4 +1,6 @@
 create_basic_machinery=Create basic machinery
+create_check_relation=Create check relation
+create_swap_relation=Create swap relation
 diagramName=DiagramName
 dropAttackerGRAtTopLevel=DropAttackerGRAtTopLevel
 dropBasicMachineryGRAtTopLevel=DropBasicMachineryGRAtTopLevel
@@ -8,5 +10,6 @@ dropNetworkGRAtTopLevel=DropNetworkGRAtTopLevel
 dropPerformerGRAtTopLevel=DropPerformerGRAtTopLevel
 invalid_parameter=Invalid parameter
 kind=Kind
+linkMachineryGRToMachineryGR=LinkMachineryGRToMachineryGR
 model=Model
 networkType=NetworkType

@@ -119,4 +119,111 @@ public class PimCAModel {
   
   }  
 
+  @FlexoConcept  
+  public class Relation extends PieceOfKnowledge  {  
+  
+    public String multiplex;  
+    public String comSec;  
+    public String protocol;  
+    public PieceOfKnowledge source;  
+    public PieceOfKnowledge target;  
+  
+    @ActionScheme    
+    Void init(FlexoConceptInstanceType<PieceOfKnowledge> source, FlexoConceptInstanceType<PieceOfKnowledge> target) {    
+      source = parameters.source;      
+      target = parameters.target;    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class Use extends Relation  {  
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+    @CreationScheme    
+    Use:create(FlexoConceptInstanceType<PieceOfKnowledge> source, FlexoConceptInstanceType<PieceOfKnowledge> target) {    
+      this.init(parameters.source,parameters.target)    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class Control extends Relation  {  
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+    @CreationScheme    
+    Control:create(FlexoConceptInstanceType<PieceOfKnowledge> source, FlexoConceptInstanceType<PieceOfKnowledge> target) {    
+      this.init(parameters.source,parameters.target)    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class Maintain extends Relation  {  
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+    @CreationScheme    
+    Maintain:create(FlexoConceptInstanceType<PieceOfKnowledge> source, FlexoConceptInstanceType<PieceOfKnowledge> target) {    
+      this.init(parameters.source,parameters.target)    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class Swap extends Relation  {  
+  
+    @CreationScheme    
+    Swap:create(FlexoConceptInstanceType<PieceOfKnowledge> source, FlexoConceptInstanceType<PieceOfKnowledge> target) {    
+      this.init(parameters.source,parameters.target)    
+    }    
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class Check extends Relation  {  
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+    @CreationScheme    
+    Check:create(FlexoConceptInstanceType<PieceOfKnowledge> source, FlexoConceptInstanceType<PieceOfKnowledge> target) {    
+      this.init(parameters.source,parameters.target)    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class Produce extends Relation  {  
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+    @CreationScheme    
+    Produce:create(FlexoConceptInstanceType<PieceOfKnowledge> source, FlexoConceptInstanceType<PieceOfKnowledge> target) {    
+      this.init(parameters.source,parameters.target)    
+    }    
+  
+  }  
+
 }

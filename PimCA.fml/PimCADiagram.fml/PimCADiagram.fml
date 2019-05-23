@@ -20,7 +20,7 @@ public class PimCADiagram {
 
 
   @FlexoConcept  
-  public class BasicMachineryGR {  
+  public class BasicMachineryGR extends MachineryGR  {  
   
     public DiagramShape shape;  
     public Machinery machinery;  
@@ -34,25 +34,25 @@ public class PimCADiagram {
   }  
 
   @FlexoConcept  
-  public class PerformerGR {  
+  public class PerformerGR extends MachineryGR  {  
   
-    public DiagramShape forme;  
-    public Performer performer;  
+    public DiagramShape shape;  
+    public Performer machinery;  
   
     @DropScheme    
     PerformerGR:dropPerformerGRAtTopLevel(String name) {    
-      forme = diagram.AddShape();      
-      performer = Performer.create(parameters.name);    
+      shape = diagram.AddShape();      
+      machinery = Performer.create(parameters.name);    
     }    
   
   }  
 
   @FlexoConcept  
-  public class NetworkGR {  
+  public class NetworkGR extends MachineryGR  {  
   
     public DiagramShape shape;  
     public DiagramShape icon;  
-    public Network network;  
+    public Network machinery;  
     public DiagramShape label;  
   
     @DropScheme    
@@ -60,53 +60,113 @@ public class PimCADiagram {
       shape = diagram.AddShape();      
       icon = diagram.AddShape();      
       label = diagram.AddShape();      
-      network = Network.create(parameters.name,parameters.networkType);    
+      machinery = Network.create(parameters.name,parameters.networkType);    
     }    
   
   }  
 
   @FlexoConcept  
-  public class InterfaceGR {  
+  public class InterfaceGR extends MachineryGR  {  
   
     public DiagramShape shape;  
     public DiagramShape icon;  
     public DiagramShape text;  
-    public Interface interface;  
+    public Interface machinery;  
   
     @DropScheme    
     InterfaceGR:dropInterfaceGRAtTopLevel(String name) {    
       shape = diagram.AddShape();      
       icon = diagram.AddShape();      
       text = diagram.AddShape();      
-      interface = Interface.create(parameters.name);    
+      machinery = Interface.create(parameters.name);    
     }    
   
   }  
 
   @FlexoConcept  
-  public class CustomsGR {  
+  public class CustomsGR extends MachineryGR  {  
   
     public DiagramShape shape;  
-    public Customs customs;  
+    public Customs machinery;  
   
     @DropScheme    
     CustomsGR:dropCustomsGRAtTopLevel(String name) {    
       shape = diagram.AddShape();      
-      customs = Customs.create(parameters.name);    
+      machinery = Customs.create(parameters.name);    
     }    
   
   }  
 
   @FlexoConcept  
-  public class AttackerGR {  
+  public class AttackerGR extends MachineryGR  {  
   
     public DiagramShape shape;  
-    public Attacker attacker;  
+    public Attacker machinery;  
   
     @DropScheme    
     AttackerGR:dropAttackerGRAtTopLevel(String name) {    
       shape = diagram.AddShape();      
-      attacker = Attacker.create(parameters.name);    
+      machinery = Attacker.create(parameters.name);    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class MachineryGR {  
+  
+      
+    abstract FlexoConceptInstanceType<Machinery> machinery;  
+      
+    abstract DiagramShape shape;  
+  }  
+
+  @FlexoConcept  
+  public class SwapGR extends RelationGR  {  
+  
+    public DiagramConnector connector;  
+    public Swap relation;  
+  
+    @LinkScheme    
+    SwapGR:createSwapGR() {    
+      connector = diagram.AddConnector();      
+      relation = Swap.create(fromTarget.machinery,toTarget.machinery);    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class RelationGR {  
+  
+      
+    abstract DiagramConnector connector;  
+    public MachineryGR sourceGR;  
+    public MachineryGR targetGR;  
+      
+    abstract FlexoConceptInstanceType<Relation> relation;  
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+    @ActionScheme    
+    Void init(FlexoConceptInstanceType<MachineryGR> sourceGR, FlexoConceptInstanceType<MachineryGR> targetGR) {    
+      sourceGR = parameters.sourceGR;      
+      targetGR = parameters.targetGR;    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class CheckGR extends RelationGR  {  
+  
+    public DiagramConnector connector;  
+    public Check relation;  
+  
+    @LinkScheme    
+    CheckGR:createCheckGR() {    
+      connector = diagram.AddConnector();      
+      relation = Check.create(fromTarget.machinery,toTarget.machinery);    
     }    
   
   }  

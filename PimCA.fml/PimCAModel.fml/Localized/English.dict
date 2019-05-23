@@ -1,6 +1,9 @@
 aNetworkType=ANetworkType
+comSec=ComSec
 comment=Comment
+multiplex=Multiplex
 nbCopy=NbCopy
+protocol=Protocol
 role=Role
 usageArea=UsageArea
 usageLevel=UsageLevel
