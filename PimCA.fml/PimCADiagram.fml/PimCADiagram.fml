@@ -83,4 +83,32 @@ public class PimCADiagram {
   
   }  
 
+  @FlexoConcept  
+  public class CustomsGR {  
+  
+    public DiagramShape shape;  
+    public Customs customs;  
+  
+    @DropScheme    
+    CustomsGR:dropCustomsGRAtTopLevel(String name) {    
+      shape = diagram.AddShape();      
+      customs = Customs.create(parameters.name);    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class AttackerGR {  
+  
+    public DiagramShape shape;  
+    public Attacker attacker;  
+  
+    @DropScheme    
+    AttackerGR:dropAttackerGRAtTopLevel(String name) {    
+      shape = diagram.AddShape();      
+      attacker = Attacker.create(parameters.name);    
+    }    
+  
+  }  
+
 }

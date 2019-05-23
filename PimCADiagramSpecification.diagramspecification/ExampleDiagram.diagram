@@ -104,7 +104,33 @@
       <TextStyle id="88" backgroundColor="255,255,255" color="51,51,51" font="Lucida Sans Regular,0,12" />
     </ShapeGraphicalRepresentation>
   </Shape>
-  <DrawingGraphicalRepresentation id="89" backgroundColor="255,255,255" drawWorkingArea="false" focusColor="255,0,0" selectionColor="0,0,255" rectangleSelectingSelectionColor="0,0,255" dimensionConstraints="FREELY_RESIZABLE" identifier="4db3941f">
-    <TextStyle id="90" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
+  <Shape id="89" name="Forme" text="login/password" userID="SYL" flexoID="10">
+    <ShapeGraphicalRepresentation id="90" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" allowToLeaveBounds="false" adaptBoundsToContents="false" x="184.0" y="78.0" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="40.0" height="40.0" identifier="644a47aa" absoluteTextY="49.0" absoluteTextX="21.0" layer="1" text="login/password">
+      <SelectedImageBackgroundStyle id="91" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ForegroundStyle id="92" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <FocusedImageBackgroundStyle id="93" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ShadowStyle id="94" drawShadow="false" />
+      <FocusedForegroundStyle id="95" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="96" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <ImageBackgroundStyle id="97" fitToShape="true" imageFile="../Icons/Customs/LockClosed_64x64.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <RectangleShape id="98" />
+      <TextStyle id="99" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
+    </ShapeGraphicalRepresentation>
+  </Shape>
+  <Shape id="100" name="Forme" text="Attacker" userID="SYL" flexoID="11">
+    <ShapeGraphicalRepresentation id="101" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" allowToLeaveBounds="false" adaptBoundsToContents="false" x="360.0" y="212.0" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="64.0" height="64.0" identifier="2648e221" absoluteTextY="69.0" absoluteTextX="33.0" layer="1" text="Attacker">
+      <SelectedImageBackgroundStyle id="102" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ForegroundStyle id="103" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <FocusedImageBackgroundStyle id="104" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ShadowStyle id="105" drawShadow="false" />
+      <FocusedForegroundStyle id="106" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="107" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <ImageBackgroundStyle id="108" fitToShape="true" imageFile="../Icons/Performers/Attacker_64x64.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <RectangleShape id="109" />
+      <TextStyle id="110" backgroundColor="255,255,255" color="102,102,102" font="Lucida Sans,0,11" />
+    </ShapeGraphicalRepresentation>
+  </Shape>
+  <DrawingGraphicalRepresentation id="111" backgroundColor="255,255,255" drawWorkingArea="false" focusColor="255,0,0" selectionColor="0,0,255" rectangleSelectingSelectionColor="0,0,255" dimensionConstraints="FREELY_RESIZABLE" identifier="4db3941f">
+    <TextStyle id="112" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
   </DrawingGraphicalRepresentation>
 </Diagram>

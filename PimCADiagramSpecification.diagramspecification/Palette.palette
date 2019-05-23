@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DiagramPalette id="0" name="Palette">
   <DiagramPaletteElement id="1" name="MachineriesContainer">
-    <ShapeGraphicalRepresentation id="2" relativeTextY="0.15" locationConstraints="FREELY_MOVABLE" allowToLeaveBounds="false" adaptBoundsToContents="false" x="10.0" y="13.491903932375692" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="264.0239043824701" height="132.5390027492675" identifier="5342dd1f" absoluteTextY="9.0" absoluteTextX="122.0" text="Machineries">
+    <ShapeGraphicalRepresentation id="2" relativeTextY="0.15" locationConstraints="FREELY_MOVABLE" allowToLeaveBounds="false" adaptBoundsToContents="false" x="10.0" y="14.491903932375692" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="264.0239043824701" height="138.77415684819843" identifier="5342dd1f" absoluteTextY="9.0" absoluteTextX="131.0" text="Machineries">
       <SelectedColorBackgroundStyle id="3" color="254,247,217" transparencyLevel="0.5" />
       <ForegroundStyle id="4" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="SMALL_DASHES" capStyle="CAP_SQUARE" useTransparency="true" />
       <FocusedColorBackgroundStyle id="5" color="254,247,217" transparencyLevel="0.5" />
@@ -14,7 +14,7 @@
     </ShapeGraphicalRepresentation>
   </DiagramPaletteElement>
   <DiagramPaletteElement id="12" name="BasicMachinery">
-    <ShapeGraphicalRepresentation id="13" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" allowToLeaveBounds="false" adaptBoundsToContents="false" x="36.84498457044609" y="29.003523077944408" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="50.0" height="50.0" identifier="faee93c" absoluteTextY="-5.0" absoluteTextX="30.0" layer="1" text="">
+    <ShapeGraphicalRepresentation id="13" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" allowToLeaveBounds="false" adaptBoundsToContents="false" x="103.84498457044609" y="40.00352307794441" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="50.0" height="50.0" identifier="faee93c" absoluteTextY="-5.0" absoluteTextX="30.0" layer="1" text="">
       <SelectedImageBackgroundStyle id="14" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
       <ForegroundStyle id="15" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
       <FocusedImageBackgroundStyle id="16" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
@@ -27,7 +27,7 @@
     </ShapeGraphicalRepresentation>
   </DiagramPaletteElement>
   <DiagramPaletteElement id="23" name="PerformerGR">
-    <ShapeGraphicalRepresentation id="24" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" allowToLeaveBounds="false" adaptBoundsToContents="false" x="105.0" y="29.0" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="50.0" height="50.0" identifier="5ac81c47" absoluteTextY="-7.0" absoluteTextX="52.0" layer="1" text="">
+    <ShapeGraphicalRepresentation id="24" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" allowToLeaveBounds="false" adaptBoundsToContents="false" x="43.0" y="37.0" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="50.0" height="50.0" identifier="5ac81c47" absoluteTextY="-7.0" absoluteTextX="52.0" layer="1" text="">
       <SelectedImageBackgroundStyle id="25" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
       <ForegroundStyle id="26" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
       <FocusedImageBackgroundStyle id="27" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
@@ -40,7 +40,7 @@
     </ShapeGraphicalRepresentation>
   </DiagramPaletteElement>
   <DiagramPaletteElement id="34" name="NetworkGR">
-    <ShapeGraphicalRepresentation id="35" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" adaptBoundsToContents="false" x="170.0" y="41.0" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="90.0" height="35.0" identifier="1edecc42" absoluteTextY="16.0" absoluteTextX="57.0" layer="1" text="">
+    <ShapeGraphicalRepresentation id="35" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" adaptBoundsToContents="false" x="170.0" y="52.0" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="90.0" height="35.0" identifier="1edecc42" absoluteTextY="16.0" absoluteTextX="57.0" layer="1" text="">
       <SelectedImageBackgroundStyle id="36" imageFile="NetworkGR.palette-element.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
       <ForegroundStyle id="37" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
       <FocusedImageBackgroundStyle id="38" imageFile="NetworkGR.palette-element.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
@@ -53,19 +53,45 @@
     </ShapeGraphicalRepresentation>
   </DiagramPaletteElement>
   <DiagramPaletteElement id="45" name="InterfaceGR">
-    <ShapeGraphicalRepresentation id="46" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" isFloatingLabel="false" adaptBoundsToContents="false" x="10.0" y="86.0" relativeTextX="0.5" dimensionConstraints="UNRESIZABLE" width="135.0" height="55.0" identifier="38c5ab36" layer="1" text="">
+    <ShapeGraphicalRepresentation id="46" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" isFloatingLabel="false" adaptBoundsToContents="false" x="158.0" y="101.0" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="107.83018867924528" height="43.92156862745098" identifier="38c5ab36" layer="1" text="">
       <SelectedImageBackgroundStyle id="47" imageFile="InterfaceGR.palette-element.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
       <ForegroundStyle id="48" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
       <FocusedImageBackgroundStyle id="49" imageFile="InterfaceGR.palette-element.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
       <ShadowStyle id="50" shadowDepth="0" drawShadow="false" />
       <FocusedForegroundStyle id="51" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
       <SelectedForegroundStyle id="52" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
-      <ImageBackgroundStyle id="53" imageFile="InterfaceGR.palette-element.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="53" fitToShape="true" imageFile="InterfaceGR.palette-element.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
       <RectangleShape id="54" />
       <TextStyle id="55" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
     </ShapeGraphicalRepresentation>
   </DiagramPaletteElement>
-  <DrawingGraphicalRepresentation id="56" backgroundColor="255,255,255" drawWorkingArea="false" focusColor="255,0,0" selectionColor="0,0,255" rectangleSelectingSelectionColor="0,0,255" dimensionConstraints="FREELY_RESIZABLE" identifier="4835fa74">
-    <TextStyle id="57" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
+  <DiagramPaletteElement id="56" name="CustomsGR">
+    <ShapeGraphicalRepresentation id="57" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" allowToLeaveBounds="false" adaptBoundsToContents="false" x="109.0" y="102.0" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="40.0" height="40.0" identifier="141562b0" absoluteTextY="49.0" absoluteTextX="21.0" layer="1" text="">
+      <SelectedImageBackgroundStyle id="58" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ForegroundStyle id="59" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <FocusedImageBackgroundStyle id="60" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ShadowStyle id="61" drawShadow="false" />
+      <FocusedForegroundStyle id="62" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="63" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <ImageBackgroundStyle id="64" fitToShape="true" imageFile="../Icons/Customs/LockClosed_64x64.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <RectangleShape id="65" />
+      <TextStyle id="66" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
+    </ShapeGraphicalRepresentation>
+  </DiagramPaletteElement>
+  <DiagramPaletteElement id="67" name="AttackerGR">
+    <ShapeGraphicalRepresentation id="68" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" allowToLeaveBounds="false" adaptBoundsToContents="false" x="43.0" y="94.0" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="50.0" height="50.0" identifier="79b381cc" absoluteTextY="69.0" absoluteTextX="33.0" layer="1" text="">
+      <SelectedImageBackgroundStyle id="69" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ForegroundStyle id="70" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <FocusedImageBackgroundStyle id="71" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ShadowStyle id="72" drawShadow="false" />
+      <FocusedForegroundStyle id="73" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="74" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <ImageBackgroundStyle id="75" fitToShape="true" imageFile="../Icons/Performers/Attacker_64x64.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <RectangleShape id="76" />
+      <TextStyle id="77" backgroundColor="255,255,255" color="102,102,102" font="Lucida Sans,0,11" />
+    </ShapeGraphicalRepresentation>
+  </DiagramPaletteElement>
+  <DrawingGraphicalRepresentation id="78" backgroundColor="255,255,255" drawWorkingArea="false" focusColor="255,0,0" selectionColor="0,0,255" rectangleSelectingSelectionColor="0,0,255" dimensionConstraints="FREELY_RESIZABLE" identifier="4835fa74">
+    <TextStyle id="79" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
   </DrawingGraphicalRepresentation>
 </DiagramPalette>
