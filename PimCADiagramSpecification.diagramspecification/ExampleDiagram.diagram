@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram id="0" diagramSpecificationURI="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification" uri="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram" name="ExampleDiagram.diagram" userID="SYL" flexoID="1">
+  <Shape id="1" name="Machinery" text="FPGA" userID="SYL" flexoID="2">
+    <ShapeGraphicalRepresentation id="2" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" allowToLeaveBounds="false" adaptBoundsToContents="false" x="137.0" y="138.0" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="64.0" height="64.0" identifier="45460f45" absoluteTextY="-6.0" absoluteTextX="33.0" layer="1" text="FPGA">
+      <SelectedImageBackgroundStyle id="3" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ForegroundStyle id="4" joinStyle="JOIN_MITER" color="0,0,0" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <FocusedImageBackgroundStyle id="5" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ShadowStyle id="6" drawShadow="false" />
+      <FocusedForegroundStyle id="7" joinStyle="JOIN_MITER" color="0,0,0" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="8" joinStyle="JOIN_MITER" color="0,0,0" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <ImageBackgroundStyle id="9" fitToShape="true" imageFile="../Icons/Machinery/Machinery_64x64.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <RectangleShape id="10" />
+      <TextStyle id="11" backgroundColor="255,255,255" color="0,102,204" font="Lucida Sans,0,11" />
+    </ShapeGraphicalRepresentation>
+  </Shape>
+  <DrawingGraphicalRepresentation id="12" backgroundColor="255,255,255" drawWorkingArea="false" focusColor="255,0,0" selectionColor="0,0,255" rectangleSelectingSelectionColor="0,0,255" dimensionConstraints="FREELY_RESIZABLE" identifier="4db3941f">
+    <TextStyle id="13" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
+  </DrawingGraphicalRepresentation>
+</Diagram>

@@ -1,0 +1,36 @@
+use org.openflexo.technologyadapter.diagram.TypedDiagramModelSlot;
+use org.openflexo.foundation.fml.rt.FMLRTVirtualModelInstanceModelSlot;
+
+/**
+ * FML-controlled diagram representing a PimCA model
+ * 
+ * @version 0.1
+ */
+@VirtualModel(uri="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml")
+public class PimCADiagram {
+
+  public Diagram diagram;
+  public PimCAModel model;
+
+  @CreationScheme  
+  PimCADiagram:init(String diagramName, VirtualModelInstanceType<PimCAModel> model) {  
+    diagram = CreateDiagram();    
+    model = parameters.model;  
+  }  
+
+
+  @FlexoConcept  
+  public class BasicMachineryGR {  
+  
+    public DiagramShape shape;  
+    public Machinery machinery;  
+  
+    @DropScheme    
+    BasicMachineryGR:dropBasicMachineryGRAtTopLevel() {    
+      shape = diagram.AddShape();      
+      machinery = Machinery.create();    
+    }    
+  
+  }  
+
+}
