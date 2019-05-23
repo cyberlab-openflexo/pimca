@@ -65,4 +65,22 @@ public class PimCADiagram {
   
   }  
 
+  @FlexoConcept  
+  public class InterfaceGR {  
+  
+    public DiagramShape shape;  
+    public DiagramShape icon;  
+    public DiagramShape text;  
+    public Interface interface;  
+  
+    @DropScheme    
+    InterfaceGR:dropInterfaceGRAtTopLevel(String name) {    
+      shape = diagram.AddShape();      
+      icon = diagram.AddShape();      
+      text = diagram.AddShape();      
+      interface = Interface.create(parameters.name);    
+    }    
+  
+  }  
+
 }

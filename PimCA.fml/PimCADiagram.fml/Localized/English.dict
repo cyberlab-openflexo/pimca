@@ -1,6 +1,7 @@
 create_basic_machinery=Create basic machinery
 diagramName=DiagramName
 dropBasicMachineryGRAtTopLevel=DropBasicMachineryGRAtTopLevel
+dropInterfaceGRAtTopLevel=DropInterfaceGRAtTopLevel
 dropNetworkGRAtTopLevel=DropNetworkGRAtTopLevel
 dropPerformerGRAtTopLevel=DropPerformerGRAtTopLevel
 invalid_parameter=Invalid parameter
