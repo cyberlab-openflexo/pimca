@@ -1,3 +1,9 @@
+create_basic_machinery=Create basic machinery
 diagramName=DiagramName
 dropBasicMachineryGRAtTopLevel=DropBasicMachineryGRAtTopLevel
+dropNetworkGRAtTopLevel=DropNetworkGRAtTopLevel
+dropPerformerGRAtTopLevel=DropPerformerGRAtTopLevel
+invalid_parameter=Invalid parameter
+kind=Kind
 model=Model
+networkType=NetworkType

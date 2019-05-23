@@ -26,9 +26,41 @@ public class PimCADiagram {
     public Machinery machinery;  
   
     @DropScheme    
-    BasicMachineryGR:dropBasicMachineryGRAtTopLevel() {    
+    BasicMachineryGR:dropBasicMachineryGRAtTopLevel(String name, FlexoEnumType<MachineryType> kind) {    
       shape = diagram.AddShape();      
-      machinery = Machinery.create();    
+      machinery = Machinery.create(parameters.name,parameters.kind);    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class PerformerGR {  
+  
+    public DiagramShape forme;  
+    public Performer performer;  
+  
+    @DropScheme    
+    PerformerGR:dropPerformerGRAtTopLevel(String name) {    
+      forme = diagram.AddShape();      
+      performer = Performer.create(parameters.name);    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class NetworkGR {  
+  
+    public DiagramShape shape;  
+    public DiagramShape icon;  
+    public Network network;  
+    public DiagramShape label;  
+  
+    @DropScheme    
+    NetworkGR:dropNetworkGRAtTopLevel(String name, FlexoEnumType<NetworkType> networkType) {    
+      shape = diagram.AddShape();      
+      icon = diagram.AddShape();      
+      label = diagram.AddShape();      
+      network = Network.create(parameters.name,parameters.networkType);    
     }    
   
   }  

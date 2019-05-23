@@ -8,16 +8,113 @@
 public class PimCAModel {
 
   @FlexoConcept  
-  public class Machinery {  
+  public class Machinery extends PieceOfKnowledge  {  
+  
+    public MachineryType kind;  
   
     @CreationScheme    
-    Machinery:create() {    
-      
+    Machinery:create(String name, FlexoEnumType<MachineryType> kind) {    
+      name = parameters.name;      
+      kind = parameters.kind;    
     }    
   
     @DeletionScheme    
     Void delete() {    
       
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class QualifiedElement {  
+  
+    public String name;  
+    public String usageArea;  
+    public Date usagePeriod;  
+    public String usageLevel;  
+    public int validity;  
+    public String comment;  
+  }  
+
+  @FlexoConcept  
+  public class PieceOfKnowledge extends QualifiedElement  {  
+  
+    public int nbCopy;  
+    public String role;  
+  }  
+
+  @FlexoConcept  
+  public class MachineryType {  
+  }  
+
+  @FlexoConcept  
+  public class NetworkType {  
+  }  
+
+  @FlexoConcept  
+  public class Customs extends Machinery  {  
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+    @CreationScheme    
+    Customs:create(String name) {    
+      name = parameters.name;    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class Network extends Machinery  {  
+  
+    public NetworkType networkType;  
+  
+    @CreationScheme    
+    Network:create(String name, FlexoEnumType<NetworkType> aNetworkType) {    
+      name = parameters.name;      
+      networkType = parameters.aNetworkType;    
+    }    
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class Interface extends Machinery  {  
+  
+    @CreationScheme    
+    Interface:create(String name) {    
+      name = parameters.name;    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class Performer extends Machinery  {  
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+    @CreationScheme    
+    Performer:create(String name) {    
+      name = parameters.name;    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class Attacker extends Performer  {  
+  
+    @CreationScheme    
+    Attacker:create(String name) {    
+      name = parameters.name;    
     }    
   
   }  
