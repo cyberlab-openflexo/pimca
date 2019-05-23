@@ -1,0 +1,25 @@
+
+/**
+ * 
+ * @author sylvain
+ * @version 0.1
+ */
+@VirtualModel(uri="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml")
+public class PimCAModel {
+
+  @FlexoConcept  
+  public class Machinery {  
+  
+    @CreationScheme    
+    Machinery:create() {    
+      
+    }    
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+  }  
+
+}

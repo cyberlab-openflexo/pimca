@@ -1,0 +1,9 @@
+
+/**
+ * 
+ * @author sylvain
+ * @version 0.1
+ */
+@VirtualModel(uri="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml")
+public class PimCA {
+}

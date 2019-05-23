@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VirtualModel id="SYL-5" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" uri="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml" version="0.1" name="PimCAModel" author="sylvain" userID="SYL" flexoID="5">
+  <FlexoConcept id="SYL-6" name="Machinery" author="sylvain" userID="SYL" flexoID="6">
+    <Inspector id="SYL-7" inspectorTitle="Machinery" userID="SYL" flexoID="7" />
+    <CreationScheme id="SYL-11" name="create" width="800" label="create" height="600" userID="SYL" flexoID="11">
+      <BehaviourControlGraph_EmptyControlGraph id="SYL-13" userID="SYL" flexoID="13" />
+    </CreationScheme>
+    <DeletionScheme id="SYL-12" name="delete" width="800" label="delete" height="600" userID="SYL" flexoID="12">
+      <BehaviourControlGraph_EmptyControlGraph id="SYL-14" userID="SYL" flexoID="14" />
+    </DeletionScheme>
+  </FlexoConcept>
+  <Inspector id="SYL-1" inspectorTitle="PimCAModel" userID="SYL" flexoID="1" />
+</VirtualModel>
