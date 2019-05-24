@@ -171,4 +171,60 @@ public class PimCADiagram {
   
   }  
 
+  @FlexoConcept  
+  public class ControlGR extends RelationGR  {  
+  
+    public DiagramConnector connector;  
+    public Control relation;  
+  
+    @LinkScheme    
+    ControlGR:createControlGR() {    
+      connector = diagram.AddConnector();      
+      relation = Control.create(fromTarget.machinery,toTarget.machinery);    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class UseGR extends RelationGR  {  
+  
+    public DiagramConnector connector;  
+    public Use relation;  
+  
+    @LinkScheme    
+    UseGR:createUseGR() {    
+      connector = diagram.AddConnector();      
+      relation = Use.create(fromTarget.machinery,toTarget.machinery);    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class ProduceGR extends RelationGR  {  
+  
+    public DiagramConnector connector;  
+    public Produce relation;  
+  
+    @LinkScheme    
+    ProduceGR:createProduceGR() {    
+      connector = diagram.AddConnector();      
+      relation = Produce.create(fromTarget.machinery,toTarget.machinery);    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class MaintainGR extends RelationGR  {  
+  
+    public DiagramConnector connector;  
+    public Maintain relation;  
+  
+    @LinkScheme    
+    MaintainGR:createMaintainGR() {    
+      connector = diagram.AddConnector();      
+      relation = Maintain.create(fromTarget.machinery,toTarget.machinery);    
+    }    
+  
+  }  
+
 }

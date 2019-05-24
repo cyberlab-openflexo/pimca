@@ -1,6 +1,10 @@
 create_basic_machinery=Create basic machinery
 create_check_relation=Create check relation
+create_control_relation=Create control relation
+create_maintain_relation=Create maintain relation
+create_produce_relation=Create produce relation
 create_swap_relation=Create swap relation
+create_use_relation=Create use relation
 diagramName=DiagramName
 dropAttackerGRAtTopLevel=DropAttackerGRAtTopLevel
 dropBasicMachineryGRAtTopLevel=DropBasicMachineryGRAtTopLevel
