@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Diagram id="0" diagramSpecificationURI="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification" uri="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram" name="diagram.diagram" userID="SYL" flexoID="1">
-  <Connector id="1" name="Connector16" text="use" userID="SYL" flexoID="16">
+  <Connector id="1" name="Connector16" text="Utilise" userID="SYL" flexoID="16">
     <StartShape idref="2" />
     <EndShape idref="13" />
-    <ConnectorGraphicalRepresentation id="46" identifier="61323106" absoluteTextX="16.0" layer="64" text="use">
+    <ConnectorGraphicalRepresentation id="46" identifier="61323106" absoluteTextY="-4.0" absoluteTextX="22.0" layer="64" text="Utilise">
       <RectPolylinConnectorSpecification id="47" rectPolylinConstraints="NONE" arcSize="8" crossedControlPoint="0.4539877300613497,0.47247706422018354" endOrientation="NORTH" startOrientation="SOUTH" adjustability="BASICALLY_ADJUSTABLE" startSymbol="NONE" middleSymbol="NONE" endSymbol="FILLED_ARROW" />
       <ForegroundStyle id="48" color="0,153,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" lineWidth="1.999999998509884" />
       <FocusedForegroundStyle id="49" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
@@ -11,21 +11,21 @@
       <TextStyle id="51" backgroundColor="255,255,255" color="0,153,0" font="Lucida Sans,0,11" />
     </ConnectorGraphicalRepresentation>
   </Connector>
-  <Connector id="52" name="Connector17" text="swap" userID="SYL" flexoID="17">
+  <Connector id="52" name="Connector17" userID="SYL" flexoID="17">
     <StartShape idref="13" />
     <EndShape idref="53" />
-    <ConnectorGraphicalRepresentation id="64" identifier="1a46abb9" absoluteTextY="1.0" absoluteTextX="20.0" layer="64" text="swap">
-      <RectPolylinConnectorSpecification id="65" rectPolylinConstraints="NONE" arcSize="8" endOrientation="NORTH" startOrientation="SOUTH" adjustability="BASICALLY_ADJUSTABLE" startSymbol="FILLED_ARROW" middleSymbol="NONE" endSymbol="FILLED_ARROW" />
+    <ConnectorGraphicalRepresentation id="64" identifier="1a46abb9" absoluteTextY="1.0" absoluteTextX="20.0" layer="64">
+      <RectPolylinConnectorSpecification id="65" rectPolylinConstraints="NONE" arcSize="8" crossedControlPoint="0.46625766871165647,0.425" endOrientation="NORTH" startOrientation="SOUTH" adjustability="BASICALLY_ADJUSTABLE" startSymbol="FILLED_ARROW" middleSymbol="NONE" endSymbol="FILLED_ARROW" />
       <ForegroundStyle id="66" color="0,99,255" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" lineWidth="1.999999998509884" />
       <FocusedForegroundStyle id="67" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
       <SelectedForegroundStyle id="68" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
       <TextStyle id="69" backgroundColor="255,255,255" color="51,51,255" font="Lucida Sans,0,11" />
     </ConnectorGraphicalRepresentation>
   </Connector>
-  <Connector id="70" name="Connector18" text="swap" userID="SYL" flexoID="18">
+  <Connector id="70" name="Connector18" userID="SYL" flexoID="18">
     <StartShape idref="53" />
     <EndShape idref="71" />
-    <ConnectorGraphicalRepresentation id="104" identifier="85f2609" absoluteTextY="-8.0" absoluteTextX="-1.0" layer="64" text="swap">
+    <ConnectorGraphicalRepresentation id="104" identifier="85f2609" absoluteTextY="-8.0" absoluteTextX="-1.0" layer="64">
       <RectPolylinConnectorSpecification id="105" rectPolylinConstraints="NONE" arcSize="8" endOrientation="EAST" startOrientation="WEST" adjustability="BASICALLY_ADJUSTABLE" startSymbol="FILLED_ARROW" middleSymbol="NONE" endSymbol="FILLED_ARROW" />
       <ForegroundStyle id="106" color="0,99,255" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" lineWidth="1.999999998509884" />
       <FocusedForegroundStyle id="107" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
@@ -33,10 +33,10 @@
       <TextStyle id="109" backgroundColor="255,255,255" color="51,51,255" font="Lucida Sans,0,11" />
     </ConnectorGraphicalRepresentation>
   </Connector>
-  <Connector id="110" name="Connector20" text="swap" userID="SYL" flexoID="20">
+  <Connector id="110" name="Connector20" userID="SYL" flexoID="20">
     <StartShape idref="71" />
     <EndShape idref="111" />
-    <ConnectorGraphicalRepresentation id="122" identifier="4f4ac1be" absoluteTextY="-8.0" absoluteTextX="-1.0" layer="64" text="swap">
+    <ConnectorGraphicalRepresentation id="122" identifier="4f4ac1be" absoluteTextY="-8.0" absoluteTextX="-1.0" layer="64">
       <RectPolylinConnectorSpecification id="123" rectPolylinConstraints="NONE" arcSize="8" crossedControlPoint="0.7603305785123967,0.2451923076923077" endOrientation="SOUTH" startOrientation="WEST" adjustability="BASICALLY_ADJUSTABLE" startSymbol="FILLED_ARROW" middleSymbol="NONE" endSymbol="FILLED_ARROW" />
       <ForegroundStyle id="124" color="0,99,255" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" lineWidth="1.999999998509884" />
       <FocusedForegroundStyle id="125" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
@@ -44,10 +44,10 @@
       <TextStyle id="127" backgroundColor="255,255,255" color="51,51,255" font="Lucida Sans,0,11" />
     </ConnectorGraphicalRepresentation>
   </Connector>
-  <Connector id="128" name="Connector22" text="swap" userID="SYL" flexoID="22">
+  <Connector id="128" name="Connector22" userID="SYL" flexoID="22">
     <StartShape idref="129" />
     <EndShape idref="140" />
-    <ConnectorGraphicalRepresentation id="173" identifier="7e7c9c4d" absoluteTextY="33.0" absoluteTextX="19.0" layer="64" text="swap">
+    <ConnectorGraphicalRepresentation id="173" identifier="7e7c9c4d" absoluteTextY="33.0" absoluteTextX="19.0" layer="64">
       <RectPolylinConnectorSpecification id="174" rectPolylinConstraints="NONE" arcSize="8" crossedControlPoint="0.3611111111111111,0.4444444444444444" endOrientation="EAST" startOrientation="NORTH" adjustability="BASICALLY_ADJUSTABLE" startSymbol="FILLED_ARROW" middleSymbol="NONE" endSymbol="FILLED_ARROW" />
       <ForegroundStyle id="175" color="0,99,255" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" lineWidth="1.999999998509884" />
       <FocusedForegroundStyle id="176" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
@@ -55,10 +55,10 @@
       <TextStyle id="178" backgroundColor="255,255,255" color="51,51,255" font="Lucida Sans,0,11" />
     </ConnectorGraphicalRepresentation>
   </Connector>
-  <Connector id="179" name="Connector23" text="swap" userID="SYL" flexoID="23">
+  <Connector id="179" name="Connector23" userID="SYL" flexoID="23">
     <StartShape idref="180" />
     <EndShape idref="140" />
-    <ConnectorGraphicalRepresentation id="213" identifier="7f7d6e14" absoluteTextY="12.0" absoluteTextX="-29.0" layer="64" text="swap">
+    <ConnectorGraphicalRepresentation id="213" identifier="7f7d6e14" absoluteTextY="12.0" absoluteTextX="-29.0" layer="64">
       <RectPolylinConnectorSpecification id="214" rectPolylinConstraints="NONE" arcSize="8" crossedControlPoint="0.7346938775510203,0.7355769230769231" endOrientation="WEST" startOrientation="NORTH" adjustability="BASICALLY_ADJUSTABLE" startSymbol="FILLED_ARROW" middleSymbol="NONE" endSymbol="FILLED_ARROW" />
       <ForegroundStyle id="215" color="0,99,255" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" lineWidth="1.999999998509884" />
       <FocusedForegroundStyle id="216" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
@@ -66,10 +66,10 @@
       <TextStyle id="218" backgroundColor="255,255,255" color="51,51,255" font="Lucida Sans,0,11" />
     </ConnectorGraphicalRepresentation>
   </Connector>
-  <Connector id="219" name="Connector24" text="swap" userID="SYL" flexoID="24">
+  <Connector id="219" name="Connector24" userID="SYL" flexoID="24">
     <StartShape idref="140" />
     <EndShape idref="111" />
-    <ConnectorGraphicalRepresentation id="220" identifier="473188a4" absoluteTextY="-33.0" absoluteTextX="7.0" layer="64" text="swap">
+    <ConnectorGraphicalRepresentation id="220" identifier="473188a4" absoluteTextY="-33.0" absoluteTextX="7.0" layer="64">
       <RectPolylinConnectorSpecification id="221" rectPolylinConstraints="NONE" arcSize="8" crossedControlPoint="0.4,0.1875" endOrientation="SOUTH" startOrientation="EAST" adjustability="BASICALLY_ADJUSTABLE" startSymbol="FILLED_ARROW" middleSymbol="NONE" endSymbol="FILLED_ARROW" />
       <ForegroundStyle id="222" color="0,99,255" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" lineWidth="1.999999998509884" />
       <FocusedForegroundStyle id="223" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
@@ -77,10 +77,10 @@
       <TextStyle id="225" backgroundColor="255,255,255" color="51,51,255" font="Lucida Sans,0,11" />
     </ConnectorGraphicalRepresentation>
   </Connector>
-  <Connector id="226" name="Connector26" text="swap" userID="SYL" flexoID="26">
+  <Connector id="226" name="Connector26" userID="SYL" flexoID="26">
     <StartShape idref="140" />
     <EndShape idref="227" />
-    <ConnectorGraphicalRepresentation id="238" identifier="1e6f703a" absoluteTextY="-21.0" absoluteTextX="-18.0" layer="64" text="swap">
+    <ConnectorGraphicalRepresentation id="238" identifier="1e6f703a" absoluteTextY="-21.0" absoluteTextX="-18.0" layer="64">
       <RectPolylinConnectorSpecification id="239" rectPolylinConstraints="NONE" arcSize="8" crossedControlPoint="0.6244343891402715,0.2072538860103627" endOrientation="SOUTH" startOrientation="WEST" adjustability="BASICALLY_ADJUSTABLE" startSymbol="FILLED_ARROW" middleSymbol="NONE" endSymbol="FILLED_ARROW" />
       <ForegroundStyle id="240" color="0,99,255" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" lineWidth="1.999999998509884" />
       <FocusedForegroundStyle id="241" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
@@ -206,7 +206,7 @@
     </ShapeGraphicalRepresentation>
   </Shape>
   <Shape id="53" name="Shape11" text="PC" userID="SYL" flexoID="11">
-    <ShapeGraphicalRepresentation id="54" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" allowToLeaveBounds="false" adaptBoundsToContents="false" x="671.0" y="251.0" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="64.0" height="64.0" identifier="57c4180a" absoluteTextY="-6.0" absoluteTextX="33.0" layer="1" text="PC">
+    <ShapeGraphicalRepresentation id="54" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" allowToLeaveBounds="false" adaptBoundsToContents="false" x="671.0" y="251.0" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="64.0" height="64.0" identifier="57c4180a" absoluteTextY="12.0" absoluteTextX="59.0" layer="1" text="PC">
       <SelectedImageBackgroundStyle id="55" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
       <ForegroundStyle id="56" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
       <FocusedImageBackgroundStyle id="57" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
@@ -309,7 +309,7 @@
       <TextStyle id="237" backgroundColor="255,255,255" color="0,102,204" font="Lucida Sans,0,11" />
     </ShapeGraphicalRepresentation>
   </Shape>
-  <DrawingGraphicalRepresentation id="244" drawWorkingArea="false" backgroundColor="255,255,255" focusColor="255,0,0" selectionColor="0,0,255" rectangleSelectingSelectionColor="0,0,255" dimensionConstraints="FREELY_RESIZABLE" identifier="888ecec">
+  <DrawingGraphicalRepresentation id="244" backgroundColor="255,255,255" drawWorkingArea="false" focusColor="255,0,0" selectionColor="0,0,255" rectangleSelectingSelectionColor="0,0,255" dimensionConstraints="FREELY_RESIZABLE" identifier="888ecec">
     <TextStyle id="245" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
   </DrawingGraphicalRepresentation>
 </Diagram>

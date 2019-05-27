@@ -226,4 +226,64 @@ public class PimCAModel {
   
   }  
 
+  @FlexoConcept  
+  public class Resource extends PieceOfKnowledge  {  
+  
+    @CreationScheme    
+    Resource:create() {    
+      
+    }    
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class BasicResource extends Resource  {  
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+    @CreationScheme    
+    BasicResource:create(String name) {    
+      name = parameters.name;    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class Instructions extends Resource  {  
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+    @CreationScheme    
+    Instructions:create(String name) {    
+      name = parameters.name;    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class Passeport extends Resource  {  
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+    @CreationScheme    
+    Passeport:create(String name) {    
+      name = parameters.name;    
+    }    
+  
+  }  
+
 }

@@ -220,5 +220,50 @@
       <GenericBehaviourParameter id="SYL-293" widget="CUSTOM_WIDGET" name="target" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#PieceOfKnowledge&gt;" userID="SYL" flexoID="293" />
     </CreationScheme>
   </FlexoConcept>
+  <FlexoConcept id="SYL-348" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#PieceOfKnowledge" name="Resource" userID="SYL" flexoID="348">
+    <Inspector id="SYL-349" inspectorTitle="Resource" userID="SYL" flexoID="349" />
+    <CreationScheme id="SYL-353" name="create" width="800" label="create" height="600" userID="SYL" flexoID="353">
+      <BehaviourControlGraph_EmptyControlGraph id="SYL-355" userID="SYL" flexoID="355" />
+    </CreationScheme>
+    <DeletionScheme id="SYL-354" name="delete" width="800" label="delete" height="600" userID="SYL" flexoID="354">
+      <BehaviourControlGraph_EmptyControlGraph id="SYL-356" userID="SYL" flexoID="356" />
+    </DeletionScheme>
+  </FlexoConcept>
+  <FlexoConcept id="SYL-357" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Resource" name="BasicResource" userID="SYL" flexoID="357">
+    <Inspector id="SYL-358" inspectorTitle="BasicResource" userID="SYL" flexoID="358" />
+    <DeletionScheme id="SYL-363" name="delete" width="800" label="delete" height="600" userID="SYL" flexoID="363">
+      <BehaviourControlGraph_EmptyControlGraph id="SYL-395" userID="SYL" flexoID="395" />
+    </DeletionScheme>
+    <CreationScheme id="SYL-364" name="create" width="800" label="create" height="600" userID="SYL" flexoID="364">
+      <BehaviourControlGraph_AssignationAction id="SYL-366" assign="name" userID="SYL" flexoID="366">
+        <AssignableAction_ExpressionAction id="SYL-365" expression="parameters.name" userID="SYL" flexoID="365" />
+      </BehaviourControlGraph_AssignationAction>
+      <GenericBehaviourParameter id="SYL-367" widget="TEXT_FIELD" name="name" type="java.lang.String" userID="SYL" flexoID="367" />
+    </CreationScheme>
+  </FlexoConcept>
+  <FlexoConcept id="SYL-368" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Resource" name="Instructions" userID="SYL" flexoID="368">
+    <Inspector id="SYL-369" inspectorTitle="Instructions" userID="SYL" flexoID="369" />
+    <DeletionScheme id="SYL-374" name="delete" width="800" label="delete" height="600" userID="SYL" flexoID="374">
+      <BehaviourControlGraph_EmptyControlGraph id="SYL-376" userID="SYL" flexoID="376" />
+    </DeletionScheme>
+    <CreationScheme id="SYL-377" name="create" width="800" label="create" height="600" userID="SYL" flexoID="377">
+      <BehaviourControlGraph_AssignationAction id="SYL-379" assign="name" userID="SYL" flexoID="379">
+        <AssignableAction_ExpressionAction id="SYL-378" expression="parameters.name" userID="SYL" flexoID="378" />
+      </BehaviourControlGraph_AssignationAction>
+      <GenericBehaviourParameter id="SYL-380" widget="TEXT_FIELD" name="name" type="java.lang.String" userID="SYL" flexoID="380" />
+    </CreationScheme>
+  </FlexoConcept>
+  <FlexoConcept id="SYL-381" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Resource" name="Passeport" userID="SYL" flexoID="381">
+    <Inspector id="SYL-382" inspectorTitle="Passeport" userID="SYL" flexoID="382" />
+    <DeletionScheme id="SYL-387" name="delete" width="800" label="delete" height="600" userID="SYL" flexoID="387">
+      <BehaviourControlGraph_EmptyControlGraph id="SYL-389" userID="SYL" flexoID="389" />
+    </DeletionScheme>
+    <CreationScheme id="SYL-390" name="create" width="800" label="create" height="600" userID="SYL" flexoID="390">
+      <BehaviourControlGraph_AssignationAction id="SYL-392" assign="name" userID="SYL" flexoID="392">
+        <AssignableAction_ExpressionAction id="SYL-391" expression="parameters.name" userID="SYL" flexoID="391" />
+      </BehaviourControlGraph_AssignationAction>
+      <GenericBehaviourParameter id="SYL-393" widget="TEXT_FIELD" name="name" type="java.lang.String" userID="SYL" flexoID="393" />
+    </CreationScheme>
+  </FlexoConcept>
   <Inspector id="SYL-1" inspectorTitle="PimCAModel" userID="SYL" flexoID="1" />
 </VirtualModel>
