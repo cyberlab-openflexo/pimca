@@ -112,12 +112,14 @@ public class PimCADiagram {
   }  
 
   @FlexoConcept  
-  public class MachineryGR {  
+  public class MachineryGR extends ElementGR  {  
   
       
     abstract FlexoConceptInstanceType<Machinery> machinery;  
       
     abstract DiagramShape shape;  
+      
+    public FlexoConceptInstanceType<Machinery> pieceOfKnowledge = machinery;  
   }  
 
   @FlexoConcept  
@@ -129,7 +131,7 @@ public class PimCADiagram {
     @LinkScheme    
     SwapGR:createSwapGR() {    
       connector = diagram.AddConnector();      
-      relation = Swap.create(fromTarget.machinery,toTarget.machinery);    
+      relation = Swap.create(fromTarget.pieceOfKnowledge,toTarget.pieceOfKnowledge);    
     }    
   
   }  
@@ -139,8 +141,8 @@ public class PimCADiagram {
   
       
     abstract DiagramConnector connector;  
-    public MachineryGR sourceGR;  
-    public MachineryGR targetGR;  
+    public ElementGR sourceGR;  
+    public ElementGR targetGR;  
       
     abstract FlexoConceptInstanceType<Relation> relation;  
   
@@ -150,7 +152,7 @@ public class PimCADiagram {
     }    
   
     @ActionScheme    
-    Void init(FlexoConceptInstanceType<MachineryGR> sourceGR, FlexoConceptInstanceType<MachineryGR> targetGR) {    
+    Void init(FlexoConceptInstanceType<ElementGR> sourceGR, FlexoConceptInstanceType<ElementGR> targetGR) {    
       sourceGR = parameters.sourceGR;      
       targetGR = parameters.targetGR;    
     }    
@@ -166,7 +168,7 @@ public class PimCADiagram {
     @LinkScheme    
     CheckGR:createCheckGR() {    
       connector = diagram.AddConnector();      
-      relation = Check.create(fromTarget.machinery,toTarget.machinery);    
+      relation = Check.create(fromTarget.pieceOfKnowledge,toTarget.pieceOfKnowledge);    
     }    
   
   }  
@@ -180,7 +182,7 @@ public class PimCADiagram {
     @LinkScheme    
     ControlGR:createControlGR() {    
       connector = diagram.AddConnector();      
-      relation = Control.create(fromTarget.machinery,toTarget.machinery);    
+      relation = Control.create(fromTarget.pieceOfKnowledge,toTarget.pieceOfKnowledge);    
     }    
   
   }  
@@ -194,7 +196,7 @@ public class PimCADiagram {
     @LinkScheme    
     UseGR:createUseGR() {    
       connector = diagram.AddConnector();      
-      relation = Use.create(fromTarget.machinery,toTarget.machinery);    
+      relation = Use.create(fromTarget.pieceOfKnowledge,toTarget.pieceOfKnowledge);    
     }    
   
   }  
@@ -208,7 +210,7 @@ public class PimCADiagram {
     @LinkScheme    
     ProduceGR:createProduceGR() {    
       connector = diagram.AddConnector();      
-      relation = Produce.create(fromTarget.machinery,toTarget.machinery);    
+      relation = Produce.create(fromTarget.pieceOfKnowledge,toTarget.pieceOfKnowledge);    
     }    
   
   }  
@@ -222,7 +224,7 @@ public class PimCADiagram {
     @LinkScheme    
     MaintainGR:createMaintainGR() {    
       connector = diagram.AddConnector();      
-      relation = Maintain.create(fromTarget.machinery,toTarget.machinery);    
+      relation = Maintain.create(fromTarget.pieceOfKnowledge,toTarget.pieceOfKnowledge);    
     }    
   
   }  
@@ -270,23 +272,23 @@ public class PimCADiagram {
   }  
 
   @FlexoConcept  
-  public class ResourceGR {  
+  public class ResourceGR extends ElementGR  {  
   
       
     abstract FlexoConceptInstanceType<Resource> resource;  
       
     abstract DiagramShape shape;  
-  
-    @CreationScheme    
-    ResourceGR:create() {    
       
-    }    
+    public FlexoConceptInstanceType<Resource> pieceOfKnowledge = resource;  
+  }  
+
+  @FlexoConcept  
+  public class ElementGR {  
   
-    @DeletionScheme    
-    Void delete() {    
       
-    }    
-  
+    abstract FlexoConceptInstanceType<Machinery> pieceOfKnowledge;  
+      
+    abstract DiagramShape shape;  
   }  
 
 }
