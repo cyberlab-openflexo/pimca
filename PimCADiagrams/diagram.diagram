@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram id="0" diagramSpecificationURI="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification" uri="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram" name="diagram.diagram" userID="SYL" flexoID="1">
+  <Connector id="1" name="Connector16" text="use" userID="SYL" flexoID="16">
+    <StartShape idref="2" />
+    <EndShape idref="13" />
+    <ConnectorGraphicalRepresentation id="46" identifier="61323106" absoluteTextX="16.0" layer="64" text="use">
+      <RectPolylinConnectorSpecification id="47" rectPolylinConstraints="NONE" arcSize="8" crossedControlPoint="0.4539877300613497,0.47247706422018354" endOrientation="NORTH" startOrientation="SOUTH" adjustability="BASICALLY_ADJUSTABLE" startSymbol="NONE" middleSymbol="NONE" endSymbol="FILLED_ARROW" />
+      <ForegroundStyle id="48" color="0,153,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" lineWidth="1.999999998509884" />
+      <FocusedForegroundStyle id="49" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="50" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <TextStyle id="51" backgroundColor="255,255,255" color="0,153,0" font="Lucida Sans,0,11" />
+    </ConnectorGraphicalRepresentation>
+  </Connector>
+  <Connector id="52" name="Connector17" text="swap" userID="SYL" flexoID="17">
+    <StartShape idref="13" />
+    <EndShape idref="53" />
+    <ConnectorGraphicalRepresentation id="64" identifier="1a46abb9" absoluteTextY="1.0" absoluteTextX="20.0" layer="64" text="swap">
+      <RectPolylinConnectorSpecification id="65" rectPolylinConstraints="NONE" arcSize="8" endOrientation="NORTH" startOrientation="SOUTH" adjustability="BASICALLY_ADJUSTABLE" startSymbol="FILLED_ARROW" middleSymbol="NONE" endSymbol="FILLED_ARROW" />
+      <ForegroundStyle id="66" color="0,99,255" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" lineWidth="1.999999998509884" />
+      <FocusedForegroundStyle id="67" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="68" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <TextStyle id="69" backgroundColor="255,255,255" color="51,51,255" font="Lucida Sans,0,11" />
+    </ConnectorGraphicalRepresentation>
+  </Connector>
+  <Connector id="70" name="Connector18" text="swap" userID="SYL" flexoID="18">
+    <StartShape idref="53" />
+    <EndShape idref="71" />
+    <ConnectorGraphicalRepresentation id="104" identifier="85f2609" absoluteTextY="-8.0" absoluteTextX="-1.0" layer="64" text="swap">
+      <RectPolylinConnectorSpecification id="105" rectPolylinConstraints="NONE" arcSize="8" endOrientation="EAST" startOrientation="WEST" adjustability="BASICALLY_ADJUSTABLE" startSymbol="FILLED_ARROW" middleSymbol="NONE" endSymbol="FILLED_ARROW" />
+      <ForegroundStyle id="106" color="0,99,255" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" lineWidth="1.999999998509884" />
+      <FocusedForegroundStyle id="107" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="108" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <TextStyle id="109" backgroundColor="255,255,255" color="51,51,255" font="Lucida Sans,0,11" />
+    </ConnectorGraphicalRepresentation>
+  </Connector>
+  <Connector id="110" name="Connector20" text="swap" userID="SYL" flexoID="20">
+    <StartShape idref="71" />
+    <EndShape idref="111" />
+    <ConnectorGraphicalRepresentation id="122" identifier="4f4ac1be" absoluteTextY="-8.0" absoluteTextX="-1.0" layer="64" text="swap">
+      <RectPolylinConnectorSpecification id="123" rectPolylinConstraints="NONE" arcSize="8" crossedControlPoint="0.7603305785123967,0.2451923076923077" endOrientation="SOUTH" startOrientation="WEST" adjustability="BASICALLY_ADJUSTABLE" startSymbol="FILLED_ARROW" middleSymbol="NONE" endSymbol="FILLED_ARROW" />
+      <ForegroundStyle id="124" color="0,99,255" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" lineWidth="1.999999998509884" />
+      <FocusedForegroundStyle id="125" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="126" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <TextStyle id="127" backgroundColor="255,255,255" color="51,51,255" font="Lucida Sans,0,11" />
+    </ConnectorGraphicalRepresentation>
+  </Connector>
+  <Connector id="128" name="Connector22" text="swap" userID="SYL" flexoID="22">
+    <StartShape idref="129" />
+    <EndShape idref="140" />
+    <ConnectorGraphicalRepresentation id="173" identifier="7e7c9c4d" absoluteTextY="33.0" absoluteTextX="19.0" layer="64" text="swap">
+      <RectPolylinConnectorSpecification id="174" rectPolylinConstraints="NONE" arcSize="8" crossedControlPoint="0.3611111111111111,0.4444444444444444" endOrientation="EAST" startOrientation="NORTH" adjustability="BASICALLY_ADJUSTABLE" startSymbol="FILLED_ARROW" middleSymbol="NONE" endSymbol="FILLED_ARROW" />
+      <ForegroundStyle id="175" color="0,99,255" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" lineWidth="1.999999998509884" />
+      <FocusedForegroundStyle id="176" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="177" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <TextStyle id="178" backgroundColor="255,255,255" color="51,51,255" font="Lucida Sans,0,11" />
+    </ConnectorGraphicalRepresentation>
+  </Connector>
+  <Connector id="179" name="Connector23" text="swap" userID="SYL" flexoID="23">
+    <StartShape idref="180" />
+    <EndShape idref="140" />
+    <ConnectorGraphicalRepresentation id="213" identifier="7f7d6e14" absoluteTextY="12.0" absoluteTextX="-29.0" layer="64" text="swap">
+      <RectPolylinConnectorSpecification id="214" rectPolylinConstraints="NONE" arcSize="8" crossedControlPoint="0.7346938775510203,0.7355769230769231" endOrientation="WEST" startOrientation="NORTH" adjustability="BASICALLY_ADJUSTABLE" startSymbol="FILLED_ARROW" middleSymbol="NONE" endSymbol="FILLED_ARROW" />
+      <ForegroundStyle id="215" color="0,99,255" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" lineWidth="1.999999998509884" />
+      <FocusedForegroundStyle id="216" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="217" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <TextStyle id="218" backgroundColor="255,255,255" color="51,51,255" font="Lucida Sans,0,11" />
+    </ConnectorGraphicalRepresentation>
+  </Connector>
+  <Connector id="219" name="Connector24" text="swap" userID="SYL" flexoID="24">
+    <StartShape idref="140" />
+    <EndShape idref="111" />
+    <ConnectorGraphicalRepresentation id="220" identifier="473188a4" absoluteTextY="-33.0" absoluteTextX="7.0" layer="64" text="swap">
+      <RectPolylinConnectorSpecification id="221" rectPolylinConstraints="NONE" arcSize="8" crossedControlPoint="0.4,0.1875" endOrientation="SOUTH" startOrientation="EAST" adjustability="BASICALLY_ADJUSTABLE" startSymbol="FILLED_ARROW" middleSymbol="NONE" endSymbol="FILLED_ARROW" />
+      <ForegroundStyle id="222" color="0,99,255" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" lineWidth="1.999999998509884" />
+      <FocusedForegroundStyle id="223" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="224" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <TextStyle id="225" backgroundColor="255,255,255" color="51,51,255" font="Lucida Sans,0,11" />
+    </ConnectorGraphicalRepresentation>
+  </Connector>
+  <Connector id="226" name="Connector26" text="swap" userID="SYL" flexoID="26">
+    <StartShape idref="140" />
+    <EndShape idref="227" />
+    <ConnectorGraphicalRepresentation id="238" identifier="1e6f703a" absoluteTextY="-21.0" absoluteTextX="-18.0" layer="64" text="swap">
+      <RectPolylinConnectorSpecification id="239" rectPolylinConstraints="NONE" arcSize="8" crossedControlPoint="0.6244343891402715,0.2072538860103627" endOrientation="SOUTH" startOrientation="WEST" adjustability="BASICALLY_ADJUSTABLE" startSymbol="FILLED_ARROW" middleSymbol="NONE" endSymbol="FILLED_ARROW" />
+      <ForegroundStyle id="240" color="0,99,255" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" lineWidth="1.999999998509884" />
+      <FocusedForegroundStyle id="241" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="242" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <TextStyle id="243" backgroundColor="255,255,255" color="51,51,255" font="Lucida Sans,0,11" />
+    </ConnectorGraphicalRepresentation>
+  </Connector>
+  <Shape id="180" name="Shape2" userID="SYL" flexoID="2">
+    <Shape id="181" name="Shape3" userID="SYL" flexoID="3">
+      <ShapeGraphicalRepresentation id="182" relativeTextY="0.5" locationConstraints="UNMOVABLE" isFloatingLabel="false" widthConstraints="20" allowToLeaveBounds="false" adaptBoundsToContents="false" yConstraints="((parent.height - 20) / 2)" xConstraints="20" x="20.0" y="29.35779816513761" relativeTextX="0.5" dimensionConstraints="UNRESIZABLE" width="20.0" height="20.0" identifier="12dcd8a4" layer="1" text="" isSelectable="false" isFocusable="false">
+        <SelectedImageBackgroundStyle id="183" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+        <ForegroundStyle id="184" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+        <FocusedImageBackgroundStyle id="185" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+        <ShadowStyle id="186" drawShadow="false" />
+        <FocusedForegroundStyle id="187" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+        <SelectedForegroundStyle id="188" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+        <ImageBackgroundStyle id="189" fitToShape="true" imageFile="../Icons/Interface/Interface_32x32.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+        <RectangleShape id="190" />
+        <TextStyle id="191" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
+      </ShapeGraphicalRepresentation>
+    </Shape>
+    <Shape id="192" name="Shape4" text="Camera" userID="SYL" flexoID="4">
+      <ShapeGraphicalRepresentation id="193" relativeTextY="0.5" locationConstraints="UNMOVABLE" isFloatingLabel="false" widthConstraints="(parent.width - 40)" allowToLeaveBounds="false" adaptBoundsToContents="false" yConstraints="0" heightConstraints="parent.height" xConstraints="30" x="30.0" relativeTextX="0.5" dimensionConstraints="UNRESIZABLE" width="68.57544234017963" height="78.71559633027522" identifier="2b488d3d" layer="1" text="Camera" isSelectable="false" isFocusable="false">
+        <SelectedColorBackgroundStyle id="194" color="254,247,217" transparencyLevel="0.5" />
+        <ForegroundStyle id="195" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+        <FocusedColorBackgroundStyle id="196" color="254,247,217" transparencyLevel="0.5" />
+        <ShadowStyle id="197" drawShadow="false" />
+        <FocusedForegroundStyle id="198" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+        <SelectedForegroundStyle id="199" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+        <NoneBackgroundStyle id="200" transparencyLevel="0.5" />
+        <RectangleShape id="201" />
+        <TextStyle id="202" backgroundColor="255,255,255" color="102,102,102" font="Lucida Sans,0,11" />
+      </ShapeGraphicalRepresentation>
+    </Shape>
+    <ShapeGraphicalRepresentation id="203" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" isFloatingLabel="false" allowToLeaveBounds="false" adaptBoundsToContents="false" x="133.0" y="349.0" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="108.57544234017963" height="78.71559633027522" identifier="f90319e" absoluteTextY="19.191919191919194" absoluteTextX="64.64646464646465" layer="1" text="">
+      <SelectedColorBackgroundStyle id="204" color="254,247,217" transparencyLevel="0.5" />
+      <ForegroundStyle id="205" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <FocusedColorBackgroundStyle id="206" color="254,247,217" transparencyLevel="0.5" />
+      <ShadowStyle id="207" drawShadow="false" />
+      <FocusedForegroundStyle id="208" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="209" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <ColorBackgroundStyle id="210" color="255,204,153" transparencyLevel="0.5" />
+      <OvalShape id="211" />
+      <TextStyle id="212" backgroundColor="255,255,255" color="51,51,51" font="Lucida Sans Regular,0,12" />
+    </ShapeGraphicalRepresentation>
+  </Shape>
+  <Shape id="140" name="Shape5" userID="SYL" flexoID="5">
+    <Shape id="141" name="Shape6" userID="SYL" flexoID="6">
+      <ShapeGraphicalRepresentation id="142" relativeTextY="0.5" locationConstraints="UNMOVABLE" isFloatingLabel="false" widthConstraints="32" allowToLeaveBounds="false" adaptBoundsToContents="false" yConstraints="((parent.height - 32) / 2)" xConstraints="5" x="5.0" y="4.0" relativeTextX="0.5" dimensionConstraints="UNRESIZABLE" width="32.0" height="32.0" identifier="688248e4" layer="1" text="" isSelectable="false" isFocusable="false">
+        <SelectedImageBackgroundStyle id="143" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+        <ForegroundStyle id="144" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+        <FocusedImageBackgroundStyle id="145" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+        <ShadowStyle id="146" drawShadow="false" />
+        <FocusedForegroundStyle id="147" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+        <SelectedForegroundStyle id="148" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+        <ImageBackgroundStyle id="149" fitToShape="true" imageFile="../Icons/Network/Network_32x32.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+        <RectangleShape id="150" />
+        <TextStyle id="151" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
+      </ShapeGraphicalRepresentation>
+    </Shape>
+    <Shape id="152" name="Shape7" text="Bus" userID="SYL" flexoID="7">
+      <ShapeGraphicalRepresentation id="153" relativeTextY="0.5" locationConstraints="UNMOVABLE" isFloatingLabel="false" widthConstraints="(parent.width - 32)" allowToLeaveBounds="false" adaptBoundsToContents="false" yConstraints="0" heightConstraints="parent.height" xConstraints="32" x="32.0" relativeTextX="0.5" dimensionConstraints="UNRESIZABLE" width="51.92638036809815" height="40.0" identifier="5b7a32d2" layer="1" text="Bus" isSelectable="false" isFocusable="false">
+        <SelectedColorBackgroundStyle id="154" color="254,247,217" transparencyLevel="0.5" />
+        <ForegroundStyle id="155" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+        <FocusedColorBackgroundStyle id="156" color="254,247,217" transparencyLevel="0.5" />
+        <ShadowStyle id="157" drawShadow="false" />
+        <FocusedForegroundStyle id="158" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+        <SelectedForegroundStyle id="159" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+        <NoneBackgroundStyle id="160" transparencyLevel="0.5" />
+        <RectangleShape id="161" />
+        <TextStyle id="162" backgroundColor="255,255,255" color="102,102,102" font="Lucida Sans,0,11" />
+      </ShapeGraphicalRepresentation>
+    </Shape>
+    <ShapeGraphicalRepresentation id="163" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" isFloatingLabel="false" allowToLeaveBounds="false" adaptBoundsToContents="false" x="302.0" y="260.0" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="83.92638036809815" height="40.0" identifier="51c04f18" absoluteTextY="19.191919191919194" absoluteTextX="64.64646464646465" layer="1" text="">
+      <SelectedColorBackgroundStyle id="164" color="254,247,217" transparencyLevel="0.5" />
+      <ForegroundStyle id="165" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <FocusedColorBackgroundStyle id="166" color="254,247,217" transparencyLevel="0.5" />
+      <ShadowStyle id="167" drawShadow="false" />
+      <FocusedForegroundStyle id="168" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="169" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <ColorBackgroundStyle id="170" color="255,255,204" transparencyLevel="0.5" />
+      <RectangleShape id="171" />
+      <TextStyle id="172" backgroundColor="255,255,255" color="51,51,51" font="Lucida Sans Regular,0,12" />
+    </ShapeGraphicalRepresentation>
+  </Shape>
+  <Shape id="71" name="Shape8" userID="SYL" flexoID="8">
+    <Shape id="72" name="Shape9" userID="SYL" flexoID="9">
+      <ShapeGraphicalRepresentation id="73" relativeTextY="0.5" locationConstraints="UNMOVABLE" isFloatingLabel="false" widthConstraints="32" allowToLeaveBounds="false" adaptBoundsToContents="false" yConstraints="((parent.height - 32) / 2)" xConstraints="5" x="5.0" y="4.0" relativeTextX="0.5" dimensionConstraints="UNRESIZABLE" width="32.0" height="32.0" identifier="3c0e250e" layer="1" text="" isSelectable="false" isFocusable="false">
+        <SelectedImageBackgroundStyle id="74" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+        <ForegroundStyle id="75" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+        <FocusedImageBackgroundStyle id="76" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+        <ShadowStyle id="77" drawShadow="false" />
+        <FocusedForegroundStyle id="78" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+        <SelectedForegroundStyle id="79" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+        <ImageBackgroundStyle id="80" fitToShape="true" imageFile="../Icons/Network/Network_32x32.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+        <RectangleShape id="81" />
+        <TextStyle id="82" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
+      </ShapeGraphicalRepresentation>
+    </Shape>
+    <Shape id="83" name="Shape10" text="Ethernet" userID="SYL" flexoID="10">
+      <ShapeGraphicalRepresentation id="84" relativeTextY="0.5" locationConstraints="UNMOVABLE" isFloatingLabel="false" widthConstraints="(parent.width - 32)" allowToLeaveBounds="false" adaptBoundsToContents="false" yConstraints="0" heightConstraints="parent.height" xConstraints="32" x="32.0" relativeTextX="0.5" dimensionConstraints="UNRESIZABLE" width="88.0" height="40.0" identifier="5ec1da" layer="1" text="Ethernet" isSelectable="false" isFocusable="false">
+        <SelectedColorBackgroundStyle id="85" color="254,247,217" transparencyLevel="0.5" />
+        <ForegroundStyle id="86" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+        <FocusedColorBackgroundStyle id="87" color="254,247,217" transparencyLevel="0.5" />
+        <ShadowStyle id="88" drawShadow="false" />
+        <FocusedForegroundStyle id="89" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+        <SelectedForegroundStyle id="90" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+        <NoneBackgroundStyle id="91" transparencyLevel="0.5" />
+        <RectangleShape id="92" />
+        <TextStyle id="93" backgroundColor="255,255,255" color="102,102,102" font="Lucida Sans,0,11" />
+      </ShapeGraphicalRepresentation>
+    </Shape>
+    <ShapeGraphicalRepresentation id="94" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" isFloatingLabel="false" allowToLeaveBounds="false" adaptBoundsToContents="false" x="474.0" y="260.0" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="120.0" height="40.0" identifier="20b3cadf" absoluteTextY="19.191919191919194" absoluteTextX="64.64646464646465" layer="1" text="">
+      <SelectedColorBackgroundStyle id="95" color="254,247,217" transparencyLevel="0.5" />
+      <ForegroundStyle id="96" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <FocusedColorBackgroundStyle id="97" color="254,247,217" transparencyLevel="0.5" />
+      <ShadowStyle id="98" drawShadow="false" />
+      <FocusedForegroundStyle id="99" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="100" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <ColorBackgroundStyle id="101" color="255,255,204" transparencyLevel="0.5" />
+      <RectangleShape id="102" />
+      <TextStyle id="103" backgroundColor="255,255,255" color="51,51,51" font="Lucida Sans Regular,0,12" />
+    </ShapeGraphicalRepresentation>
+  </Shape>
+  <Shape id="53" name="Shape11" text="PC" userID="SYL" flexoID="11">
+    <ShapeGraphicalRepresentation id="54" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" allowToLeaveBounds="false" adaptBoundsToContents="false" x="671.0" y="251.0" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="64.0" height="64.0" identifier="57c4180a" absoluteTextY="-6.0" absoluteTextX="33.0" layer="1" text="PC">
+      <SelectedImageBackgroundStyle id="55" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ForegroundStyle id="56" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <FocusedImageBackgroundStyle id="57" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ShadowStyle id="58" drawShadow="false" />
+      <FocusedForegroundStyle id="59" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="60" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <ImageBackgroundStyle id="61" fitToShape="true" imageFile="../Icons/Machinery/Machinery_64x64.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <RectangleShape id="62" />
+      <TextStyle id="63" backgroundColor="255,255,255" color="0,102,204" font="Lucida Sans,0,11" />
+    </ShapeGraphicalRepresentation>
+  </Shape>
+  <Shape id="13" name="Shape12" userID="SYL" flexoID="12">
+    <Shape id="14" name="Shape13" userID="SYL" flexoID="13">
+      <ShapeGraphicalRepresentation id="15" relativeTextY="0.5" locationConstraints="UNMOVABLE" isFloatingLabel="false" widthConstraints="20" allowToLeaveBounds="false" adaptBoundsToContents="false" yConstraints="((parent.height - 20) / 2)" xConstraints="20" x="20.0" y="10.0" relativeTextX="0.5" dimensionConstraints="UNRESIZABLE" width="20.0" height="20.0" identifier="5462758" layer="1" text="" isSelectable="false" isFocusable="false">
+        <SelectedImageBackgroundStyle id="16" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+        <ForegroundStyle id="17" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+        <FocusedImageBackgroundStyle id="18" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+        <ShadowStyle id="19" drawShadow="false" />
+        <FocusedForegroundStyle id="20" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+        <SelectedForegroundStyle id="21" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+        <ImageBackgroundStyle id="22" fitToShape="true" imageFile="../Icons/Interface/Interface_32x32.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+        <RectangleShape id="23" />
+        <TextStyle id="24" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
+      </ShapeGraphicalRepresentation>
+    </Shape>
+    <Shape id="25" name="Shape14" text="Clavier" userID="SYL" flexoID="14">
+      <ShapeGraphicalRepresentation id="26" relativeTextY="0.5" locationConstraints="UNMOVABLE" isFloatingLabel="false" widthConstraints="(parent.width - 40)" allowToLeaveBounds="false" adaptBoundsToContents="false" yConstraints="0" heightConstraints="parent.height" xConstraints="30" x="30.0" relativeTextX="0.5" dimensionConstraints="UNRESIZABLE" width="80.0" height="40.0" identifier="141d4be9" layer="1" text="Clavier" isSelectable="false" isFocusable="false">
+        <SelectedColorBackgroundStyle id="27" color="254,247,217" transparencyLevel="0.5" />
+        <ForegroundStyle id="28" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+        <FocusedColorBackgroundStyle id="29" color="254,247,217" transparencyLevel="0.5" />
+        <ShadowStyle id="30" drawShadow="false" />
+        <FocusedForegroundStyle id="31" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+        <SelectedForegroundStyle id="32" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+        <NoneBackgroundStyle id="33" transparencyLevel="0.5" />
+        <RectangleShape id="34" />
+        <TextStyle id="35" backgroundColor="255,255,255" color="102,102,102" font="Lucida Sans,0,11" />
+      </ShapeGraphicalRepresentation>
+    </Shape>
+    <ShapeGraphicalRepresentation id="36" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" isFloatingLabel="false" allowToLeaveBounds="false" adaptBoundsToContents="false" x="646.0" y="150.0" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="120.0" height="40.0" identifier="3745274" absoluteTextY="19.191919191919194" absoluteTextX="64.64646464646465" layer="1" text="">
+      <SelectedColorBackgroundStyle id="37" color="254,247,217" transparencyLevel="0.5" />
+      <ForegroundStyle id="38" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <FocusedColorBackgroundStyle id="39" color="254,247,217" transparencyLevel="0.5" />
+      <ShadowStyle id="40" drawShadow="false" />
+      <FocusedForegroundStyle id="41" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="42" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" capStyle="CAP_SQUARE" />
+      <ColorBackgroundStyle id="43" color="255,204,153" transparencyLevel="0.5" />
+      <OvalShape id="44" />
+      <TextStyle id="45" backgroundColor="255,255,255" color="51,51,51" font="Lucida Sans Regular,0,12" />
+    </ShapeGraphicalRepresentation>
+  </Shape>
+  <Shape id="2" name="Shape15" text="Engineer" userID="SYL" flexoID="15">
+    <ShapeGraphicalRepresentation id="3" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" allowToLeaveBounds="false" adaptBoundsToContents="false" x="666.0" y="38.0" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="64.0" height="64.0" identifier="5dbe0342" absoluteTextY="-14.0" absoluteTextX="30.0" layer="1" text="Engineer">
+      <SelectedImageBackgroundStyle id="4" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ForegroundStyle id="5" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <FocusedImageBackgroundStyle id="6" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ShadowStyle id="7" drawShadow="false" />
+      <FocusedForegroundStyle id="8" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="9" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <ImageBackgroundStyle id="10" fitToShape="true" imageFile="../Icons/Performers/PerformerMale_64x64.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <RectangleShape id="11" />
+      <TextStyle id="12" backgroundColor="255,255,255" color="102,102,102" font="Lucida Sans,0,11" />
+    </ShapeGraphicalRepresentation>
+  </Shape>
+  <Shape id="111" name="Shape19" text="ARM" userID="SYL" flexoID="19">
+    <ShapeGraphicalRepresentation id="112" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" allowToLeaveBounds="false" adaptBoundsToContents="false" x="395.0" y="161.0" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="64.0" height="64.0" identifier="7fdb908b" absoluteTextY="-6.0" absoluteTextX="33.0" layer="1" text="ARM">
+      <SelectedImageBackgroundStyle id="113" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ForegroundStyle id="114" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <FocusedImageBackgroundStyle id="115" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ShadowStyle id="116" drawShadow="false" />
+      <FocusedForegroundStyle id="117" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="118" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <ImageBackgroundStyle id="119" fitToShape="true" imageFile="../Icons/Machinery/Machinery_64x64.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <RectangleShape id="120" />
+      <TextStyle id="121" backgroundColor="255,255,255" color="0,102,204" font="Lucida Sans,0,11" />
+    </ShapeGraphicalRepresentation>
+  </Shape>
+  <Shape id="129" name="Shape21" text="SSD" userID="SYL" flexoID="21">
+    <ShapeGraphicalRepresentation id="130" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" allowToLeaveBounds="false" adaptBoundsToContents="false" x="411.0" y="368.0" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="64.0" height="64.0" identifier="62111d3" absoluteTextY="-6.0" absoluteTextX="33.0" layer="1" text="SSD">
+      <SelectedImageBackgroundStyle id="131" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ForegroundStyle id="132" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <FocusedImageBackgroundStyle id="133" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ShadowStyle id="134" drawShadow="false" />
+      <FocusedForegroundStyle id="135" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="136" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <ImageBackgroundStyle id="137" fitToShape="true" imageFile="../Icons/Machinery/Machinery_64x64.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <RectangleShape id="138" />
+      <TextStyle id="139" backgroundColor="255,255,255" color="0,102,204" font="Lucida Sans,0,11" />
+    </ShapeGraphicalRepresentation>
+  </Shape>
+  <Shape id="227" name="Shape25" text="FPGA" userID="SYL" flexoID="25">
+    <ShapeGraphicalRepresentation id="228" relativeTextY="0.5" locationConstraints="FREELY_MOVABLE" allowToLeaveBounds="false" adaptBoundsToContents="false" x="206.0" y="160.0" relativeTextX="0.5" dimensionConstraints="FREELY_RESIZABLE" width="64.0" height="64.0" identifier="7d1fce94" absoluteTextY="-6.0" absoluteTextX="33.0" layer="1" text="FPGA">
+      <SelectedImageBackgroundStyle id="229" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ForegroundStyle id="230" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <FocusedImageBackgroundStyle id="231" fitToShape="true" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ShadowStyle id="232" drawShadow="false" />
+      <FocusedForegroundStyle id="233" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <SelectedForegroundStyle id="234" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
+      <ImageBackgroundStyle id="235" fitToShape="true" imageFile="../Icons/Machinery/Machinery_64x64.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <RectangleShape id="236" />
+      <TextStyle id="237" backgroundColor="255,255,255" color="0,102,204" font="Lucida Sans,0,11" />
+    </ShapeGraphicalRepresentation>
+  </Shape>
+  <DrawingGraphicalRepresentation id="244" drawWorkingArea="false" backgroundColor="255,255,255" focusColor="255,0,0" selectionColor="0,0,255" rectangleSelectingSelectionColor="0,0,255" dimensionConstraints="FREELY_RESIZABLE" identifier="888ecec">
+    <TextStyle id="245" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
+  </DrawingGraphicalRepresentation>
+</Diagram>

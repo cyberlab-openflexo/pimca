@@ -3,6 +3,7 @@ comSec=ComSec
 comment=Comment
 multiplex=Multiplex
 nbCopy=NbCopy
+networkType=NetworkType
 protocol=Protocol
 role=Role
 usageArea=UsageArea

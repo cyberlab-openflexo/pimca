@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FMLRTVirtualModelInstance id="0" virtualModelURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml" modelVersion="1.0" title="Diagram1" version="0.1" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml" userID="SYL" flexoID="1">
+  <FlexoConceptInstance id="1" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#InterfaceGR" userID="SYL" flexoID="4">
+    <ModelObjectActorReference id="2" objectReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram#SYL_2" roleName="shape" userID="SYL" flexoID="21" />
+    <ModelObjectActorReference id="3" objectReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram#SYL_3" roleName="icon" userID="SYL" flexoID="22" />
+    <ModelObjectActorReference id="4" objectReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram#SYL_4" roleName="text" userID="SYL" flexoID="23" />
+    <ModelObjectActorReference id="5" objectReference="http://ensta-bretagne.fr/cyber/pimca/ShapeDetectionSystem.fml.rt/Model.fml.rt#SYL_2" roleName="machinery" userID="SYL" flexoID="24" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="6" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#NetworkGR" userID="SYL" flexoID="5">
+    <ModelObjectActorReference id="7" objectReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram#SYL_5" roleName="shape" userID="SYL" flexoID="25" />
+    <ModelObjectActorReference id="8" objectReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram#SYL_6" roleName="icon" userID="SYL" flexoID="26" />
+    <ModelObjectActorReference id="9" objectReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram#SYL_7" roleName="label" userID="SYL" flexoID="27" />
+    <ModelObjectActorReference id="10" objectReference="http://ensta-bretagne.fr/cyber/pimca/ShapeDetectionSystem.fml.rt/Model.fml.rt#SYL_3" roleName="machinery" userID="SYL" flexoID="28" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="11" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#NetworkGR" userID="SYL" flexoID="6">
+    <ModelObjectActorReference id="12" objectReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram#SYL_8" roleName="shape" userID="SYL" flexoID="29" />
+    <ModelObjectActorReference id="13" objectReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram#SYL_9" roleName="icon" userID="SYL" flexoID="30" />
+    <ModelObjectActorReference id="14" objectReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram#SYL_10" roleName="label" userID="SYL" flexoID="31" />
+    <ModelObjectActorReference id="15" objectReference="http://ensta-bretagne.fr/cyber/pimca/ShapeDetectionSystem.fml.rt/Model.fml.rt#SYL_4" roleName="machinery" userID="SYL" flexoID="32" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="16" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#BasicMachineryGR" userID="SYL" flexoID="7">
+    <ModelObjectActorReference id="17" objectReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram#SYL_11" roleName="shape" userID="SYL" flexoID="33" />
+    <ModelObjectActorReference id="18" objectReference="http://ensta-bretagne.fr/cyber/pimca/ShapeDetectionSystem.fml.rt/Model.fml.rt#SYL_5" roleName="machinery" userID="SYL" flexoID="34" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="19" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#InterfaceGR" userID="SYL" flexoID="8">
+    <ModelObjectActorReference id="20" objectReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram#SYL_12" roleName="shape" userID="SYL" flexoID="35" />
+    <ModelObjectActorReference id="21" objectReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram#SYL_13" roleName="icon" userID="SYL" flexoID="36" />
+    <ModelObjectActorReference id="22" objectReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram#SYL_14" roleName="text" userID="SYL" flexoID="37" />
+    <ModelObjectActorReference id="23" objectReference="http://ensta-bretagne.fr/cyber/pimca/ShapeDetectionSystem.fml.rt/Model.fml.rt#SYL_6" roleName="machinery" userID="SYL" flexoID="38" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="24" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#PerformerGR" userID="SYL" flexoID="9">
+    <ModelObjectActorReference id="25" objectReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram#SYL_15" roleName="shape" userID="SYL" flexoID="39" />
+    <ModelObjectActorReference id="26" objectReference="http://ensta-bretagne.fr/cyber/pimca/ShapeDetectionSystem.fml.rt/Model.fml.rt#SYL_7" roleName="machinery" userID="SYL" flexoID="40" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="27" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#UseGR" userID="SYL" flexoID="10">
+    <ModelObjectActorReference id="28" objectReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram#SYL_16" roleName="connector" userID="SYL" flexoID="41" />
+    <ModelObjectActorReference id="29" objectReference="http://ensta-bretagne.fr/cyber/pimca/ShapeDetectionSystem.fml.rt/Model.fml.rt#SYL_8" roleName="relation" userID="SYL" flexoID="42" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="30" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#SwapGR" userID="SYL" flexoID="11">
+    <ModelObjectActorReference id="31" objectReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram#SYL_17" roleName="connector" userID="SYL" flexoID="43" />
+    <ModelObjectActorReference id="32" objectReference="http://ensta-bretagne.fr/cyber/pimca/ShapeDetectionSystem.fml.rt/Model.fml.rt#SYL_9" roleName="relation" userID="SYL" flexoID="44" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="33" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#SwapGR" userID="SYL" flexoID="12">
+    <ModelObjectActorReference id="34" objectReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram#SYL_18" roleName="connector" userID="SYL" flexoID="45" />
+    <ModelObjectActorReference id="35" objectReference="http://ensta-bretagne.fr/cyber/pimca/ShapeDetectionSystem.fml.rt/Model.fml.rt#SYL_10" roleName="relation" userID="SYL" flexoID="46" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="36" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#BasicMachineryGR" userID="SYL" flexoID="13">
+    <ModelObjectActorReference id="37" objectReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram#SYL_19" roleName="shape" userID="SYL" flexoID="47" />
+    <ModelObjectActorReference id="38" objectReference="http://ensta-bretagne.fr/cyber/pimca/ShapeDetectionSystem.fml.rt/Model.fml.rt#SYL_11" roleName="machinery" userID="SYL" flexoID="48" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="39" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#SwapGR" userID="SYL" flexoID="14">
+    <ModelObjectActorReference id="40" objectReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram#SYL_20" roleName="connector" userID="SYL" flexoID="49" />
+    <ModelObjectActorReference id="41" objectReference="http://ensta-bretagne.fr/cyber/pimca/ShapeDetectionSystem.fml.rt/Model.fml.rt#SYL_12" roleName="relation" userID="SYL" flexoID="50" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="42" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#BasicMachineryGR" userID="SYL" flexoID="15">
+    <ModelObjectActorReference id="43" objectReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram#SYL_21" roleName="shape" userID="SYL" flexoID="51" />
+    <ModelObjectActorReference id="44" objectReference="http://ensta-bretagne.fr/cyber/pimca/ShapeDetectionSystem.fml.rt/Model.fml.rt#SYL_13" roleName="machinery" userID="SYL" flexoID="52" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="45" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#SwapGR" userID="SYL" flexoID="16">
+    <ModelObjectActorReference id="46" objectReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram#SYL_22" roleName="connector" userID="SYL" flexoID="53" />
+    <ModelObjectActorReference id="47" objectReference="http://ensta-bretagne.fr/cyber/pimca/ShapeDetectionSystem.fml.rt/Model.fml.rt#SYL_14" roleName="relation" userID="SYL" flexoID="54" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="48" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#SwapGR" userID="SYL" flexoID="17">
+    <ModelObjectActorReference id="49" objectReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram#SYL_23" roleName="connector" userID="SYL" flexoID="55" />
+    <ModelObjectActorReference id="50" objectReference="http://ensta-bretagne.fr/cyber/pimca/ShapeDetectionSystem.fml.rt/Model.fml.rt#SYL_15" roleName="relation" userID="SYL" flexoID="56" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="51" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#SwapGR" userID="SYL" flexoID="18">
+    <ModelObjectActorReference id="52" objectReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram#SYL_24" roleName="connector" userID="SYL" flexoID="57" />
+    <ModelObjectActorReference id="53" objectReference="http://ensta-bretagne.fr/cyber/pimca/ShapeDetectionSystem.fml.rt/Model.fml.rt#SYL_16" roleName="relation" userID="SYL" flexoID="58" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="54" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#BasicMachineryGR" userID="SYL" flexoID="19">
+    <ModelObjectActorReference id="55" objectReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram#SYL_25" roleName="shape" userID="SYL" flexoID="59" />
+    <ModelObjectActorReference id="56" objectReference="http://ensta-bretagne.fr/cyber/pimca/ShapeDetectionSystem.fml.rt/Model.fml.rt#SYL_17" roleName="machinery" userID="SYL" flexoID="60" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="57" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#SwapGR" userID="SYL" flexoID="20">
+    <ModelObjectActorReference id="58" objectReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram#SYL_26" roleName="connector" userID="SYL" flexoID="61" />
+    <ModelObjectActorReference id="59" objectReference="http://ensta-bretagne.fr/cyber/pimca/ShapeDetectionSystem.fml.rt/Model.fml.rt#SYL_18" roleName="relation" userID="SYL" flexoID="62" />
+  </FlexoConceptInstance>
+  <TypeAwareModelSlotInstance id="60" modelURI="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram" modelSlotName="diagram" roleName="diagram" userID="SYL" flexoID="2" />
+  <VirtualModelModelSlotInstance id="61" virtualModelInstanceURI="http://ensta-bretagne.fr/cyber/pimca/ShapeDetectionSystem.fml.rt/Model.fml.rt" modelSlotName="model" roleName="model" userID="SYL" flexoID="3" />
+</FMLRTVirtualModelInstance>
