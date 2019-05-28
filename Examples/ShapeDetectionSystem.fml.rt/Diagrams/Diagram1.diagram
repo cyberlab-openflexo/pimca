@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Diagram id="0" diagramSpecificationURI="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification" uri="http://ensta-bretagne.fr/cyber/pimca/PimCADiagrams/diagram.diagram" name="diagram.diagram" userID="SYL" flexoID="1">
+<Diagram id="0" diagramSpecificationURI="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification" uri="http://ensta-bretagne.fr/cyber/pimca/Examples/ShapeDetectionSystem.fml.rt/Diagrams/Diagram1.diagram" name="diagram.diagram" userID="SYL" flexoID="1">
   <Connector id="1" name="Connector16" text="Utilise" userID="SYL" flexoID="16">
     <StartShape idref="2" />
     <EndShape idref="13" />
@@ -141,7 +141,7 @@
         <ShadowStyle id="186" drawShadow="false" />
         <FocusedForegroundStyle id="187" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
         <SelectedForegroundStyle id="188" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
-        <ImageBackgroundStyle id="189" fitToShape="true" imageFile="../Icons/Interface/Interface_32x32.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+        <ImageBackgroundStyle id="189" fitToShape="true" imageFile="../../../Icons/Interface/Interface_32x32.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
         <RectangleShape id="190" />
         <TextStyle id="191" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
       </ShapeGraphicalRepresentation>
@@ -180,7 +180,7 @@
         <ShadowStyle id="146" drawShadow="false" />
         <FocusedForegroundStyle id="147" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
         <SelectedForegroundStyle id="148" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
-        <ImageBackgroundStyle id="149" fitToShape="true" imageFile="../Icons/Network/Network_32x32.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+        <ImageBackgroundStyle id="149" fitToShape="true" imageFile="../../../Icons/Network/Network_32x32.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
         <RectangleShape id="150" />
         <TextStyle id="151" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
       </ShapeGraphicalRepresentation>
@@ -219,7 +219,7 @@
         <ShadowStyle id="77" drawShadow="false" />
         <FocusedForegroundStyle id="78" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
         <SelectedForegroundStyle id="79" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
-        <ImageBackgroundStyle id="80" fitToShape="true" imageFile="../Icons/Network/Network_32x32.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+        <ImageBackgroundStyle id="80" fitToShape="true" imageFile="../../../Icons/Network/Network_32x32.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
         <RectangleShape id="81" />
         <TextStyle id="82" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
       </ShapeGraphicalRepresentation>
@@ -257,7 +257,7 @@
       <ShadowStyle id="58" drawShadow="false" />
       <FocusedForegroundStyle id="59" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
       <SelectedForegroundStyle id="60" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
-      <ImageBackgroundStyle id="61" fitToShape="true" imageFile="../Icons/Machinery/Machinery_64x64.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="61" fitToShape="true" imageFile="../../../Icons/Machinery/Machinery_64x64.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
       <RectangleShape id="62" />
       <TextStyle id="63" backgroundColor="255,255,255" color="0,102,204" font="Lucida Sans,0,11" />
     </ShapeGraphicalRepresentation>
@@ -271,7 +271,7 @@
         <ShadowStyle id="19" drawShadow="false" />
         <FocusedForegroundStyle id="20" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
         <SelectedForegroundStyle id="21" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
-        <ImageBackgroundStyle id="22" fitToShape="true" imageFile="../Icons/Interface/Interface_32x32.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+        <ImageBackgroundStyle id="22" fitToShape="true" imageFile="../../../Icons/Interface/Interface_32x32.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
         <RectangleShape id="23" />
         <TextStyle id="24" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
       </ShapeGraphicalRepresentation>
@@ -309,7 +309,7 @@
       <ShadowStyle id="7" drawShadow="false" />
       <FocusedForegroundStyle id="8" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
       <SelectedForegroundStyle id="9" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
-      <ImageBackgroundStyle id="10" fitToShape="true" imageFile="../Icons/Performers/PerformerMale_64x64.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="10" fitToShape="true" imageFile="../../../Icons/Performers/PerformerMale_64x64.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
       <RectangleShape id="11" />
       <TextStyle id="12" backgroundColor="255,255,255" color="102,102,102" font="Lucida Sans,0,11" />
     </ShapeGraphicalRepresentation>
@@ -322,7 +322,7 @@
       <ShadowStyle id="116" drawShadow="false" />
       <FocusedForegroundStyle id="117" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
       <SelectedForegroundStyle id="118" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
-      <ImageBackgroundStyle id="119" fitToShape="true" imageFile="../Icons/Machinery/Machinery_64x64.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="119" fitToShape="true" imageFile="../../../Icons/Machinery/Machinery_64x64.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
       <RectangleShape id="120" />
       <TextStyle id="121" backgroundColor="255,255,255" color="0,102,204" font="Lucida Sans,0,11" />
     </ShapeGraphicalRepresentation>
@@ -335,7 +335,7 @@
       <ShadowStyle id="134" drawShadow="false" />
       <FocusedForegroundStyle id="135" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
       <SelectedForegroundStyle id="136" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
-      <ImageBackgroundStyle id="137" fitToShape="true" imageFile="../Icons/Machinery/Machinery_64x64.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="137" fitToShape="true" imageFile="../../../Icons/Machinery/Machinery_64x64.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
       <RectangleShape id="138" />
       <TextStyle id="139" backgroundColor="255,255,255" color="0,102,204" font="Lucida Sans,0,11" />
     </ShapeGraphicalRepresentation>
@@ -348,7 +348,7 @@
       <ShadowStyle id="232" drawShadow="false" />
       <FocusedForegroundStyle id="233" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
       <SelectedForegroundStyle id="234" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
-      <ImageBackgroundStyle id="235" fitToShape="true" imageFile="../Icons/Machinery/Machinery_64x64.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="235" fitToShape="true" imageFile="../../../Icons/Machinery/Machinery_64x64.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
       <RectangleShape id="236" />
       <TextStyle id="237" backgroundColor="255,255,255" color="0,102,204" font="Lucida Sans,0,11" />
     </ShapeGraphicalRepresentation>
@@ -361,7 +361,7 @@
       <ShadowStyle id="268" drawShadow="false" />
       <FocusedForegroundStyle id="269" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
       <SelectedForegroundStyle id="270" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
-      <ImageBackgroundStyle id="271" fitToShape="true" imageFile="../Icons/Resources/Resource_64x64.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="271" fitToShape="true" imageFile="../../../Icons/Resources/Resource_64x64.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
       <RectangleShape id="272" />
       <TextStyle id="273" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
     </ShapeGraphicalRepresentation>
@@ -374,7 +374,7 @@
       <ShadowStyle id="286" drawShadow="false" />
       <FocusedForegroundStyle id="287" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
       <SelectedForegroundStyle id="288" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
-      <ImageBackgroundStyle id="289" fitToShape="true" imageFile="../Icons/Resources/Resource_64x64.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="289" fitToShape="true" imageFile="../../../Icons/Resources/Resource_64x64.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
       <RectangleShape id="290" />
       <TextStyle id="291" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
     </ShapeGraphicalRepresentation>
@@ -387,7 +387,7 @@
       <ShadowStyle id="250" drawShadow="false" />
       <FocusedForegroundStyle id="251" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
       <SelectedForegroundStyle id="252" color="0,0,0" joinStyle="JOIN_MITER" dashStyle="PLAIN_STROKE" noStroke="true" capStyle="CAP_SQUARE" />
-      <ImageBackgroundStyle id="253" fitToShape="true" imageFile="../Icons/Resources/Resource_64x64.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
+      <ImageBackgroundStyle id="253" fitToShape="true" imageFile="../../../Icons/Resources/Resource_64x64.png" imageBackgroundColor="255,255,255" imageBackgroundType="TRANSPARENT" transparencyLevel="0.5" />
       <RectangleShape id="254" />
       <TextStyle id="255" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
     </ShapeGraphicalRepresentation>
