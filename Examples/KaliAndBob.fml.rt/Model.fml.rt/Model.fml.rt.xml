@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FMLRTVirtualModelInstance id="0" virtualModelURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml" modelVersion="1.0" title="Model" version="0.1" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml" userID="SYL" flexoID="1">
+  <FlexoConceptInstance id="1" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Attacker" userID="SYL" flexoID="2">
+    <PrimitiveActorReference id="2" valueAsString="Kali" roleName="name" userID="SYL" flexoID="4" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="3" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Network" userID="SYL" flexoID="3">
+    <PrimitiveActorReference id="4" valueAsString="Internet" roleName="name" userID="SYL" flexoID="5" />
+    <FlexoEnumValueActorReference id="5" valueAsString="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#NetworkType#MatterData" roleName="networkType" userID="SYL" flexoID="6" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="6" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Network" userID="SYL" flexoID="7">
+    <PrimitiveActorReference id="7" valueAsString="Firewall" roleName="name" userID="SYL" flexoID="12" />
+    <FlexoEnumValueActorReference id="8" valueAsString="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#NetworkType#MatterData" roleName="networkType" userID="SYL" flexoID="13" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="9" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Network" userID="SYL" flexoID="8">
+    <PrimitiveActorReference id="10" valueAsString="Web" roleName="name" userID="SYL" flexoID="14" />
+    <FlexoEnumValueActorReference id="11" valueAsString="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#NetworkType#MatterData" roleName="networkType" userID="SYL" flexoID="15" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="12" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Network" userID="SYL" flexoID="9">
+    <PrimitiveActorReference id="13" valueAsString="LAN" roleName="name" userID="SYL" flexoID="16" />
+    <FlexoEnumValueActorReference id="14" valueAsString="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#NetworkType#MatterData" roleName="networkType" userID="SYL" flexoID="17" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="15" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Network" userID="SYL" flexoID="10">
+    <PrimitiveActorReference id="16" valueAsString="Services" roleName="name" userID="SYL" flexoID="18" />
+    <FlexoEnumValueActorReference id="17" valueAsString="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#NetworkType#MatterData" roleName="networkType" userID="SYL" flexoID="19" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="18" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Machinery" userID="SYL" flexoID="11">
+    <PrimitiveActorReference id="19" valueAsString="ActiveDirectory" roleName="name" userID="SYL" flexoID="20" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="20" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Interface" userID="SYL" flexoID="21">
+    <PrimitiveActorReference id="21" valueAsString="WebServer" roleName="name" userID="SYL" flexoID="23" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="22" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Performer" userID="SYL" flexoID="22">
+    <PrimitiveActorReference id="23" valueAsString="Bob PC" roleName="name" userID="SYL" flexoID="24" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="24" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Swap" userID="SYL" flexoID="25">
+    <ModelObjectActorReference id="25" objectReference="http://ensta-bretagne.fr/cyber/pimca/KaliAndBob.fml.rt/Model.fml.rt#SYL_2" roleName="source" userID="SYL" flexoID="26" />
+    <ModelObjectActorReference id="26" objectReference="http://ensta-bretagne.fr/cyber/pimca/KaliAndBob.fml.rt/Model.fml.rt#SYL_3" roleName="target" userID="SYL" flexoID="27" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="27" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Swap" userID="SYL" flexoID="28">
+    <ModelObjectActorReference id="28" objectReference="http://ensta-bretagne.fr/cyber/pimca/KaliAndBob.fml.rt/Model.fml.rt#SYL_3" roleName="source" userID="SYL" flexoID="35" />
+    <ModelObjectActorReference id="29" objectReference="http://ensta-bretagne.fr/cyber/pimca/KaliAndBob.fml.rt/Model.fml.rt#SYL_7" roleName="target" userID="SYL" flexoID="36" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="30" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Swap" userID="SYL" flexoID="29">
+    <ModelObjectActorReference id="31" objectReference="http://ensta-bretagne.fr/cyber/pimca/KaliAndBob.fml.rt/Model.fml.rt#SYL_7" roleName="source" userID="SYL" flexoID="37" />
+    <ModelObjectActorReference id="32" objectReference="http://ensta-bretagne.fr/cyber/pimca/KaliAndBob.fml.rt/Model.fml.rt#SYL_8" roleName="target" userID="SYL" flexoID="38" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="33" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Swap" userID="SYL" flexoID="30">
+    <ModelObjectActorReference id="34" objectReference="http://ensta-bretagne.fr/cyber/pimca/KaliAndBob.fml.rt/Model.fml.rt#SYL_9" roleName="source" userID="SYL" flexoID="39" />
+    <ModelObjectActorReference id="35" objectReference="http://ensta-bretagne.fr/cyber/pimca/KaliAndBob.fml.rt/Model.fml.rt#SYL_8" roleName="target" userID="SYL" flexoID="40" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="36" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Swap" userID="SYL" flexoID="31">
+    <ModelObjectActorReference id="37" objectReference="http://ensta-bretagne.fr/cyber/pimca/KaliAndBob.fml.rt/Model.fml.rt#SYL_8" roleName="source" userID="SYL" flexoID="41" />
+    <ModelObjectActorReference id="38" objectReference="http://ensta-bretagne.fr/cyber/pimca/KaliAndBob.fml.rt/Model.fml.rt#SYL_10" roleName="target" userID="SYL" flexoID="42" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="39" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Swap" userID="SYL" flexoID="32">
+    <ModelObjectActorReference id="40" objectReference="http://ensta-bretagne.fr/cyber/pimca/KaliAndBob.fml.rt/Model.fml.rt#SYL_9" roleName="source" userID="SYL" flexoID="43" />
+    <ModelObjectActorReference id="41" objectReference="http://ensta-bretagne.fr/cyber/pimca/KaliAndBob.fml.rt/Model.fml.rt#SYL_22" roleName="target" userID="SYL" flexoID="44" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="42" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Swap" userID="SYL" flexoID="33">
+    <ModelObjectActorReference id="43" objectReference="http://ensta-bretagne.fr/cyber/pimca/KaliAndBob.fml.rt/Model.fml.rt#SYL_8" roleName="source" userID="SYL" flexoID="45" />
+    <ModelObjectActorReference id="44" objectReference="http://ensta-bretagne.fr/cyber/pimca/KaliAndBob.fml.rt/Model.fml.rt#SYL_21" roleName="target" userID="SYL" flexoID="46" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="45" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Swap" userID="SYL" flexoID="34">
+    <ModelObjectActorReference id="46" objectReference="http://ensta-bretagne.fr/cyber/pimca/KaliAndBob.fml.rt/Model.fml.rt#SYL_10" roleName="source" userID="SYL" flexoID="47" />
+    <ModelObjectActorReference id="47" objectReference="http://ensta-bretagne.fr/cyber/pimca/KaliAndBob.fml.rt/Model.fml.rt#SYL_11" roleName="target" userID="SYL" flexoID="48" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="48" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Control" userID="SYL" flexoID="49">
+    <ModelObjectActorReference id="49" objectReference="http://ensta-bretagne.fr/cyber/pimca/KaliAndBob.fml.rt/Model.fml.rt#SYL_22" roleName="source" userID="SYL" flexoID="51" />
+    <ModelObjectActorReference id="50" objectReference="http://ensta-bretagne.fr/cyber/pimca/KaliAndBob.fml.rt/Model.fml.rt#SYL_21" roleName="target" userID="SYL" flexoID="52" />
+    <PrimitiveActorReference id="51" valueAsString="contrôle" roleName="name" userID="SYL" flexoID="53" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="52" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Control" userID="SYL" flexoID="50">
+    <ModelObjectActorReference id="53" objectReference="http://ensta-bretagne.fr/cyber/pimca/KaliAndBob.fml.rt/Model.fml.rt#SYL_22" roleName="source" userID="SYL" flexoID="54" />
+    <ModelObjectActorReference id="54" objectReference="http://ensta-bretagne.fr/cyber/pimca/KaliAndBob.fml.rt/Model.fml.rt#SYL_11" roleName="target" userID="SYL" flexoID="55" />
+    <PrimitiveActorReference id="55" valueAsString="contrôle" roleName="name" userID="SYL" flexoID="56" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="56" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Use" userID="SYL" flexoID="57">
+    <ModelObjectActorReference id="57" objectReference="http://ensta-bretagne.fr/cyber/pimca/KaliAndBob.fml.rt/Model.fml.rt#SYL_22" roleName="source" userID="SYL" flexoID="59" />
+    <ModelObjectActorReference id="58" objectReference="http://ensta-bretagne.fr/cyber/pimca/KaliAndBob.fml.rt/Model.fml.rt#SYL_11" roleName="target" userID="SYL" flexoID="60" />
+    <PrimitiveActorReference id="59" valueAsString="utilise" roleName="name" userID="SYL" flexoID="61" />
+  </FlexoConceptInstance>
+  <FlexoConceptInstance id="60" flexoConceptURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Use" userID="SYL" flexoID="58">
+    <ModelObjectActorReference id="61" objectReference="http://ensta-bretagne.fr/cyber/pimca/KaliAndBob.fml.rt/Model.fml.rt#SYL_2" roleName="source" userID="SYL" flexoID="62" />
+    <ModelObjectActorReference id="62" objectReference="http://ensta-bretagne.fr/cyber/pimca/KaliAndBob.fml.rt/Model.fml.rt#SYL_21" roleName="target" userID="SYL" flexoID="63" />
+    <PrimitiveActorReference id="63" valueAsString="utilise" roleName="name" userID="SYL" flexoID="64" />
+  </FlexoConceptInstance>
+</FMLRTVirtualModelInstance>
