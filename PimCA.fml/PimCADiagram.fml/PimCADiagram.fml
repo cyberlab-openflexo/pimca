@@ -286,7 +286,7 @@ public class PimCADiagram {
   public class ElementGR {  
   
       
-    abstract FlexoConceptInstanceType<Machinery> pieceOfKnowledge;  
+    abstract FlexoConceptInstanceType<PieceOfKnowledge> pieceOfKnowledge;  
       
     abstract DiagramShape shape;  
   }  
