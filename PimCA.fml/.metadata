@@ -1,8 +1,0 @@
-#Metadata for directory /Users/sylvain/GIT-2.0.0/pimca/PimCA.fml
-#Fri May 24 12:43:59 CEST 2019
-PimCA.fml.xml.modelVersion=2.0
-PimCA.fml.xml.requiredModelSlotList=
-PimCA.fml.xml.virtualModelClassName=org.openflexo.foundation.fml.VirtualModel
-PimCA.fml.xml.version=0.1
-PimCA.fml.xml.uri=http\://ensta-bretagne.fr/cyber/pimca/PimCA.fml
-PimCA.fml.xml.name=PimCA

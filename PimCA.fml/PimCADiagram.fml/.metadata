@@ -1,8 +1,0 @@
-#Metadata for directory /Users/sylvain/GIT-2.0.0/pimca/PimCA.fml/PimCADiagram.fml
-#Tue May 28 10:42:47 CEST 2019
-PimCADiagram.fml.xml.name=PimCADiagram
-PimCADiagram.fml.xml.modelVersion=2.0
-PimCADiagram.fml.xml.version=0.1
-PimCADiagram.fml.xml.uri=http\://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml
-PimCADiagram.fml.xml.requiredModelSlotList=org.openflexo.technologyadapter.diagram.TypedDiagramModelSlot,org.openflexo.foundation.fml.rt.FMLRTVirtualModelInstanceModelSlot
-PimCADiagram.fml.xml.virtualModelClassName=org.openflexo.foundation.fml.VirtualModel
