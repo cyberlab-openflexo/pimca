@@ -7,6 +7,21 @@
 @VirtualModel(uri="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml")
 public class PimCAModel {
 
+  @GetSetProperty(value="machineries", access=get)  
+  public List<FlexoConceptInstanceType<Machinery>> getMachineries {  
+    return this.SelectFlexoConceptInstance(type=Machinery);  
+  }
+  @GetSetProperty(value="resources", access=get)  
+  public List<FlexoConceptInstanceType<Resource>> getResources {  
+    return this.SelectFlexoConceptInstance(type=Resource);  
+  }
+
+  @CreationScheme  
+  PimCAModel:create() {  
+  
+  }  
+
+
   @FlexoConcept  
   public class Machinery extends PieceOfKnowledge  {  
   
@@ -15,7 +30,8 @@ public class PimCAModel {
     @CreationScheme    
     Machinery:create(String name, FlexoEnumType<MachineryType> kind) {    
       name = parameters.name;      
-      kind = parameters.kind;    
+      kind = parameters.kind;      
+      container.firePropertyChange machineries    
     }    
   
     @DeletionScheme    
@@ -41,6 +57,10 @@ public class PimCAModel {
   
     public int nbCopy;  
     public String role;  
+    @GetSetProperty(value="relations", access=get)    
+    public List<FlexoConceptInstanceType<Relation>> getRelations {    
+      return container.SelectFlexoConceptInstance(type=Relation,where=where=((selected.source = this) | (selected.target = this)));    
+    }  
   }  
 
   @FlexoConcept  
@@ -61,7 +81,8 @@ public class PimCAModel {
   
     @CreationScheme    
     Customs:create(String name) {    
-      name = parameters.name;    
+      name = parameters.name;      
+      container.firePropertyChange machineries    
     }    
   
   }  
@@ -74,7 +95,8 @@ public class PimCAModel {
     @CreationScheme    
     Network:create(String name, FlexoEnumType<NetworkType> aNetworkType) {    
       name = parameters.name;      
-      networkType = parameters.aNetworkType;    
+      networkType = parameters.aNetworkType;      
+      container.firePropertyChange machineries    
     }    
   
     @DeletionScheme    
@@ -89,7 +111,8 @@ public class PimCAModel {
   
     @CreationScheme    
     Interface:create(String name) {    
-      name = parameters.name;    
+      name = parameters.name;      
+      container.firePropertyChange machineries    
     }    
   
   }  
@@ -104,7 +127,8 @@ public class PimCAModel {
   
     @CreationScheme    
     Performer:create(String name) {    
-      name = parameters.name;    
+      name = parameters.name;      
+      container.firePropertyChange machineries    
     }    
   
   }  
@@ -114,7 +138,8 @@ public class PimCAModel {
   
     @CreationScheme    
     Attacker:create(String name) {    
-      name = parameters.name;    
+      name = parameters.name;      
+      container.firePropertyChange machineries    
     }    
   
   }  
@@ -131,7 +156,9 @@ public class PimCAModel {
     @ActionScheme    
     Void init(FlexoConceptInstanceType<PieceOfKnowledge> source, FlexoConceptInstanceType<PieceOfKnowledge> target) {    
       source = parameters.source;      
-      target = parameters.target;    
+      target = parameters.target;      
+      source.firePropertyChange relations      
+      target.firePropertyChange relations    
     }    
   
   }  
@@ -229,6 +256,11 @@ public class PimCAModel {
   @FlexoConcept  
   public class Resource extends PieceOfKnowledge  {  
   
+    @GetSetProperty(value="relations", access=get)    
+    public List<FlexoConceptInstanceType<Relation>> getRelations {    
+      return container.SelectFlexoConceptInstance(type=Relation,where=where=(selected.source = this));    
+    }  
+  
     @CreationScheme    
     Resource:create() {    
       
@@ -251,7 +283,8 @@ public class PimCAModel {
   
     @CreationScheme    
     BasicResource:create(String name) {    
-      name = parameters.name;    
+      name = parameters.name;      
+      container.firePropertyChange resources    
     }    
   
   }  
@@ -266,7 +299,8 @@ public class PimCAModel {
   
     @CreationScheme    
     Instructions:create(String name) {    
-      name = parameters.name;    
+      name = parameters.name;      
+      container.firePropertyChange resources    
     }    
   
   }  
@@ -281,7 +315,8 @@ public class PimCAModel {
   
     @CreationScheme    
     Passeport:create(String name) {    
-      name = parameters.name;    
+      name = parameters.name;      
+      container.firePropertyChange resources    
     }    
   
   }  

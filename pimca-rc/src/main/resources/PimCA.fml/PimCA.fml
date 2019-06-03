@@ -6,4 +6,10 @@
  */
 @VirtualModel(uri="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml")
 public class PimCA {
+
+  @CreationScheme  
+  PimCA:create() {  
+  
+  }  
+
 }
