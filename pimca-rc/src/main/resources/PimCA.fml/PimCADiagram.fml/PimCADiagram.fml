@@ -11,11 +11,13 @@ public class PimCADiagram {
 
   public Diagram diagram;
   public PimCAModel model;
+  public String diagramTitle;
 
   @CreationScheme  
-  PimCADiagram:init(String diagramName, VirtualModelInstanceType<PimCAModel> model) {  
+  PimCADiagram:init(String diagramName, String diagramTitle, VirtualModelInstanceType<PimCAModel> model) {  
     diagram = CreateDiagram();    
-    model = parameters.model;  
+    model = parameters.model;    
+    diagramTitle = parameters.diagramTitle;  
   }  
 
 
