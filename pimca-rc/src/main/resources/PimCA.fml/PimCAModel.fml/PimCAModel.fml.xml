@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VirtualModel id="SYL-5" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" uri="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml" version="0.1" bigIconResource="../../Icons/Pimca_64x64.png" smallIconResource="../../Icons/Pimca_16x16.png" name="PimCAModel" mediumIconResource="../../Icons/Pimca_32x32.png" author="sylvain" userID="SYL" flexoID="5">
-  <FlexoConcept id="SYL-6" bigIconResource="../../Icons/Machinery/Machinery_64x64.png" smallIconResource="../../Icons/Machinery/Machinery_16x16.png" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#PieceOfKnowledge" name="Machinery" mediumIconResource="../../Icons/Machinery/Machinery_32x32.png" author="sylvain" userID="SYL" flexoID="6">
+<VirtualModel id="SYL-5" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" version="0.1" uri="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml" bigIconResource="../../Icons/Pimca_64x64.png" smallIconResource="../../Icons/Pimca_16x16.png" name="PimCAModel" mediumIconResource="../../Icons/Pimca_32x32.png" author="sylvain" userID="SYL" flexoID="5">
+  <FlexoConcept id="SYL-6" bigIconResource="../../Icons/Machinery/Machinery_64x64.png" smallIconResource="../../Icons/Machinery/Machinery_16x16.png" isAbstract="true" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#PieceOfKnowledge" name="Machinery" mediumIconResource="../../Icons/Machinery/Machinery_32x32.png" author="sylvain" userID="SYL" flexoID="6">
     <Inspector id="SYL-7" inspectorTitle="Machinery" userID="SYL" flexoID="7" />
     <FlexoConceptInstanceRole id="SYL-51" virtualModelInstance="container" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#MachineryType" cloningStrategy="Reference" cardinality="One" name="kind" userID="SYL" flexoID="51" />
     <CreationScheme id="SYL-11" name="create" width="800" label="create" height="600" userID="SYL" flexoID="11">
@@ -312,6 +312,27 @@
         </ControlGraph1_AssignationAction>
       </BehaviourControlGraph_Sequence>
       <GenericBehaviourParameter id="SYL-393" widget="TEXT_FIELD" name="name" type="java.lang.String" userID="SYL" flexoID="393" />
+    </CreationScheme>
+  </FlexoConcept>
+  <FlexoConcept id="SYL-778" bigIconResource="../../Icons/Machinery/Machinery_64x64.png" smallIconResource="../../Icons/Machinery/Machinery_16x16.png" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Machinery" name="BasicMachinery" mediumIconResource="../../Icons/Machinery/Machinery_32x32.png" userID="SYL" flexoID="778">
+    <Inspector id="SYL-779" inspectorTitle="BasicMachinery" userID="SYL" flexoID="779" />
+    <DeletionScheme id="SYL-784" name="delete" width="800" label="delete" height="600" userID="SYL" flexoID="784">
+      <BehaviourControlGraph_EmptyControlGraph id="SYL-796" userID="SYL" flexoID="796" />
+    </DeletionScheme>
+    <CreationScheme id="SYL-785" name="create" width="800" label="create" height="600" userID="SYL" flexoID="785">
+      <BehaviourControlGraph_Sequence id="SYL-792" userID="SYL" flexoID="792">
+        <ControlGraph2_Sequence id="SYL-789" ownerContext="controlGraph2" userID="SYL" flexoID="789">
+          <ControlGraph2_NotifyPropertyChangedAction id="SYL-786" propertyName="machineries" object="container" ownerContext="controlGraph2" userID="SYL" flexoID="786" />
+          <ControlGraph1_AssignationAction id="SYL-788" assign="kind" ownerContext="controlGraph1" userID="SYL" flexoID="788">
+            <AssignableAction_ExpressionAction id="SYL-787" expression="parameters.kind" userID="SYL" flexoID="787" />
+          </ControlGraph1_AssignationAction>
+        </ControlGraph2_Sequence>
+        <ControlGraph1_AssignationAction id="SYL-791" assign="name" ownerContext="controlGraph1" userID="SYL" flexoID="791">
+          <AssignableAction_ExpressionAction id="SYL-790" expression="parameters.name" userID="SYL" flexoID="790" />
+        </ControlGraph1_AssignationAction>
+      </BehaviourControlGraph_Sequence>
+      <GenericBehaviourParameter id="SYL-793" widget="CUSTOM_WIDGET" name="name" type="java.lang.String" userID="SYL" flexoID="793" />
+      <GenericBehaviourParameter id="SYL-794" widget="DROPDOWN" name="kind" type="org.openflexo.foundation.fml.FlexoEnumType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#MachineryType&gt;" userID="SYL" flexoID="794" />
     </CreationScheme>
   </FlexoConcept>
   <Inspector id="SYL-1" inspectorTitle="PimCAModel" userID="SYL" flexoID="1" />

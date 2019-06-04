@@ -28,7 +28,13 @@ public class PimCADiagram {
     @DropScheme    
     BasicMachineryGR:dropBasicMachineryGRAtTopLevel(String name, FlexoEnumType<MachineryType> kind) {    
       shape = diagram.AddShape();      
-      machinery = Machinery.create(parameters.name,parameters.kind);    
+      machinery = BasicMachinery.create("Machinery",null);    
+    }    
+  
+    @DropScheme    
+    BasicMachineryGR:representBasicMachinery(FlexoConceptInstanceType<BasicMachinery> basicMachinery) {    
+      shape = diagram.AddShape();      
+      machinery = parameters.basicMachinery;    
     }    
   
   }  
@@ -43,6 +49,12 @@ public class PimCADiagram {
     PerformerGR:dropPerformerGRAtTopLevel(String name) {    
       shape = diagram.AddShape();      
       machinery = Performer.create(parameters.name);    
+    }    
+  
+    @DropScheme    
+    PerformerGR:representPerformer(FlexoConceptInstanceType<Performer> performer) {    
+      shape = diagram.AddShape();      
+      machinery = parameters.performer;    
     }    
   
   }  
@@ -63,6 +75,12 @@ public class PimCADiagram {
       machinery = Network.create(parameters.name,parameters.networkType);    
     }    
   
+    @DropScheme    
+    NetworkGR:representNetwork(FlexoConceptInstanceType<Network> network) {    
+      shape = diagram.AddShape();      
+      machinery = parameters.network;    
+    }    
+  
   }  
 
   @FlexoConcept  
@@ -81,6 +99,12 @@ public class PimCADiagram {
       machinery = Interface.create(parameters.name);    
     }    
   
+    @DropScheme    
+    InterfaceGR:representInterface(FlexoConceptInstanceType<Interface> interface) {    
+      shape = diagram.AddShape();      
+      machinery = parameters.interface;    
+    }    
+  
   }  
 
   @FlexoConcept  
@@ -95,6 +119,12 @@ public class PimCADiagram {
       machinery = Customs.create(parameters.name);    
     }    
   
+    @DropScheme    
+    CustomsGR:representCustoms(FlexoConceptInstanceType<Customs> customs) {    
+      shape = diagram.AddShape();      
+      machinery = parameters.customs;    
+    }    
+  
   }  
 
   @FlexoConcept  
@@ -107,6 +137,12 @@ public class PimCADiagram {
     AttackerGR:dropAttackerGRAtTopLevel(String name) {    
       shape = diagram.AddShape();      
       machinery = Attacker.create(parameters.name);    
+    }    
+  
+    @DropScheme    
+    AttackerGR:representAttacker(FlexoConceptInstanceType<Attacker> attacker) {    
+      shape = diagram.AddShape();      
+      machinery = parameters.attacker;    
     }    
   
   }  
@@ -241,6 +277,12 @@ public class PimCADiagram {
       resource = BasicResource.create(parameters.name);    
     }    
   
+    @DropScheme    
+    BasicResourceGR:representBasicResource(FlexoConceptInstanceType<BasicResource> basicResource) {    
+      shape = diagram.AddShape();      
+      resource = parameters.basicResource;    
+    }    
+  
   }  
 
   @FlexoConcept  
@@ -255,6 +297,12 @@ public class PimCADiagram {
       resource = Instructions.create(parameters.name);    
     }    
   
+    @DropScheme    
+    InstructionsGR:representInstructions(FlexoConceptInstanceType<Instructions> instructions) {    
+      shape = diagram.AddShape();      
+      resource = parameters.instructions;    
+    }    
+  
   }  
 
   @FlexoConcept  
@@ -267,6 +315,12 @@ public class PimCADiagram {
     PassportGR:dropPassportGRAtTopLevel(String name) {    
       shape = diagram.AddShape();      
       resource = Passeport.create(parameters.name);    
+    }    
+  
+    @DropScheme    
+    PassportGR:representPasseport(FlexoConceptInstanceType<Passeport> passeport) {    
+      shape = diagram.AddShape();      
+      resource = parameters.passeport;    
     }    
   
   }  

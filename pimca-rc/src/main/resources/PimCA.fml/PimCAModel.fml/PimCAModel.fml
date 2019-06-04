@@ -321,4 +321,21 @@ public class PimCAModel {
   
   }  
 
+  @FlexoConcept  
+  public class BasicMachinery extends Machinery  {  
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+    @CreationScheme    
+    BasicMachinery:create(String name, FlexoEnumType<MachineryType> kind) {    
+      name = parameters.name;      
+      kind = parameters.kind;      
+      container.firePropertyChange machineries    
+    }    
+  
+  }  
+
 }
