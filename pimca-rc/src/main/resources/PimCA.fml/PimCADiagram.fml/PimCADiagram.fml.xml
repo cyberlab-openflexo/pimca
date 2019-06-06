@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VirtualModel id="SYL-5" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" uri="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml" version="0.1" bigIconResource="../../Icons/Pimca2_64x64.png" smallIconResource="../../Icons/Pimca2_16x16.png" name="PimCADiagram" mediumIconResource="../../Icons/Pimca2_32x32.png" description="FML-controlled diagram representing a PimCA model" userID="SYL" flexoID="5">
+<VirtualModel id="SYL-5" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" version="0.1" uri="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml" bigIconResource="../../Icons/Pimca2_64x64.png" smallIconResource="../../Icons/Pimca2_16x16.png" name="PimCADiagram" mediumIconResource="../../Icons/Pimca2_32x32.png" description="FML-controlled diagram representing a PimCA model" userID="SYL" flexoID="5">
   <FlexoConcept id="SYL-20" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#MachineryGR" name="BasicMachineryGR" userID="SYL" flexoID="20">
     <Inspector id="SYL-16" inspectorTitle="BasicMachinery" userID="SYL" flexoID="16" />
     <ShapeRole id="SYL-25" previewHeight="64.0" previewY="68.0" previewX="93.0" previewWidth="64.0" exampleLabel="Machinery" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_2" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="25">
-      <GRSpec id="SYL-2050" featureName="label" value="machinery.name" userID="SYL" flexoID="2050" />
+      <GRSpec id="SYL-2126" featureName="label" value="machinery.name" userID="SYL" flexoID="2126" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-26" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Machinery" cloningStrategy="Reference" cardinality="ZeroOne" name="machinery" userID="SYL" flexoID="26" />
     <DropScheme id="SYL-21" target="top" name="dropBasicMachineryGRAtTopLevel" width="800" label="create_basic_machinery" height="600" userID="SYL" flexoID="21">
@@ -36,7 +36,7 @@
   <FlexoConcept id="SYL-75" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#MachineryGR" name="PerformerGR" userID="SYL" flexoID="75">
     <Inspector id="SYL-71" inspectorTitle="Performer" userID="SYL" flexoID="71" />
     <ShapeRole id="SYL-89" previewHeight="64.0" previewY="68.0" previewX="93.0" previewWidth="64.0" exampleLabel="Forme" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_3" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="89">
-      <GRSpec id="SYL-2051" featureName="label" value="machinery.name" userID="SYL" flexoID="2051" />
+      <GRSpec id="SYL-2127" featureName="label" value="machinery.name" userID="SYL" flexoID="2127" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-90" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Performer" cloningStrategy="Reference" cardinality="ZeroOne" name="machinery" userID="SYL" flexoID="90" />
     <DropScheme id="SYL-76" target="top" name="dropPerformerGRAtTopLevel" width="800" label="dropPerformerGRAtTopLevel" height="600" userID="SYL" flexoID="76">
@@ -75,7 +75,7 @@
     <FlexoConceptInstanceRole id="SYL-114" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Network" cloningStrategy="Reference" cardinality="ZeroOne" name="machinery" userID="SYL" flexoID="114" />
     <ShapeRole id="SYL-210" previewY="0.0" previewX="32.0" previewWidth="88.0" exampleLabel="Network" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_6" cloningStrategy="Clone" cardinality="ZeroOne" name="label" userID="SYL" flexoID="210">
       <ParentShapeRole idref="SYL-112" />
-      <GRSpec id="SYL-2052" featureName="label" value="machinery.name" userID="SYL" flexoID="2052" />
+      <GRSpec id="SYL-2128" featureName="label" value="machinery.name" userID="SYL" flexoID="2128" />
     </ShapeRole>
     <DropScheme id="SYL-111" target="top" skipConfirmationPanel="false" name="dropNetworkGRAtTopLevel" width="800" label="create_network" height="600" userID="SYL" flexoID="111">
       <BehaviourControlGraph_Sequence id="SYL-115" userID="SYL" flexoID="115">
@@ -122,7 +122,7 @@
     </ShapeRole>
     <ShapeRole id="SYL-267" previewY="0.0" previewX="30.0" previewWidth="80.0" exampleLabel="Interface" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_9" cloningStrategy="Clone" cardinality="ZeroOne" name="text" userID="SYL" flexoID="267">
       <ParentShapeRole idref="SYL-243" />
-      <GRSpec id="SYL-2053" featureName="label" value="machinery.name" userID="SYL" flexoID="2053" />
+      <GRSpec id="SYL-2129" featureName="label" value="machinery.name" userID="SYL" flexoID="2129" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-268" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Interface" cloningStrategy="Reference" cardinality="ZeroOne" name="machinery" userID="SYL" flexoID="268" />
     <DropScheme id="SYL-231" target="top" name="dropInterfaceGRAtTopLevel" width="800" label="dropInterfaceGRAtTopLevel" height="600" userID="SYL" flexoID="231">
@@ -163,7 +163,7 @@
   <FlexoConcept id="SYL-321" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#MachineryGR" name="CustomsGR" userID="SYL" flexoID="321">
     <Inspector id="SYL-317" inspectorTitle="Customs" userID="SYL" flexoID="317" />
     <ShapeRole id="SYL-334" previewY="80.0" previewX="105.0" previewWidth="40.0" exampleLabel="Customs" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_10" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="334">
-      <GRSpec id="SYL-2054" featureName="label" value="machinery.name" userID="SYL" flexoID="2054" />
+      <GRSpec id="SYL-2130" featureName="label" value="machinery.name" userID="SYL" flexoID="2130" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-335" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Customs" cloningStrategy="Reference" cardinality="ZeroOne" name="machinery" userID="SYL" flexoID="335" />
     <DropScheme id="SYL-322" target="top" name="dropCustomsGRAtTopLevel" width="800" label="dropCustomsGRAtTopLevel" height="600" userID="SYL" flexoID="322">
@@ -194,7 +194,7 @@
   <FlexoConcept id="SYL-350" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#MachineryGR" name="AttackerGR" userID="SYL" flexoID="350">
     <Inspector id="SYL-346" inspectorTitle="Attacker" userID="SYL" flexoID="346" />
     <ShapeRole id="SYL-363" previewHeight="64.0" previewY="68.0" previewX="93.0" previewWidth="64.0" exampleLabel="Attacker" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_11" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="363">
-      <GRSpec id="SYL-2055" featureName="label" value="machinery.name" userID="SYL" flexoID="2055" />
+      <GRSpec id="SYL-2131" featureName="label" value="machinery.name" userID="SYL" flexoID="2131" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-371" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Attacker" cloningStrategy="Reference" cardinality="ZeroOne" name="machinery" userID="SYL" flexoID="371" />
     <DropScheme id="SYL-351" target="top" name="dropAttackerGRAtTopLevel" width="800" label="dropAttackerGRAtTopLevel" height="600" userID="SYL" flexoID="351">
@@ -233,7 +233,7 @@
   <FlexoConcept id="SYL-513" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#RelationGR" name="SwapGR" userID="SYL" flexoID="513">
     <Inspector id="SYL-509" inspectorTitle="Swap relation" userID="SYL" flexoID="509" />
     <ConnectorRole id="SYL-518" exampleLabel="swap" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_12" cloningStrategy="Clone" cardinality="ZeroOne" name="connector" userID="SYL" flexoID="518">
-      <GRSpec id="SYL-2056" featureName="label" value="relation.name" userID="SYL" flexoID="2056" />
+      <GRSpec id="SYL-2132" featureName="label" value="relation.name" userID="SYL" flexoID="2132" />
     </ConnectorRole>
     <FlexoConceptInstanceRole id="SYL-521" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Swap" cloningStrategy="Reference" cardinality="ZeroOne" name="relation" userID="SYL" flexoID="521" />
     <LinkScheme id="SYL-514" northDirectionSupported="true" eastDirectionSupported="true" fromTarget="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR" toTarget="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR" westDirectionSupported="true" isAvailableWithFloatingPalette="true" southDirectionSupported="true" name="createSwapGR" width="800" label="create_swap_relation" height="600" userID="SYL" flexoID="514">
@@ -283,7 +283,7 @@
   <FlexoConcept id="SYL-554" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#RelationGR" name="CheckGR" userID="SYL" flexoID="554">
     <Inspector id="SYL-550" inspectorTitle="Check relation" userID="SYL" flexoID="550" />
     <ConnectorRole id="SYL-559" exampleLabel="check" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_13" cloningStrategy="Clone" cardinality="ZeroOne" name="connector" userID="SYL" flexoID="559">
-      <GRSpec id="SYL-2057" featureName="label" value="relation.name" userID="SYL" flexoID="2057" />
+      <GRSpec id="SYL-2133" featureName="label" value="relation.name" userID="SYL" flexoID="2133" />
     </ConnectorRole>
     <FlexoConceptInstanceRole id="SYL-562" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Check" cloningStrategy="Reference" cardinality="ZeroOne" name="relation" userID="SYL" flexoID="562" />
     <LinkScheme id="SYL-555" northDirectionSupported="true" eastDirectionSupported="true" fromTarget="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR" toTarget="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR" westDirectionSupported="true" isAvailableWithFloatingPalette="true" southDirectionSupported="true" name="createCheckGR" width="800" label="create_check_relation" height="600" userID="SYL" flexoID="555">
@@ -303,7 +303,7 @@
   <FlexoConcept id="SYL-692" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#RelationGR" name="ControlGR" userID="SYL" flexoID="692">
     <Inspector id="SYL-688" inspectorTitle="Control relation" userID="SYL" flexoID="688" />
     <ConnectorRole id="SYL-720" exampleLabel="control" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_14" cloningStrategy="Clone" cardinality="ZeroOne" name="connector" userID="SYL" flexoID="720">
-      <GRSpec id="SYL-2058" featureName="label" value="relation.name" userID="SYL" flexoID="2058" />
+      <GRSpec id="SYL-2134" featureName="label" value="relation.name" userID="SYL" flexoID="2134" />
     </ConnectorRole>
     <FlexoConceptInstanceRole id="SYL-721" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Control" cloningStrategy="Reference" cardinality="ZeroOne" name="relation" userID="SYL" flexoID="721" />
     <LinkScheme id="SYL-693" northDirectionSupported="true" eastDirectionSupported="true" fromTarget="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR" toTarget="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR" westDirectionSupported="true" isAvailableWithFloatingPalette="true" southDirectionSupported="true" name="createControlGR" width="800" label="create_control_relation" height="600" userID="SYL" flexoID="693">
@@ -323,7 +323,7 @@
   <FlexoConcept id="SYL-698" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#RelationGR" name="UseGR" userID="SYL" flexoID="698">
     <Inspector id="SYL-694" inspectorTitle="Use relation" userID="SYL" flexoID="694" />
     <ConnectorRole id="SYL-727" exampleLabel="use" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_15" cloningStrategy="Clone" cardinality="ZeroOne" name="connector" userID="SYL" flexoID="727">
-      <GRSpec id="SYL-2059" featureName="label" value="relation.name" userID="SYL" flexoID="2059" />
+      <GRSpec id="SYL-2135" featureName="label" value="relation.name" userID="SYL" flexoID="2135" />
     </ConnectorRole>
     <FlexoConceptInstanceRole id="SYL-728" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Use" cloningStrategy="Reference" cardinality="ZeroOne" name="relation" userID="SYL" flexoID="728" />
     <LinkScheme id="SYL-699" northDirectionSupported="true" eastDirectionSupported="true" fromTarget="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR" toTarget="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR" westDirectionSupported="true" isAvailableWithFloatingPalette="true" southDirectionSupported="true" name="createUseGR" width="800" label="create_use_relation" height="600" userID="SYL" flexoID="699">
@@ -343,7 +343,7 @@
   <FlexoConcept id="SYL-704" isAbstract="true" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#RelationGR" name="ProduceGR" userID="SYL" flexoID="704">
     <Inspector id="SYL-700" inspectorTitle="Produce relation" userID="SYL" flexoID="700" />
     <ConnectorRole id="SYL-734" exampleLabel="produce" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_16" cloningStrategy="Clone" cardinality="ZeroOne" name="connector" userID="SYL" flexoID="734">
-      <GRSpec id="SYL-2060" featureName="label" readOnly="true" value="relation.name" userID="SYL" flexoID="2060" />
+      <GRSpec id="SYL-2136" featureName="label" readOnly="true" value="relation.name" userID="SYL" flexoID="2136" />
     </ConnectorRole>
     <FlexoConceptInstanceRole id="SYL-735" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Produce" cloningStrategy="Reference" cardinality="ZeroOne" name="relation" userID="SYL" flexoID="735" />
     <LinkScheme id="SYL-705" northDirectionSupported="true" eastDirectionSupported="true" fromTarget="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR" toTarget="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR" westDirectionSupported="true" isAvailableWithFloatingPalette="true" southDirectionSupported="true" name="createProduceGR" width="800" label="create_produce_relation" height="600" userID="SYL" flexoID="705">
@@ -363,7 +363,7 @@
   <FlexoConcept id="SYL-710" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#RelationGR" name="MaintainGR" userID="SYL" flexoID="710">
     <Inspector id="SYL-706" inspectorTitle="Maintain relation" userID="SYL" flexoID="706" />
     <ConnectorRole id="SYL-741" exampleLabel="maintain" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_18" cloningStrategy="Clone" cardinality="ZeroOne" name="connector" userID="SYL" flexoID="741">
-      <GRSpec id="SYL-2061" featureName="label" value="relation.name" userID="SYL" flexoID="2061" />
+      <GRSpec id="SYL-2137" featureName="label" value="relation.name" userID="SYL" flexoID="2137" />
     </ConnectorRole>
     <FlexoConceptInstanceRole id="SYL-742" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Maintain" cloningStrategy="Reference" cardinality="ZeroOne" name="relation" userID="SYL" flexoID="742" />
     <LinkScheme id="SYL-711" northDirectionSupported="true" eastDirectionSupported="true" fromTarget="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR" toTarget="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR" westDirectionSupported="true" isAvailableWithFloatingPalette="true" southDirectionSupported="true" name="createMaintainGR" width="800" label="create_maintain_relation" height="600" userID="SYL" flexoID="711">
@@ -383,7 +383,7 @@
   <FlexoConcept id="SYL-876" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ResourceGR" name="BasicResourceGR" userID="SYL" flexoID="876">
     <Inspector id="SYL-872" inspectorTitle="BasicResource" userID="SYL" flexoID="872" />
     <ShapeRole id="SYL-924" previewHeight="64.0" previewY="68.0" previewX="93.0" previewWidth="64.0" exampleLabel="Resource" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_19" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="924">
-      <GRSpec id="SYL-2062" featureName="label" value="resource.name" userID="SYL" flexoID="2062" />
+      <GRSpec id="SYL-2138" featureName="label" value="resource.name" userID="SYL" flexoID="2138" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-928" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#BasicResource" cloningStrategy="Reference" cardinality="ZeroOne" name="resource" userID="SYL" flexoID="928" />
     <DropScheme id="SYL-877" target="top" name="dropBasicResourceGRAtTopLevel" width="800" label="dropBasicResourceGRAtTopLevel" height="600" userID="SYL" flexoID="877">
@@ -414,7 +414,7 @@
   <FlexoConcept id="SYL-882" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ResourceGR" name="InstructionsGR" userID="SYL" flexoID="882">
     <Inspector id="SYL-878" inspectorTitle="Instructions" userID="SYL" flexoID="878" />
     <ShapeRole id="SYL-944" previewHeight="50.0" previewY="75.0" previewX="100.0" exampleLabel="Instructions" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_20" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="944">
-      <GRSpec id="SYL-2063" featureName="label" value="resource.name" userID="SYL" flexoID="2063" />
+      <GRSpec id="SYL-2139" featureName="label" value="resource.name" userID="SYL" flexoID="2139" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-945" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Instructions" cloningStrategy="Reference" cardinality="ZeroOne" name="resource" userID="SYL" flexoID="945" />
     <DropScheme id="SYL-883" target="top" name="dropInstructionsGRAtTopLevel" width="800" label="dropInstructionsGRAtTopLevel" height="600" userID="SYL" flexoID="883">
@@ -445,7 +445,7 @@
   <FlexoConcept id="SYL-888" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ResourceGR" name="PassportGR" userID="SYL" flexoID="888">
     <Inspector id="SYL-884" inspectorTitle="Passport" userID="SYL" flexoID="884" />
     <ShapeRole id="SYL-901" previewHeight="50.0" previewY="75.0" previewX="100.0" exampleLabel="Passport" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_21" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="901">
-      <GRSpec id="SYL-2064" featureName="label" value="resource.name" userID="SYL" flexoID="2064" />
+      <GRSpec id="SYL-2140" featureName="label" value="resource.name" userID="SYL" flexoID="2140" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-953" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Passeport" cloningStrategy="Reference" cardinality="ZeroOne" name="resource" userID="SYL" flexoID="953" />
     <DropScheme id="SYL-889" target="top" name="dropPassportGRAtTopLevel" width="800" label="dropPassportGRAtTopLevel" height="600" userID="SYL" flexoID="889">
@@ -495,6 +495,7 @@
   <UseModelSlotDeclaration id="1" modelSlotClass="org.openflexo.foundation.fml.rt.FMLRTVirtualModelInstanceModelSlot" userID="SYL" flexoID="-1" />
   <Inspector id="SYL-1" renderer="diagramTitle" inspectorTitle="PimCADiagram" userID="SYL" flexoID="1">
     <InspectorEntry id="SYL-2049" widget="TEXT_FIELD" data="diagramTitle" name="title" label="title" type="java.lang.String" userID="SYL" flexoID="2049" />
+    <InspectorEntry id="SYL-2141" widget="TEXT_AREA" data="diagramDescription" name="description" label="description" type="java.lang.String" userID="SYL" flexoID="2141" />
   </Inspector>
   <TypedDiagramModelSlot id="SYL-7" templateDiagramReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_1" metaModelURI="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="diagram" userID="SYL" flexoID="7">
     <FMLDiagramPaletteElementBinding id="SYL-60" paletteElementId="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/Palette.palette#BasicMachinery" userID="SYL" flexoID="60">
@@ -530,6 +531,7 @@
   </TypedDiagramModelSlot>
   <FMLRTVirtualModelInstanceModelSlot id="SYL-12" virtualModelURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml" isRequired="true" cloningStrategy="Reference" cardinality="ZeroOne" name="model" userID="SYL" flexoID="12" />
   <PrimitiveRole id="SYL-1987" primitiveType="String" cloningStrategy="Clone" cardinality="ZeroOne" name="diagramTitle" userID="SYL" flexoID="1987" />
+  <PrimitiveRole id="SYL-2125" primitiveType="String" cloningStrategy="Clone" cardinality="ZeroOne" name="diagramDescription" userID="SYL" flexoID="2125" />
   <CreationScheme id="SYL-6" name="init" width="800" label="init" height="600" userID="SYL" flexoID="6">
     <BehaviourControlGraph_Sequence id="SYL-15" userID="SYL" flexoID="15">
       <ControlGraph2_Sequence id="SYL-1988" ownerContext="controlGraph2" userID="SYL" flexoID="1988">

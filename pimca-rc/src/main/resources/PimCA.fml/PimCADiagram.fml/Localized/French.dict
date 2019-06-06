@@ -27,6 +27,7 @@ networkType=Type de r\u00E9seau
 network_type=network_type
 number_copy=number_copy
 represent_basic_resource=represent_basic_resource
+represent_performer=represent_performer
 role=role
 source=source
 target=target
