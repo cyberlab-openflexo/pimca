@@ -26,6 +26,7 @@ multiplex=multiplex
 networkType=networkType
 network_type=network_type
 number_copy=number_copy
+represent_basic_machinery=represent_basic_machinery
 represent_basic_resource=represent_basic_resource
 represent_performer=represent_performer
 role=role
