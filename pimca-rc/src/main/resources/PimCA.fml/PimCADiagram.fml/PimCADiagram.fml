@@ -36,6 +36,11 @@ public class PimCADiagram {
           }        
         }      
       }    
+    }    
+    for (relationGR : this.SelectFlexoConceptInstance(type=RelationGR)) {    
+      if (relationGR.sourceGR.isDeleted | relationGR.targetGR.isDeleted) {      
+        relationGR.removeFromDiagram();      
+      }    
     }  
   }  
 
@@ -259,14 +264,20 @@ public class PimCADiagram {
     abstract FlexoConceptInstanceType<Relation> relation;  
   
     @DeletionScheme    
-    Void delete() {    
-      
+    public Void delete() {    
+      delete connector;      
+      relation.delete();    
     }    
   
     @ActionScheme    
     Void init(FlexoConceptInstanceType<ElementGR> sourceGR, FlexoConceptInstanceType<ElementGR> targetGR) {    
       sourceGR = parameters.sourceGR;      
       targetGR = parameters.targetGR;    
+    }    
+  
+    @DeletionScheme    
+    public Void removeFromDiagram() {    
+      delete connector;    
     }    
   
   }  
