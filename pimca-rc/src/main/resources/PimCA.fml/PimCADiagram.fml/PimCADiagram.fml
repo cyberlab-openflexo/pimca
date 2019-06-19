@@ -40,7 +40,7 @@ public class PimCADiagram {
   }  
 
   @ActionScheme  
-  Void makeRelationGR(FlexoConceptInstanceType<Relation> relation, FlexoConceptInstanceType<ElementGR> sourceElementGR, FlexoConceptInstanceType<ElementGR> targetElementGR) {  
+  FlexoConceptInstanceType<RelationGR> makeRelationGR(FlexoConceptInstanceType<Relation> relation, FlexoConceptInstanceType<ElementGR> sourceElementGR, FlexoConceptInstanceType<ElementGR> targetElementGR) {  
     if parameters.relation.concept.name.equals("Swap") {    
       return SwapGR.representSwap(parameters.sourceElementGR,parameters.targetElementGR,parameters.relation);    
     }    
@@ -123,6 +123,8 @@ public class PimCADiagram {
     @DropScheme    
     NetworkGR:representNetwork(FlexoConceptInstanceType<Network> network) {    
       shape = diagram.AddShape();      
+      icon = diagram.AddShape();      
+      label = diagram.AddShape();      
       machinery = parameters.network;      
       container.representRequiredRelationships()    
     }    
@@ -148,6 +150,8 @@ public class PimCADiagram {
     @DropScheme    
     InterfaceGR:representInterface(FlexoConceptInstanceType<Interface> interface) {    
       shape = diagram.AddShape();      
+      icon = diagram.AddShape();      
+      text = diagram.AddShape();      
       machinery = parameters.interface;      
       container.representRequiredRelationships()    
     }    
