@@ -40,12 +40,24 @@ public class PimCADiagram {
   }  
 
   @ActionScheme  
-  FlexoConceptInstanceType<SwapGR> makeRelationGR(FlexoConceptInstanceType<Relation> relation, FlexoConceptInstanceType<ElementGR> sourceElementGR, FlexoConceptInstanceType<ElementGR> targetElementGR) {  
+  Void makeRelationGR(FlexoConceptInstanceType<Relation> relation, FlexoConceptInstanceType<ElementGR> sourceElementGR, FlexoConceptInstanceType<ElementGR> targetElementGR) {  
     if parameters.relation.concept.name.equals("Swap") {    
       return SwapGR.representSwap(parameters.sourceElementGR,parameters.targetElementGR,parameters.relation);    
     }    
-    if parameters.relation.concept.name.equals("Swap") {    
-      return SwapGR.representSwap(parameters.sourceElementGR,parameters.targetElementGR,parameters.relation);    
+    if parameters.relation.concept.name.equals("Check") {    
+      return CheckGR.representCheck(parameters.sourceElementGR,parameters.targetElementGR,parameters.relation);    
+    }    
+    if parameters.relation.concept.name.equals("Control") {    
+      return ControlGR.representControl(parameters.sourceElementGR,parameters.targetElementGR,parameters.relation);    
+    }    
+    if parameters.relation.concept.name.equals("Use") {    
+      return UseGR.representUse(parameters.sourceElementGR,parameters.targetElementGR,parameters.relation);    
+    }    
+    if parameters.relation.concept.name.equals("Produce") {    
+      return ProduceGR.representProduce(parameters.sourceElementGR,parameters.targetElementGR,parameters.relation);    
+    }    
+    if parameters.relation.concept.name.equals("Maintain") {    
+      return MaintainGR.representMaintain(parameters.sourceElementGR,parameters.targetElementGR,parameters.relation);    
     }  
   }  
 
@@ -268,6 +280,13 @@ public class PimCADiagram {
       relation = Check.create(fromTarget.pieceOfKnowledge,toTarget.pieceOfKnowledge);    
     }    
   
+    @CreationScheme    
+    CheckGR:representCheck(FlexoConceptInstanceType<ElementGR> sourceElementGR, FlexoConceptInstanceType<ElementGR> targetElementGR, FlexoConceptInstanceType<Check> relation) {    
+      connector = diagram.AddConnector();      
+      this.init(parameters.sourceElementGR,parameters.targetElementGR)      
+      relation = parameters.relation;    
+    }    
+  
   }  
 
   @FlexoConcept  
@@ -281,6 +300,13 @@ public class PimCADiagram {
       connector = diagram.AddConnector();      
       this.init(fromTarget,toTarget)      
       relation = Control.create(fromTarget.pieceOfKnowledge,toTarget.pieceOfKnowledge);    
+    }    
+  
+    @CreationScheme    
+    ControlGR:representControl(FlexoConceptInstanceType<ElementGR> sourceElementGR, FlexoConceptInstanceType<ElementGR> targetElementGR, FlexoConceptInstanceType<Control> relation) {    
+      connector = diagram.AddConnector();      
+      this.init(parameters.sourceElementGR,parameters.targetElementGR)      
+      relation = parameters.relation;    
     }    
   
   }  
@@ -298,6 +324,13 @@ public class PimCADiagram {
       relation = Use.create(fromTarget.pieceOfKnowledge,toTarget.pieceOfKnowledge);    
     }    
   
+    @CreationScheme    
+    UseGR:representUse(FlexoConceptInstanceType<ElementGR> sourceElementGR, FlexoConceptInstanceType<ElementGR> targetElementGR, FlexoConceptInstanceType<Use> relation) {    
+      connector = diagram.AddConnector();      
+      this.init(parameters.sourceElementGR,parameters.targetElementGR)      
+      relation = parameters.relation;    
+    }    
+  
   }  
 
   @FlexoConcept  
@@ -313,6 +346,13 @@ public class PimCADiagram {
       relation = Produce.create(fromTarget.pieceOfKnowledge,toTarget.pieceOfKnowledge);    
     }    
   
+    @CreationScheme    
+    ProduceGR:representProduce(FlexoConceptInstanceType<ElementGR> sourceElementGR, FlexoConceptInstanceType<ElementGR> targetElementGR, FlexoConceptInstanceType<Produce> relation) {    
+      connector = diagram.AddConnector();      
+      this.init(parameters.sourceElementGR,parameters.targetElementGR)      
+      relation = parameters.relation;    
+    }    
+  
   }  
 
   @FlexoConcept  
@@ -326,6 +366,13 @@ public class PimCADiagram {
       connector = diagram.AddConnector();      
       this.init(fromTarget,toTarget)      
       relation = Maintain.create(fromTarget.pieceOfKnowledge,toTarget.pieceOfKnowledge);    
+    }    
+  
+    @CreationScheme    
+    MaintainGR:representMaintain(FlexoConceptInstanceType<ElementGR> sourceElementGR, FlexoConceptInstanceType<ElementGR> targetElementGR, FlexoConceptInstanceType<Maintain> relation) {    
+      connector = diagram.AddConnector();      
+      this.init(parameters.sourceElementGR,parameters.targetElementGR)      
+      relation = parameters.relation;    
     }    
   
   }  
