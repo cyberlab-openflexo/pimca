@@ -36,7 +36,13 @@ public class PimCAModel {
   
     @DeletionScheme    
     Void delete() {    
-      
+      VirtualModelInstanceType<PimCAModel> containerModel = container;      
+      for (relation : relations) {      
+        relation.delete();      
+      }      
+      delete this;      
+      fireEvent DeletedMachinery      
+      containerModel.firePropertyChange machineries    
     }    
   
   }  
@@ -82,7 +88,8 @@ public class PimCAModel {
     @CreationScheme    
     Customs:create(String name) {    
       name = parameters.name;      
-      container.firePropertyChange machineries    
+      container.firePropertyChange machineries      
+      fireEvent NewMachinery    
     }    
   
   }  
@@ -96,7 +103,8 @@ public class PimCAModel {
     Network:create(String name, FlexoEnumType<NetworkType> aNetworkType) {    
       name = parameters.name;      
       networkType = parameters.aNetworkType;      
-      container.firePropertyChange machineries    
+      container.firePropertyChange machineries      
+      fireEvent NewMachinery    
     }    
   
     @DeletionScheme    
@@ -112,7 +120,8 @@ public class PimCAModel {
     @CreationScheme    
     Interface:create(String name) {    
       name = parameters.name;      
-      container.firePropertyChange machineries    
+      container.firePropertyChange machineries      
+      fireEvent NewMachinery    
     }    
   
   }  
@@ -128,7 +137,8 @@ public class PimCAModel {
     @CreationScheme    
     Performer:create(String name) {    
       name = parameters.name;      
-      container.firePropertyChange machineries    
+      container.firePropertyChange machineries      
+      fireEvent NewMachinery    
     }    
   
   }  
@@ -139,7 +149,8 @@ public class PimCAModel {
     @CreationScheme    
     Attacker:create(String name) {    
       name = parameters.name;      
-      container.firePropertyChange machineries    
+      container.firePropertyChange machineries      
+      fireEvent NewMachinery    
     }    
   
   }  
@@ -159,6 +170,11 @@ public class PimCAModel {
       target = parameters.target;      
       source.firePropertyChange relations      
       target.firePropertyChange relations    
+    }    
+  
+    @DeletionScheme    
+    Void delete() {    
+      
     }    
   
   }  
@@ -333,7 +349,42 @@ public class PimCAModel {
     BasicMachinery:create(String name, FlexoEnumType<MachineryType> kind) {    
       name = parameters.name;      
       kind = parameters.kind;      
-      container.firePropertyChange machineries    
+      container.firePropertyChange machineries      
+      fireEvent NewMachinery    
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class NewMachinery {  
+  
+    public FlexoConceptInstance machinery;  
+  
+    @CreationScheme    
+    NewMachinery:create(UndefinedFlexoConceptInstanceType aMachinery) {    
+      machinery = parameters.aMachinery;    
+    }    
+  
+    @DeletionScheme    
+    Void delete() {    
+      
+    }    
+  
+  }  
+
+  @FlexoConcept  
+  public class DeletedMachinery {  
+  
+    public FlexoConceptInstance machinery;  
+  
+    @CreationScheme    
+    DeletedMachinery:create(UndefinedFlexoConceptInstanceType aMachinery) {    
+      machinery = parameters.aMachinery;    
+    }    
+  
+    @DeletionScheme    
+    Void delete() {    
+      
     }    
   
   }  

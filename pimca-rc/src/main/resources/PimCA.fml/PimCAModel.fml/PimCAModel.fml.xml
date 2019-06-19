@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VirtualModel id="SYL-5" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" uri="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml" version="0.1" bigIconResource="../../Icons/Pimca_64x64.png" smallIconResource="../../Icons/Pimca_16x16.png" name="PimCAModel" mediumIconResource="../../Icons/Pimca_32x32.png" author="sylvain" userID="SYL" flexoID="5">
   <FlexoConcept id="SYL-6" bigIconResource="../../Icons/Machinery/Machinery_64x64.png" smallIconResource="../../Icons/Machinery/Machinery_16x16.png" isAbstract="true" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#PieceOfKnowledge" name="Machinery" mediumIconResource="../../Icons/Machinery/Machinery_32x32.png" author="sylvain" userID="SYL" flexoID="6">
-    <Inspector id="SYL-7" inspectorTitle="Machinery" userID="SYL" flexoID="7" />
+    <Inspector id="SYL-7" renderer="name" inspectorTitle="Machinery" userID="SYL" flexoID="7" />
     <FlexoConceptInstanceRole id="SYL-51" virtualModelInstance="container" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#MachineryType" cloningStrategy="Reference" cardinality="One" name="kind" userID="SYL" flexoID="51" />
     <CreationScheme id="SYL-11" name="create" width="800" label="create" height="600" userID="SYL" flexoID="11">
       <BehaviourControlGraph_Sequence id="SYL-93" userID="SYL" flexoID="93">
@@ -19,7 +19,26 @@
       <GenericBehaviourParameter id="SYL-94" widget="DROPDOWN" name="kind" type="org.openflexo.foundation.fml.FlexoEnumType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#MachineryType&gt;" userID="SYL" flexoID="94" />
     </CreationScheme>
     <DeletionScheme id="SYL-12" name="delete" width="800" label="delete" height="600" userID="SYL" flexoID="12">
-      <BehaviourControlGraph_EmptyControlGraph id="SYL-14" userID="SYL" flexoID="14" />
+      <BehaviourControlGraph_Sequence id="SYL-994" userID="SYL" flexoID="994">
+        <ControlGraph2_Sequence id="SYL-995" ownerContext="controlGraph2" userID="SYL" flexoID="995">
+          <ControlGraph2_Sequence id="SYL-996" ownerContext="controlGraph2" userID="SYL" flexoID="996">
+            <ControlGraph2_Sequence id="SYL-997" ownerContext="controlGraph2" userID="SYL" flexoID="997">
+              <ControlGraph2_NotifyPropertyChangedAction id="SYL-993" propertyName="machineries" object="containerModel" ownerContext="controlGraph2" userID="SYL" flexoID="993" />
+              <ControlGraph1_FireEventAction id="SYL-977" creationSchemeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#DeletedMachinery.create(aMachinery)" receiver="containerModel" ownerContext="controlGraph1" userID="SYL" flexoID="977">
+                <AddFlexoConceptInstanceParameter id="SYL-991" paramName="aMachinery" value="this" userID="SYL" flexoID="991" />
+              </ControlGraph1_FireEventAction>
+            </ControlGraph2_Sequence>
+            <ControlGraph1_DeleteAction id="SYL-975" object="this" ownerContext="controlGraph1" userID="SYL" flexoID="975" />
+          </ControlGraph2_Sequence>
+          <ControlGraph1_IterationAction id="SYL-969" iteratorName="relation" ownerContext="controlGraph1" userID="SYL" flexoID="969">
+            <Iteration_ExpressionAction id="SYL-970" expression="relations" ownerContext="iterationControlGraph" userID="SYL" flexoID="970" />
+            <ControlGraph_DeleteFlexoConceptInstance id="SYL-973" deletionSchemeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Relation.delete()" object="relation" ownerContext="controlGraph" userID="SYL" flexoID="973" />
+          </ControlGraph1_IterationAction>
+        </ControlGraph2_Sequence>
+        <ControlGraph1_DeclarationAction id="SYL-967" variable="containerModel" ownerContext="controlGraph1" userID="SYL" flexoID="967">
+          <AssignableAction_ExpressionAction id="SYL-966" expression="container" userID="SYL" flexoID="966" />
+        </ControlGraph1_DeclarationAction>
+      </BehaviourControlGraph_Sequence>
     </DeletionScheme>
   </FlexoConcept>
   <FlexoConcept id="SYL-22" name="QualifiedElement" userID="SYL" flexoID="22">
@@ -79,13 +98,18 @@
     <Inspector id="SYL-60" inspectorTitle="NetworkType" userID="SYL" flexoID="60" />
   </FlexoEnum>
   <FlexoConcept id="SYL-61" bigIconResource="../../Icons/Customs/LockClosed_64x64.png" smallIconResource="../../Icons/Customs/LockClosed_16x16.png" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Machinery" name="Customs" mediumIconResource="../../Icons/Customs/LockClosed_32x32.png" userID="SYL" flexoID="61">
-    <Inspector id="SYL-62" inspectorTitle="Customs" userID="SYL" flexoID="62" />
+    <Inspector id="SYL-62" renderer="name" inspectorTitle="Customs" userID="SYL" flexoID="62" />
     <DeletionScheme id="SYL-67" name="delete" width="800" label="delete" height="600" userID="SYL" flexoID="67">
       <BehaviourControlGraph_EmptyControlGraph id="SYL-73" userID="SYL" flexoID="73" />
     </DeletionScheme>
     <CreationScheme id="SYL-69" name="create" width="800" label="create" height="600" userID="SYL" flexoID="69">
       <BehaviourControlGraph_Sequence id="SYL-624" userID="SYL" flexoID="624">
-        <ControlGraph2_NotifyPropertyChangedAction id="SYL-618" propertyName="machineries" object="container" ownerContext="controlGraph2" userID="SYL" flexoID="618" />
+        <ControlGraph2_Sequence id="SYL-880" ownerContext="controlGraph2" userID="SYL" flexoID="880">
+          <ControlGraph2_FireEventAction id="SYL-867" creationSchemeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#NewMachinery.create(aMachinery)" receiver="container" ownerContext="controlGraph2" userID="SYL" flexoID="867">
+            <AddFlexoConceptInstanceParameter id="SYL-869" paramName="aMachinery" value="this" userID="SYL" flexoID="869" />
+          </ControlGraph2_FireEventAction>
+          <ControlGraph1_NotifyPropertyChangedAction id="SYL-618" propertyName="machineries" object="container" ownerContext="controlGraph1" userID="SYL" flexoID="618" />
+        </ControlGraph2_Sequence>
         <ControlGraph1_AssignationAction id="SYL-71" assign="name" ownerContext="controlGraph1" userID="SYL" flexoID="71">
           <AssignableAction_ExpressionAction id="SYL-70" expression="parameters.name" userID="SYL" flexoID="70" />
         </ControlGraph1_AssignationAction>
@@ -94,14 +118,19 @@
     </CreationScheme>
   </FlexoConcept>
   <FlexoConcept id="SYL-75" bigIconResource="../../Icons/Network/Network_32x32.png" smallIconResource="../../Icons/Network/Network_16x16.png" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Machinery" name="Network" mediumIconResource="../../Icons/Network/Network_32x32.png" userID="SYL" flexoID="75">
-    <Inspector id="SYL-74" inspectorTitle="Network" userID="SYL" flexoID="74">
+    <Inspector id="SYL-74" renderer="name" inspectorTitle="Network" userID="SYL" flexoID="74">
       <InspectorEntry id="SYL-88" widget="DROPDOWN" data="networkType" name="networkType" label="networkType" type="org.openflexo.foundation.fml.FlexoEnumType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#NetworkType&gt;" userID="SYL" flexoID="88" />
     </Inspector>
     <FlexoConceptInstanceRole id="SYL-81" virtualModelInstance="container" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#NetworkType" cloningStrategy="Reference" cardinality="ZeroOne" name="networkType" userID="SYL" flexoID="81" />
     <CreationScheme id="SYL-79" skipConfirmationPanel="false" name="create" width="800" label="create" height="600" userID="SYL" flexoID="79">
       <BehaviourControlGraph_Sequence id="SYL-89" userID="SYL" flexoID="89">
         <ControlGraph2_Sequence id="SYL-625" ownerContext="controlGraph2" userID="SYL" flexoID="625">
-          <ControlGraph2_NotifyPropertyChangedAction id="SYL-619" propertyName="machineries" object="container" ownerContext="controlGraph2" userID="SYL" flexoID="619" />
+          <ControlGraph2_Sequence id="SYL-881" ownerContext="controlGraph2" userID="SYL" flexoID="881">
+            <ControlGraph2_FireEventAction id="SYL-871" creationSchemeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#NewMachinery.create(aMachinery)" receiver="container" ownerContext="controlGraph2" userID="SYL" flexoID="871">
+              <AddFlexoConceptInstanceParameter id="SYL-870" paramName="aMachinery" value="this" userID="SYL" flexoID="870" />
+            </ControlGraph2_FireEventAction>
+            <ControlGraph1_NotifyPropertyChangedAction id="SYL-619" propertyName="machineries" object="container" ownerContext="controlGraph1" userID="SYL" flexoID="619" />
+          </ControlGraph2_Sequence>
           <ControlGraph1_AssignationAction id="SYL-82" assign="networkType" ownerContext="controlGraph1" userID="SYL" flexoID="82">
             <AssignableAction_ExpressionAction id="SYL-84" expression="parameters.aNetworkType" userID="SYL" flexoID="84" />
           </ControlGraph1_AssignationAction>
@@ -118,10 +147,15 @@
     </DeletionScheme>
   </FlexoConcept>
   <FlexoConcept id="SYL-95" bigIconResource="../../Icons/Interface/Interface_64x64.png" smallIconResource="../../Icons/Interface/Interface_16x16.png" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Machinery" name="Interface" mediumIconResource="../../Icons/Interface/Interface_32x32.png" userID="SYL" flexoID="95">
-    <Inspector id="SYL-96" inspectorTitle="Interface" userID="SYL" flexoID="96" />
+    <Inspector id="SYL-96" renderer="name" inspectorTitle="Interface" userID="SYL" flexoID="96" />
     <CreationScheme id="SYL-100" name="create" width="800" label="create" height="600" userID="SYL" flexoID="100">
       <BehaviourControlGraph_Sequence id="SYL-626" userID="SYL" flexoID="626">
-        <ControlGraph2_NotifyPropertyChangedAction id="SYL-620" propertyName="machineries" object="container" ownerContext="controlGraph2" userID="SYL" flexoID="620" />
+        <ControlGraph2_Sequence id="SYL-882" ownerContext="controlGraph2" userID="SYL" flexoID="882">
+          <ControlGraph2_FireEventAction id="SYL-873" creationSchemeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#NewMachinery.create(aMachinery)" receiver="container" ownerContext="controlGraph2" userID="SYL" flexoID="873">
+            <AddFlexoConceptInstanceParameter id="SYL-872" paramName="aMachinery" value="this" userID="SYL" flexoID="872" />
+          </ControlGraph2_FireEventAction>
+          <ControlGraph1_NotifyPropertyChangedAction id="SYL-620" propertyName="machineries" object="container" ownerContext="controlGraph1" userID="SYL" flexoID="620" />
+        </ControlGraph2_Sequence>
         <ControlGraph1_AssignationAction id="SYL-102" assign="name" ownerContext="controlGraph1" userID="SYL" flexoID="102">
           <AssignableAction_ExpressionAction id="SYL-101" expression="parameters.name" userID="SYL" flexoID="101" />
         </ControlGraph1_AssignationAction>
@@ -130,13 +164,18 @@
     </CreationScheme>
   </FlexoConcept>
   <FlexoConcept id="SYL-104" bigIconResource="../../Icons/Performers/PerformerMale_64x64.png" smallIconResource="../../Icons/Performers/PerformerMale_16x16.png" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Machinery" name="Performer" mediumIconResource="../../Icons/Performers/PerformerMale_32x32.png" userID="SYL" flexoID="104">
-    <Inspector id="SYL-105" inspectorTitle="Performer" userID="SYL" flexoID="105" />
+    <Inspector id="SYL-105" renderer="name" inspectorTitle="Performer" userID="SYL" flexoID="105" />
     <DeletionScheme id="SYL-110" name="delete" width="800" label="delete" height="600" userID="SYL" flexoID="110">
       <BehaviourControlGraph_EmptyControlGraph id="SYL-112" userID="SYL" flexoID="112" />
     </DeletionScheme>
     <CreationScheme id="SYL-113" name="create" width="800" label="create" height="600" userID="SYL" flexoID="113">
       <BehaviourControlGraph_Sequence id="SYL-627" userID="SYL" flexoID="627">
-        <ControlGraph2_NotifyPropertyChangedAction id="SYL-616" propertyName="machineries" object="container" ownerContext="controlGraph2" userID="SYL" flexoID="616" />
+        <ControlGraph2_Sequence id="SYL-883" ownerContext="controlGraph2" userID="SYL" flexoID="883">
+          <ControlGraph2_FireEventAction id="SYL-875" creationSchemeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#NewMachinery.create(aMachinery)" receiver="container" ownerContext="controlGraph2" userID="SYL" flexoID="875">
+            <AddFlexoConceptInstanceParameter id="SYL-874" paramName="aMachinery" value="this" userID="SYL" flexoID="874" />
+          </ControlGraph2_FireEventAction>
+          <ControlGraph1_NotifyPropertyChangedAction id="SYL-616" propertyName="machineries" object="container" ownerContext="controlGraph1" userID="SYL" flexoID="616" />
+        </ControlGraph2_Sequence>
         <ControlGraph1_AssignationAction id="SYL-115" assign="name" ownerContext="controlGraph1" userID="SYL" flexoID="115">
           <AssignableAction_ExpressionAction id="SYL-114" expression="parameters.name" userID="SYL" flexoID="114" />
         </ControlGraph1_AssignationAction>
@@ -145,10 +184,15 @@
     </CreationScheme>
   </FlexoConcept>
   <FlexoConcept id="SYL-117" bigIconResource="../../Icons/Performers/Attacker_64x64.png" smallIconResource="../../Icons/Performers/Attacker_16x16.png" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Performer" name="Attacker" mediumIconResource="../../Icons/Performers/Attacker_32x32.png" userID="SYL" flexoID="117">
-    <Inspector id="SYL-118" inspectorTitle="Attacker" userID="SYL" flexoID="118" />
+    <Inspector id="SYL-118" renderer="name" inspectorTitle="Attacker" userID="SYL" flexoID="118" />
     <CreationScheme id="SYL-122" name="create" width="800" label="create" height="600" userID="SYL" flexoID="122">
       <BehaviourControlGraph_Sequence id="SYL-628" userID="SYL" flexoID="628">
-        <ControlGraph2_NotifyPropertyChangedAction id="SYL-617" propertyName="machineries" object="container" ownerContext="controlGraph2" userID="SYL" flexoID="617" />
+        <ControlGraph2_Sequence id="SYL-884" ownerContext="controlGraph2" userID="SYL" flexoID="884">
+          <ControlGraph2_FireEventAction id="SYL-877" creationSchemeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#NewMachinery.create(aMachinery)" receiver="container" ownerContext="controlGraph2" userID="SYL" flexoID="877">
+            <AddFlexoConceptInstanceParameter id="SYL-876" paramName="aMachinery" value="this" userID="SYL" flexoID="876" />
+          </ControlGraph2_FireEventAction>
+          <ControlGraph1_NotifyPropertyChangedAction id="SYL-617" propertyName="machineries" object="container" ownerContext="controlGraph1" userID="SYL" flexoID="617" />
+        </ControlGraph2_Sequence>
         <ControlGraph1_AssignationAction id="SYL-124" assign="name" ownerContext="controlGraph1" userID="SYL" flexoID="124">
           <AssignableAction_ExpressionAction id="SYL-123" expression="parameters.name" userID="SYL" flexoID="123" />
         </ControlGraph1_AssignationAction>
@@ -185,6 +229,9 @@
       <GenericBehaviourParameter id="SYL-260" isRequired="true" widget="CUSTOM_WIDGET" name="source" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#PieceOfKnowledge&gt;" userID="SYL" flexoID="260" />
       <GenericBehaviourParameter id="SYL-261" isRequired="true" widget="CUSTOM_WIDGET" name="target" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#PieceOfKnowledge&gt;" userID="SYL" flexoID="261" />
     </ActionScheme>
+    <DeletionScheme id="SYL-971" name="delete" width="800" label="delete" height="600" userID="SYL" flexoID="971">
+      <BehaviourControlGraph_EmptyControlGraph id="SYL-998" userID="SYL" flexoID="998" />
+    </DeletionScheme>
   </FlexoConcept>
   <FlexoConcept id="SYL-167" smallIconResource="../../Icons/Relations/Use_16x16.png" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Relation" name="Use" mediumIconResource="../../Icons/Relations/Use_32x32.png" userID="SYL" flexoID="167">
     <Inspector id="SYL-168" renderer="((name != null) ? name : &quot;&lt;use&gt;&quot;)" inspectorTitle="Use" userID="SYL" flexoID="168" />
@@ -315,14 +362,19 @@
     </CreationScheme>
   </FlexoConcept>
   <FlexoConcept id="SYL-778" bigIconResource="../../Icons/Machinery/Machinery_64x64.png" smallIconResource="../../Icons/Machinery/Machinery_16x16.png" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Machinery" name="BasicMachinery" mediumIconResource="../../Icons/Machinery/Machinery_32x32.png" userID="SYL" flexoID="778">
-    <Inspector id="SYL-779" inspectorTitle="BasicMachinery" userID="SYL" flexoID="779" />
+    <Inspector id="SYL-779" renderer="name" inspectorTitle="BasicMachinery" userID="SYL" flexoID="779" />
     <DeletionScheme id="SYL-784" name="delete" width="800" label="delete" height="600" userID="SYL" flexoID="784">
       <BehaviourControlGraph_EmptyControlGraph id="SYL-796" userID="SYL" flexoID="796" />
     </DeletionScheme>
     <CreationScheme id="SYL-785" name="create" width="800" label="create" height="600" userID="SYL" flexoID="785">
       <BehaviourControlGraph_Sequence id="SYL-792" userID="SYL" flexoID="792">
         <ControlGraph2_Sequence id="SYL-789" ownerContext="controlGraph2" userID="SYL" flexoID="789">
-          <ControlGraph2_NotifyPropertyChangedAction id="SYL-786" propertyName="machineries" object="container" ownerContext="controlGraph2" userID="SYL" flexoID="786" />
+          <ControlGraph2_Sequence id="SYL-885" ownerContext="controlGraph2" userID="SYL" flexoID="885">
+            <ControlGraph2_FireEventAction id="SYL-878" creationSchemeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#NewMachinery.create(aMachinery)" receiver="container" ownerContext="controlGraph2" userID="SYL" flexoID="878">
+              <AddFlexoConceptInstanceParameter id="SYL-879" paramName="aMachinery" value="this" userID="SYL" flexoID="879" />
+            </ControlGraph2_FireEventAction>
+            <ControlGraph1_NotifyPropertyChangedAction id="SYL-786" propertyName="machineries" object="container" ownerContext="controlGraph1" userID="SYL" flexoID="786" />
+          </ControlGraph2_Sequence>
           <ControlGraph1_AssignationAction id="SYL-788" assign="kind" ownerContext="controlGraph1" userID="SYL" flexoID="788">
             <AssignableAction_ExpressionAction id="SYL-787" expression="parameters.kind" userID="SYL" flexoID="787" />
           </ControlGraph1_AssignationAction>
@@ -335,6 +387,32 @@
       <GenericBehaviourParameter id="SYL-794" widget="DROPDOWN" name="kind" type="org.openflexo.foundation.fml.FlexoEnumType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#MachineryType&gt;" userID="SYL" flexoID="794" />
     </CreationScheme>
   </FlexoConcept>
+  <FlexoEvent id="SYL-886" name="NewMachinery" userID="SYL" flexoID="886">
+    <Inspector id="SYL-887" inspectorTitle="NewMachinery" userID="SYL" flexoID="887" />
+    <FlexoConceptInstanceRole id="SYL-888" cloningStrategy="Reference" cardinality="ZeroOne" name="machinery" userID="SYL" flexoID="888" />
+    <CreationScheme id="SYL-868" name="create" width="800" label="create" height="600" userID="SYL" flexoID="868">
+      <BehaviourControlGraph_AssignationAction id="SYL-889" assign="machinery" userID="SYL" flexoID="889">
+        <AssignableAction_ExpressionAction id="SYL-890" expression="parameters.aMachinery" userID="SYL" flexoID="890" />
+      </BehaviourControlGraph_AssignationAction>
+      <GenericBehaviourParameter id="SYL-891" isRequired="true" widget="CUSTOM_WIDGET" name="aMachinery" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;null&gt;" userID="SYL" flexoID="891" />
+    </CreationScheme>
+    <DeletionScheme id="SYL-892" name="delete" width="800" label="delete" height="600" userID="SYL" flexoID="892">
+      <BehaviourControlGraph_EmptyControlGraph id="SYL-893" userID="SYL" flexoID="893" />
+    </DeletionScheme>
+  </FlexoEvent>
+  <FlexoEvent id="SYL-984" name="DeletedMachinery" userID="SYL" flexoID="984">
+    <Inspector id="SYL-985" inspectorTitle="DeletedMachinery" userID="SYL" flexoID="985" />
+    <FlexoConceptInstanceRole id="SYL-999" cloningStrategy="Reference" cardinality="ZeroOne" name="machinery" userID="SYL" flexoID="999" />
+    <CreationScheme id="SYL-989" name="create" width="800" label="create" height="600" userID="SYL" flexoID="989">
+      <BehaviourControlGraph_AssignationAction id="SYL-1000" assign="machinery" userID="SYL" flexoID="1000">
+        <AssignableAction_ExpressionAction id="SYL-1001" expression="parameters.aMachinery" userID="SYL" flexoID="1001" />
+      </BehaviourControlGraph_AssignationAction>
+      <GenericBehaviourParameter id="SYL-1002" isRequired="true" widget="CUSTOM_WIDGET" name="aMachinery" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;null&gt;" userID="SYL" flexoID="1002" />
+    </CreationScheme>
+    <DeletionScheme id="SYL-990" name="delete" width="800" label="delete" height="600" userID="SYL" flexoID="990">
+      <BehaviourControlGraph_EmptyControlGraph id="SYL-1003" userID="SYL" flexoID="1003" />
+    </DeletionScheme>
+  </FlexoEvent>
   <Inspector id="SYL-1" inspectorTitle="PimCAModel" userID="SYL" flexoID="1" />
   <GetSetProperty id="SYL-530" name="machineries" userID="SYL" flexoID="530">
     <SetControlGraph_EmptyControlGraph id="SYL-531" ownerContext="setControlGraph" userID="SYL" flexoID="531" />

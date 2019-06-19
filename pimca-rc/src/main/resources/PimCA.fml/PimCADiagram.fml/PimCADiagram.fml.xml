@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VirtualModel id="SYL-5" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" version="0.1" uri="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml" bigIconResource="../../Icons/Pimca2_64x64.png" smallIconResource="../../Icons/Pimca2_16x16.png" name="PimCADiagram" mediumIconResource="../../Icons/Pimca2_32x32.png" description="FML-controlled diagram representing a PimCA model" userID="SYL" flexoID="5">
+<VirtualModel id="SYL-5" virtualModelClass="org.openflexo.foundation.fml.VirtualModel" modelVersion="2.0" uri="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml" version="0.1" bigIconResource="../../Icons/Pimca2_64x64.png" smallIconResource="../../Icons/Pimca2_16x16.png" name="PimCADiagram" mediumIconResource="../../Icons/Pimca2_32x32.png" description="FML-controlled diagram representing a PimCA model" userID="SYL" flexoID="5">
   <FlexoConcept id="SYL-20" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#MachineryGR" name="BasicMachineryGR" userID="SYL" flexoID="20">
     <Inspector id="SYL-16" inspectorTitle="BasicMachinery" userID="SYL" flexoID="16" />
     <ShapeRole id="SYL-25" previewHeight="64.0" previewY="68.0" previewX="93.0" previewWidth="64.0" exampleLabel="Machinery" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_2" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="25">
-      <GRSpec id="SYL-2126" featureName="label" value="machinery.name" userID="SYL" flexoID="2126" />
+      <GRSpec id="SYL-2382" featureName="label" value="machinery.name" userID="SYL" flexoID="2382" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-26" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Machinery" cloningStrategy="Reference" cardinality="ZeroOne" name="machinery" userID="SYL" flexoID="26" />
     <DropScheme id="SYL-21" target="top" name="dropBasicMachineryGRAtTopLevel" width="800" label="create_basic_machinery" height="600" userID="SYL" flexoID="21">
@@ -23,9 +23,12 @@
     </DropScheme>
     <DropScheme id="SYL-1729" target="top" name="representBasicMachinery" width="800" label="represent_basic_machinery" height="600" userID="SYL" flexoID="1729">
       <BehaviourControlGraph_Sequence id="SYL-1734" ownerContext="controlGraph1" userID="SYL" flexoID="1734">
-        <ControlGraph2_AssignationAction id="SYL-1731" assign="machinery" ownerContext="controlGraph2" userID="SYL" flexoID="1731">
-          <AssignableAction_ExpressionAction id="SYL-1730" expression="parameters.basicMachinery" userID="SYL" flexoID="1730" />
-        </ControlGraph2_AssignationAction>
+        <ControlGraph2_Sequence id="SYL-2403" ownerContext="controlGraph2" userID="SYL" flexoID="2403">
+          <ControlGraph2_ExpressionAction id="SYL-2402" expression="container.representRequiredRelationships()" ownerContext="controlGraph2" userID="SYL" flexoID="2402" />
+          <ControlGraph1_AssignationAction id="SYL-1731" assign="machinery" ownerContext="controlGraph1" userID="SYL" flexoID="1731">
+            <AssignableAction_ExpressionAction id="SYL-1730" expression="parameters.basicMachinery" userID="SYL" flexoID="1730" />
+          </ControlGraph1_AssignationAction>
+        </ControlGraph2_Sequence>
         <ControlGraph1_AssignationAction id="SYL-1733" assign="shape" ownerContext="controlGraph1" userID="SYL" flexoID="1733">
           <AssignableAction_AddShape id="SYL-1732" container="topLevel" receiver="diagram" userID="SYL" flexoID="1732" />
         </ControlGraph1_AssignationAction>
@@ -36,7 +39,7 @@
   <FlexoConcept id="SYL-75" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#MachineryGR" name="PerformerGR" userID="SYL" flexoID="75">
     <Inspector id="SYL-71" inspectorTitle="Performer" userID="SYL" flexoID="71" />
     <ShapeRole id="SYL-89" previewHeight="64.0" previewY="68.0" previewX="93.0" previewWidth="64.0" exampleLabel="Forme" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_3" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="89">
-      <GRSpec id="SYL-2127" featureName="label" value="machinery.name" userID="SYL" flexoID="2127" />
+      <GRSpec id="SYL-2383" featureName="label" value="machinery.name" userID="SYL" flexoID="2383" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-90" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Performer" cloningStrategy="Reference" cardinality="ZeroOne" name="machinery" userID="SYL" flexoID="90" />
     <DropScheme id="SYL-76" target="top" name="dropPerformerGRAtTopLevel" width="800" label="dropPerformerGRAtTopLevel" height="600" userID="SYL" flexoID="76">
@@ -54,9 +57,12 @@
     </DropScheme>
     <DropScheme id="SYL-1675" target="top" name="representPerformer" width="800" label="represent_performer" height="600" userID="SYL" flexoID="1675">
       <BehaviourControlGraph_Sequence id="SYL-1687" ownerContext="controlGraph1" userID="SYL" flexoID="1687">
-        <ControlGraph2_AssignationAction id="SYL-1684" assign="machinery" ownerContext="controlGraph2" userID="SYL" flexoID="1684">
-          <AssignableAction_ExpressionAction id="SYL-1683" expression="parameters.performer" userID="SYL" flexoID="1683" />
-        </ControlGraph2_AssignationAction>
+        <ControlGraph2_Sequence id="SYL-2404" ownerContext="controlGraph2" userID="SYL" flexoID="2404">
+          <ControlGraph2_ExpressionAction id="SYL-2397" expression="container.representRequiredRelationships()" ownerContext="controlGraph2" userID="SYL" flexoID="2397" />
+          <ControlGraph1_AssignationAction id="SYL-1684" assign="machinery" ownerContext="controlGraph1" userID="SYL" flexoID="1684">
+            <AssignableAction_ExpressionAction id="SYL-1683" expression="parameters.performer" userID="SYL" flexoID="1683" />
+          </ControlGraph1_AssignationAction>
+        </ControlGraph2_Sequence>
         <ControlGraph1_AssignationAction id="SYL-1679" assign="shape" ownerContext="controlGraph1" userID="SYL" flexoID="1679">
           <AssignableAction_AddShape id="SYL-1678" container="topLevel" receiver="diagram" userID="SYL" flexoID="1678" />
         </ControlGraph1_AssignationAction>
@@ -75,7 +81,7 @@
     <FlexoConceptInstanceRole id="SYL-114" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Network" cloningStrategy="Reference" cardinality="ZeroOne" name="machinery" userID="SYL" flexoID="114" />
     <ShapeRole id="SYL-210" previewY="0.0" previewX="32.0" previewWidth="88.0" exampleLabel="Network" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_6" cloningStrategy="Clone" cardinality="ZeroOne" name="label" userID="SYL" flexoID="210">
       <ParentShapeRole idref="SYL-112" />
-      <GRSpec id="SYL-2128" featureName="label" value="machinery.name" userID="SYL" flexoID="2128" />
+      <GRSpec id="SYL-2384" featureName="label" value="machinery.name" userID="SYL" flexoID="2384" />
     </ShapeRole>
     <DropScheme id="SYL-111" target="top" skipConfirmationPanel="false" name="dropNetworkGRAtTopLevel" width="800" label="create_network" height="600" userID="SYL" flexoID="111">
       <BehaviourControlGraph_Sequence id="SYL-115" userID="SYL" flexoID="115">
@@ -104,9 +110,12 @@
     </DropScheme>
     <DropScheme id="SYL-1701" target="top" name="representNetwork" width="800" label="represent_network" height="600" userID="SYL" flexoID="1701">
       <BehaviourControlGraph_Sequence id="SYL-1706" ownerContext="controlGraph1" userID="SYL" flexoID="1706">
-        <ControlGraph2_AssignationAction id="SYL-1703" assign="machinery" ownerContext="controlGraph2" userID="SYL" flexoID="1703">
-          <AssignableAction_ExpressionAction id="SYL-1702" expression="parameters.network" userID="SYL" flexoID="1702" />
-        </ControlGraph2_AssignationAction>
+        <ControlGraph2_Sequence id="SYL-2405" ownerContext="controlGraph2" userID="SYL" flexoID="2405">
+          <ControlGraph2_ExpressionAction id="SYL-2398" expression="container.representRequiredRelationships()" ownerContext="controlGraph2" userID="SYL" flexoID="2398" />
+          <ControlGraph1_AssignationAction id="SYL-1703" assign="machinery" ownerContext="controlGraph1" userID="SYL" flexoID="1703">
+            <AssignableAction_ExpressionAction id="SYL-1702" expression="parameters.network" userID="SYL" flexoID="1702" />
+          </ControlGraph1_AssignationAction>
+        </ControlGraph2_Sequence>
         <ControlGraph1_AssignationAction id="SYL-1705" assign="shape" ownerContext="controlGraph1" userID="SYL" flexoID="1705">
           <AssignableAction_AddShape id="SYL-1704" container="topLevel" receiver="diagram" userID="SYL" flexoID="1704" />
         </ControlGraph1_AssignationAction>
@@ -122,7 +131,7 @@
     </ShapeRole>
     <ShapeRole id="SYL-267" previewY="0.0" previewX="30.0" previewWidth="80.0" exampleLabel="Interface" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_9" cloningStrategy="Clone" cardinality="ZeroOne" name="text" userID="SYL" flexoID="267">
       <ParentShapeRole idref="SYL-243" />
-      <GRSpec id="SYL-2129" featureName="label" value="machinery.name" userID="SYL" flexoID="2129" />
+      <GRSpec id="SYL-2385" featureName="label" value="machinery.name" userID="SYL" flexoID="2385" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-268" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Interface" cloningStrategy="Reference" cardinality="ZeroOne" name="machinery" userID="SYL" flexoID="268" />
     <DropScheme id="SYL-231" target="top" name="dropInterfaceGRAtTopLevel" width="800" label="dropInterfaceGRAtTopLevel" height="600" userID="SYL" flexoID="231">
@@ -150,9 +159,12 @@
     </DropScheme>
     <DropScheme id="SYL-1708" target="top" name="representInterface" width="800" label="represent_interface" height="600" userID="SYL" flexoID="1708">
       <BehaviourControlGraph_Sequence id="SYL-1713" ownerContext="controlGraph1" userID="SYL" flexoID="1713">
-        <ControlGraph2_AssignationAction id="SYL-1710" assign="machinery" ownerContext="controlGraph2" userID="SYL" flexoID="1710">
-          <AssignableAction_ExpressionAction id="SYL-1709" expression="parameters.interface" userID="SYL" flexoID="1709" />
-        </ControlGraph2_AssignationAction>
+        <ControlGraph2_Sequence id="SYL-2406" ownerContext="controlGraph2" userID="SYL" flexoID="2406">
+          <ControlGraph2_ExpressionAction id="SYL-2399" expression="container.representRequiredRelationships()" ownerContext="controlGraph2" userID="SYL" flexoID="2399" />
+          <ControlGraph1_AssignationAction id="SYL-1710" assign="machinery" ownerContext="controlGraph1" userID="SYL" flexoID="1710">
+            <AssignableAction_ExpressionAction id="SYL-1709" expression="parameters.interface" userID="SYL" flexoID="1709" />
+          </ControlGraph1_AssignationAction>
+        </ControlGraph2_Sequence>
         <ControlGraph1_AssignationAction id="SYL-1712" assign="shape" ownerContext="controlGraph1" userID="SYL" flexoID="1712">
           <AssignableAction_AddShape id="SYL-1711" container="topLevel" receiver="diagram" userID="SYL" flexoID="1711" />
         </ControlGraph1_AssignationAction>
@@ -163,7 +175,7 @@
   <FlexoConcept id="SYL-321" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#MachineryGR" name="CustomsGR" userID="SYL" flexoID="321">
     <Inspector id="SYL-317" inspectorTitle="Customs" userID="SYL" flexoID="317" />
     <ShapeRole id="SYL-334" previewY="80.0" previewX="105.0" previewWidth="40.0" exampleLabel="Customs" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_10" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="334">
-      <GRSpec id="SYL-2130" featureName="label" value="machinery.name" userID="SYL" flexoID="2130" />
+      <GRSpec id="SYL-2386" featureName="label" value="machinery.name" userID="SYL" flexoID="2386" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-335" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Customs" cloningStrategy="Reference" cardinality="ZeroOne" name="machinery" userID="SYL" flexoID="335" />
     <DropScheme id="SYL-322" target="top" name="dropCustomsGRAtTopLevel" width="800" label="dropCustomsGRAtTopLevel" height="600" userID="SYL" flexoID="322">
@@ -181,9 +193,12 @@
     </DropScheme>
     <DropScheme id="SYL-1715" target="top" name="representCustoms" width="800" label="represent_customs" height="600" userID="SYL" flexoID="1715">
       <BehaviourControlGraph_Sequence id="SYL-1720" ownerContext="controlGraph1" userID="SYL" flexoID="1720">
-        <ControlGraph2_AssignationAction id="SYL-1717" assign="machinery" ownerContext="controlGraph2" userID="SYL" flexoID="1717">
-          <AssignableAction_ExpressionAction id="SYL-1716" expression="parameters.customs" userID="SYL" flexoID="1716" />
-        </ControlGraph2_AssignationAction>
+        <ControlGraph2_Sequence id="SYL-2407" ownerContext="controlGraph2" userID="SYL" flexoID="2407">
+          <ControlGraph2_ExpressionAction id="SYL-2400" expression="container.representRequiredRelationships()" ownerContext="controlGraph2" userID="SYL" flexoID="2400" />
+          <ControlGraph1_AssignationAction id="SYL-1717" assign="machinery" ownerContext="controlGraph1" userID="SYL" flexoID="1717">
+            <AssignableAction_ExpressionAction id="SYL-1716" expression="parameters.customs" userID="SYL" flexoID="1716" />
+          </ControlGraph1_AssignationAction>
+        </ControlGraph2_Sequence>
         <ControlGraph1_AssignationAction id="SYL-1719" assign="shape" ownerContext="controlGraph1" userID="SYL" flexoID="1719">
           <AssignableAction_AddShape id="SYL-1718" container="topLevel" receiver="diagram" userID="SYL" flexoID="1718" />
         </ControlGraph1_AssignationAction>
@@ -194,7 +209,7 @@
   <FlexoConcept id="SYL-350" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#MachineryGR" name="AttackerGR" userID="SYL" flexoID="350">
     <Inspector id="SYL-346" inspectorTitle="Attacker" userID="SYL" flexoID="346" />
     <ShapeRole id="SYL-363" previewHeight="64.0" previewY="68.0" previewX="93.0" previewWidth="64.0" exampleLabel="Attacker" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_11" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="363">
-      <GRSpec id="SYL-2131" featureName="label" value="machinery.name" userID="SYL" flexoID="2131" />
+      <GRSpec id="SYL-2387" featureName="label" value="machinery.name" userID="SYL" flexoID="2387" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-371" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Attacker" cloningStrategy="Reference" cardinality="ZeroOne" name="machinery" userID="SYL" flexoID="371" />
     <DropScheme id="SYL-351" target="top" name="dropAttackerGRAtTopLevel" width="800" label="dropAttackerGRAtTopLevel" height="600" userID="SYL" flexoID="351">
@@ -212,9 +227,12 @@
     </DropScheme>
     <DropScheme id="SYL-1722" target="top" name="representAttacker" width="800" label="represent_attacker" height="600" userID="SYL" flexoID="1722">
       <BehaviourControlGraph_Sequence id="SYL-1727" ownerContext="controlGraph1" userID="SYL" flexoID="1727">
-        <ControlGraph2_AssignationAction id="SYL-1724" assign="machinery" ownerContext="controlGraph2" userID="SYL" flexoID="1724">
-          <AssignableAction_ExpressionAction id="SYL-1723" expression="parameters.attacker" userID="SYL" flexoID="1723" />
-        </ControlGraph2_AssignationAction>
+        <ControlGraph2_Sequence id="SYL-2408" ownerContext="controlGraph2" userID="SYL" flexoID="2408">
+          <ControlGraph2_ExpressionAction id="SYL-2401" expression="container.representRequiredRelationships()" ownerContext="controlGraph2" userID="SYL" flexoID="2401" />
+          <ControlGraph1_AssignationAction id="SYL-1724" assign="machinery" ownerContext="controlGraph1" userID="SYL" flexoID="1724">
+            <AssignableAction_ExpressionAction id="SYL-1723" expression="parameters.attacker" userID="SYL" flexoID="1723" />
+          </ControlGraph1_AssignationAction>
+        </ControlGraph2_Sequence>
         <ControlGraph1_AssignationAction id="SYL-1726" assign="shape" ownerContext="controlGraph1" userID="SYL" flexoID="1726">
           <AssignableAction_AddShape id="SYL-1725" container="topLevel" receiver="diagram" userID="SYL" flexoID="1725" />
         </ControlGraph1_AssignationAction>
@@ -229,26 +247,65 @@
     <AbstractProperty id="SYL-411" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Machinery&gt;" name="machinery" userID="SYL" flexoID="411" />
     <AbstractProperty id="SYL-412" type="org.openflexo.technologyadapter.diagram.model.DiagramShape" name="shape" userID="SYL" flexoID="412" />
     <ExpressionProperty id="SYL-1200" expression="machinery" name="pieceOfKnowledge" userID="SYL" flexoID="1200" />
+    <DeletionScheme id="SYL-2202" visibility="Public" name="delete" width="800" label="delete" height="600" userID="SYL" flexoID="2202">
+      <BehaviourControlGraph_Sequence id="SYL-2216" userID="SYL" flexoID="2216">
+        <ControlGraph2_DeleteAction id="SYL-2207" object="shape" ownerContext="controlGraph2" userID="SYL" flexoID="2207" />
+        <ControlGraph1_DeleteFlexoConceptInstance id="SYL-2204" deletionSchemeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Machinery.delete()" object="machinery" ownerContext="controlGraph1" userID="SYL" flexoID="2204" />
+      </BehaviourControlGraph_Sequence>
+    </DeletionScheme>
+    <DeletionScheme id="SYL-2205" visibility="Public" name="removeFromDiagram" width="800" label="remove_from_diagram" height="600" userID="SYL" flexoID="2205">
+      <BehaviourControlGraph_Sequence id="SYL-2298" userID="SYL" flexoID="2298">
+        <ControlGraph2_Sequence id="SYL-2299" ownerContext="controlGraph2" userID="SYL" flexoID="2299">
+          <ControlGraph2_Sequence id="SYL-2300" ownerContext="controlGraph2" userID="SYL" flexoID="2300">
+            <ControlGraph2_ExpressionAction id="SYL-2291" expression="pimCADiagram.representRequiredRelationships()" ownerContext="controlGraph2" userID="SYL" flexoID="2291" />
+            <ControlGraph1_DeleteAction id="SYL-2287" object="this" ownerContext="controlGraph1" userID="SYL" flexoID="2287" />
+          </ControlGraph2_Sequence>
+          <ControlGraph1_DeclarationAction id="SYL-2290" variable="pimCADiagram" ownerContext="controlGraph1" userID="SYL" flexoID="2290">
+            <AssignableAction_ExpressionAction id="SYL-2289" expression="container" userID="SYL" flexoID="2289" />
+          </ControlGraph1_DeclarationAction>
+        </ControlGraph2_Sequence>
+        <ControlGraph1_DeleteAction id="SYL-2209" object="shape" ownerContext="controlGraph1" userID="SYL" flexoID="2209" />
+      </BehaviourControlGraph_Sequence>
+    </DeletionScheme>
   </FlexoConcept>
   <FlexoConcept id="SYL-513" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#RelationGR" name="SwapGR" userID="SYL" flexoID="513">
     <Inspector id="SYL-509" inspectorTitle="Swap relation" userID="SYL" flexoID="509" />
     <ConnectorRole id="SYL-518" exampleLabel="swap" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_12" cloningStrategy="Clone" cardinality="ZeroOne" name="connector" userID="SYL" flexoID="518">
-      <GRSpec id="SYL-2132" featureName="label" value="relation.name" userID="SYL" flexoID="2132" />
+      <GRSpec id="SYL-2388" featureName="label" value="relation.name" userID="SYL" flexoID="2388" />
     </ConnectorRole>
     <FlexoConceptInstanceRole id="SYL-521" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Swap" cloningStrategy="Reference" cardinality="ZeroOne" name="relation" userID="SYL" flexoID="521" />
     <LinkScheme id="SYL-514" northDirectionSupported="true" eastDirectionSupported="true" fromTarget="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR" toTarget="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR" westDirectionSupported="true" isAvailableWithFloatingPalette="true" southDirectionSupported="true" name="createSwapGR" width="800" label="create_swap_relation" height="600" userID="SYL" flexoID="514">
       <BehaviourControlGraph_Sequence id="SYL-523" userID="SYL" flexoID="523">
-        <ControlGraph2_AssignationAction id="SYL-520" assign="relation" ownerContext="controlGraph2" userID="SYL" flexoID="520">
-          <AssignableAction_AddFlexoConceptInstance id="SYL-522" creationSchemeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Swap.create(source,target)" receiver="model" userID="SYL" flexoID="522">
-            <AddFlexoConceptInstanceParameter id="SYL-548" paramName="source" value="fromTarget.pieceOfKnowledge" userID="SYL" flexoID="548" />
-            <AddFlexoConceptInstanceParameter id="SYL-549" paramName="target" value="toTarget.pieceOfKnowledge" userID="SYL" flexoID="549" />
-          </AssignableAction_AddFlexoConceptInstance>
-        </ControlGraph2_AssignationAction>
+        <ControlGraph2_Sequence id="SYL-2435" ownerContext="controlGraph2" userID="SYL" flexoID="2435">
+          <ControlGraph2_AssignationAction id="SYL-520" assign="relation" ownerContext="controlGraph2" userID="SYL" flexoID="520">
+            <AssignableAction_AddFlexoConceptInstance id="SYL-522" creationSchemeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Swap.create(source,target)" receiver="model" userID="SYL" flexoID="522">
+              <AddFlexoConceptInstanceParameter id="SYL-548" paramName="source" value="fromTarget.pieceOfKnowledge" userID="SYL" flexoID="548" />
+              <AddFlexoConceptInstanceParameter id="SYL-549" paramName="target" value="toTarget.pieceOfKnowledge" userID="SYL" flexoID="549" />
+            </AssignableAction_AddFlexoConceptInstance>
+          </ControlGraph2_AssignationAction>
+          <ControlGraph1_ExpressionAction id="SYL-2429" expression="this.init(fromTarget,toTarget)" ownerContext="controlGraph1" userID="SYL" flexoID="2429" />
+        </ControlGraph2_Sequence>
         <ControlGraph1_AssignationAction id="SYL-519" assign="connector" ownerContext="controlGraph1" userID="SYL" flexoID="519">
           <AssignableAction_AddConnector id="SYL-524" fromShape="fromTarget.shape" toShape="toTarget.shape" receiver="diagram" userID="SYL" flexoID="524" />
         </ControlGraph1_AssignationAction>
       </BehaviourControlGraph_Sequence>
     </LinkScheme>
+    <CreationScheme id="SYL-2446" name="representSwap" width="800" label="represent_swap" height="600" userID="SYL" flexoID="2446">
+      <BehaviourControlGraph_Sequence id="SYL-2455" userID="SYL" flexoID="2455">
+        <ControlGraph2_Sequence id="SYL-2456" ownerContext="controlGraph2" userID="SYL" flexoID="2456">
+          <ControlGraph2_AssignationAction id="SYL-2454" assign="relation" ownerContext="controlGraph2" userID="SYL" flexoID="2454">
+            <AssignableAction_ExpressionAction id="SYL-2453" expression="parameters.relation" userID="SYL" flexoID="2453" />
+          </ControlGraph2_AssignationAction>
+          <ControlGraph1_ExpressionAction id="SYL-2452" expression="this.init(parameters.sourceElementGR,parameters.targetElementGR)" ownerContext="controlGraph1" userID="SYL" flexoID="2452" />
+        </ControlGraph2_Sequence>
+        <ControlGraph1_AssignationAction id="SYL-2450" assign="connector" ownerContext="controlGraph1" userID="SYL" flexoID="2450">
+          <AssignableAction_AddConnector id="SYL-2451" fromShape="parameters.sourceElementGR.shape" toShape="parameters.targetElementGR.shape" receiver="diagram" userID="SYL" flexoID="2451" />
+        </ControlGraph1_AssignationAction>
+      </BehaviourControlGraph_Sequence>
+      <GenericBehaviourParameter id="SYL-2448" container="container" widget="CUSTOM_WIDGET" name="sourceElementGR" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR&gt;" userID="SYL" flexoID="2448" />
+      <GenericBehaviourParameter id="SYL-2449" container="container" widget="CUSTOM_WIDGET" name="targetElementGR" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR&gt;" userID="SYL" flexoID="2449" />
+      <GenericBehaviourParameter id="SYL-2457" widget="CUSTOM_WIDGET" name="relation" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Swap&gt;" userID="SYL" flexoID="2457" />
+    </CreationScheme>
   </FlexoConcept>
   <FlexoConcept id="SYL-525" isAbstract="true" name="RelationGR" userID="SYL" flexoID="525">
     <Inspector id="SYL-526" inspectorTitle="RelationGR" userID="SYL" flexoID="526">
@@ -283,17 +340,20 @@
   <FlexoConcept id="SYL-554" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#RelationGR" name="CheckGR" userID="SYL" flexoID="554">
     <Inspector id="SYL-550" inspectorTitle="Check relation" userID="SYL" flexoID="550" />
     <ConnectorRole id="SYL-559" exampleLabel="check" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_13" cloningStrategy="Clone" cardinality="ZeroOne" name="connector" userID="SYL" flexoID="559">
-      <GRSpec id="SYL-2133" featureName="label" value="relation.name" userID="SYL" flexoID="2133" />
+      <GRSpec id="SYL-2389" featureName="label" value="relation.name" userID="SYL" flexoID="2389" />
     </ConnectorRole>
     <FlexoConceptInstanceRole id="SYL-562" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Check" cloningStrategy="Reference" cardinality="ZeroOne" name="relation" userID="SYL" flexoID="562" />
     <LinkScheme id="SYL-555" northDirectionSupported="true" eastDirectionSupported="true" fromTarget="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR" toTarget="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR" westDirectionSupported="true" isAvailableWithFloatingPalette="true" southDirectionSupported="true" name="createCheckGR" width="800" label="create_check_relation" height="600" userID="SYL" flexoID="555">
       <BehaviourControlGraph_Sequence id="SYL-563" userID="SYL" flexoID="563">
-        <ControlGraph2_AssignationAction id="SYL-561" assign="relation" ownerContext="controlGraph2" userID="SYL" flexoID="561">
-          <AssignableAction_AddFlexoConceptInstance id="SYL-564" creationSchemeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Check.create(source,target)" receiver="model" userID="SYL" flexoID="564">
-            <AddFlexoConceptInstanceParameter id="SYL-568" paramName="source" value="fromTarget.pieceOfKnowledge" userID="SYL" flexoID="568" />
-            <AddFlexoConceptInstanceParameter id="SYL-569" paramName="target" value="toTarget.pieceOfKnowledge" userID="SYL" flexoID="569" />
-          </AssignableAction_AddFlexoConceptInstance>
-        </ControlGraph2_AssignationAction>
+        <ControlGraph2_Sequence id="SYL-2436" ownerContext="controlGraph2" userID="SYL" flexoID="2436">
+          <ControlGraph2_AssignationAction id="SYL-561" assign="relation" ownerContext="controlGraph2" userID="SYL" flexoID="561">
+            <AssignableAction_AddFlexoConceptInstance id="SYL-564" creationSchemeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Check.create(source,target)" receiver="model" userID="SYL" flexoID="564">
+              <AddFlexoConceptInstanceParameter id="SYL-568" paramName="source" value="fromTarget.pieceOfKnowledge" userID="SYL" flexoID="568" />
+              <AddFlexoConceptInstanceParameter id="SYL-569" paramName="target" value="toTarget.pieceOfKnowledge" userID="SYL" flexoID="569" />
+            </AssignableAction_AddFlexoConceptInstance>
+          </ControlGraph2_AssignationAction>
+          <ControlGraph1_ExpressionAction id="SYL-2430" expression="this.init(fromTarget,toTarget)" ownerContext="controlGraph1" userID="SYL" flexoID="2430" />
+        </ControlGraph2_Sequence>
         <ControlGraph1_AssignationAction id="SYL-560" assign="connector" ownerContext="controlGraph1" userID="SYL" flexoID="560">
           <AssignableAction_AddConnector id="SYL-565" fromShape="fromTarget.shape" toShape="toTarget.shape" receiver="diagram" userID="SYL" flexoID="565" />
         </ControlGraph1_AssignationAction>
@@ -303,17 +363,20 @@
   <FlexoConcept id="SYL-692" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#RelationGR" name="ControlGR" userID="SYL" flexoID="692">
     <Inspector id="SYL-688" inspectorTitle="Control relation" userID="SYL" flexoID="688" />
     <ConnectorRole id="SYL-720" exampleLabel="control" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_14" cloningStrategy="Clone" cardinality="ZeroOne" name="connector" userID="SYL" flexoID="720">
-      <GRSpec id="SYL-2134" featureName="label" value="relation.name" userID="SYL" flexoID="2134" />
+      <GRSpec id="SYL-2390" featureName="label" value="relation.name" userID="SYL" flexoID="2390" />
     </ConnectorRole>
     <FlexoConceptInstanceRole id="SYL-721" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Control" cloningStrategy="Reference" cardinality="ZeroOne" name="relation" userID="SYL" flexoID="721" />
     <LinkScheme id="SYL-693" northDirectionSupported="true" eastDirectionSupported="true" fromTarget="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR" toTarget="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR" westDirectionSupported="true" isAvailableWithFloatingPalette="true" southDirectionSupported="true" name="createControlGR" width="800" label="create_control_relation" height="600" userID="SYL" flexoID="693">
       <BehaviourControlGraph_Sequence id="SYL-722" userID="SYL" flexoID="722">
-        <ControlGraph2_AssignationAction id="SYL-723" assign="relation" ownerContext="controlGraph2" userID="SYL" flexoID="723">
-          <AssignableAction_AddFlexoConceptInstance id="SYL-724" creationSchemeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Control.create(source,target)" receiver="model" userID="SYL" flexoID="724">
-            <AddFlexoConceptInstanceParameter id="SYL-753" paramName="source" value="fromTarget.pieceOfKnowledge" userID="SYL" flexoID="753" />
-            <AddFlexoConceptInstanceParameter id="SYL-754" paramName="target" value="toTarget.pieceOfKnowledge" userID="SYL" flexoID="754" />
-          </AssignableAction_AddFlexoConceptInstance>
-        </ControlGraph2_AssignationAction>
+        <ControlGraph2_Sequence id="SYL-2437" ownerContext="controlGraph2" userID="SYL" flexoID="2437">
+          <ControlGraph2_AssignationAction id="SYL-723" assign="relation" ownerContext="controlGraph2" userID="SYL" flexoID="723">
+            <AssignableAction_AddFlexoConceptInstance id="SYL-724" creationSchemeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Control.create(source,target)" receiver="model" userID="SYL" flexoID="724">
+              <AddFlexoConceptInstanceParameter id="SYL-753" paramName="source" value="fromTarget.pieceOfKnowledge" userID="SYL" flexoID="753" />
+              <AddFlexoConceptInstanceParameter id="SYL-754" paramName="target" value="toTarget.pieceOfKnowledge" userID="SYL" flexoID="754" />
+            </AssignableAction_AddFlexoConceptInstance>
+          </ControlGraph2_AssignationAction>
+          <ControlGraph1_ExpressionAction id="SYL-2431" expression="this.init(fromTarget,toTarget)" ownerContext="controlGraph1" userID="SYL" flexoID="2431" />
+        </ControlGraph2_Sequence>
         <ControlGraph1_AssignationAction id="SYL-725" assign="connector" ownerContext="controlGraph1" userID="SYL" flexoID="725">
           <AssignableAction_AddConnector id="SYL-726" fromShape="fromTarget.shape" toShape="toTarget.shape" receiver="diagram" userID="SYL" flexoID="726" />
         </ControlGraph1_AssignationAction>
@@ -323,17 +386,20 @@
   <FlexoConcept id="SYL-698" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#RelationGR" name="UseGR" userID="SYL" flexoID="698">
     <Inspector id="SYL-694" inspectorTitle="Use relation" userID="SYL" flexoID="694" />
     <ConnectorRole id="SYL-727" exampleLabel="use" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_15" cloningStrategy="Clone" cardinality="ZeroOne" name="connector" userID="SYL" flexoID="727">
-      <GRSpec id="SYL-2135" featureName="label" value="relation.name" userID="SYL" flexoID="2135" />
+      <GRSpec id="SYL-2391" featureName="label" value="relation.name" userID="SYL" flexoID="2391" />
     </ConnectorRole>
     <FlexoConceptInstanceRole id="SYL-728" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Use" cloningStrategy="Reference" cardinality="ZeroOne" name="relation" userID="SYL" flexoID="728" />
     <LinkScheme id="SYL-699" northDirectionSupported="true" eastDirectionSupported="true" fromTarget="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR" toTarget="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR" westDirectionSupported="true" isAvailableWithFloatingPalette="true" southDirectionSupported="true" name="createUseGR" width="800" label="create_use_relation" height="600" userID="SYL" flexoID="699">
       <BehaviourControlGraph_Sequence id="SYL-729" userID="SYL" flexoID="729">
-        <ControlGraph2_AssignationAction id="SYL-730" assign="relation" ownerContext="controlGraph2" userID="SYL" flexoID="730">
-          <AssignableAction_AddFlexoConceptInstance id="SYL-731" creationSchemeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Use.create(source,target)" receiver="model" userID="SYL" flexoID="731">
-            <AddFlexoConceptInstanceParameter id="SYL-758" paramName="source" value="fromTarget.pieceOfKnowledge" userID="SYL" flexoID="758" />
-            <AddFlexoConceptInstanceParameter id="SYL-759" paramName="target" value="toTarget.pieceOfKnowledge" userID="SYL" flexoID="759" />
-          </AssignableAction_AddFlexoConceptInstance>
-        </ControlGraph2_AssignationAction>
+        <ControlGraph2_Sequence id="SYL-2438" ownerContext="controlGraph2" userID="SYL" flexoID="2438">
+          <ControlGraph2_AssignationAction id="SYL-730" assign="relation" ownerContext="controlGraph2" userID="SYL" flexoID="730">
+            <AssignableAction_AddFlexoConceptInstance id="SYL-731" creationSchemeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Use.create(source,target)" receiver="model" userID="SYL" flexoID="731">
+              <AddFlexoConceptInstanceParameter id="SYL-758" paramName="source" value="fromTarget.pieceOfKnowledge" userID="SYL" flexoID="758" />
+              <AddFlexoConceptInstanceParameter id="SYL-759" paramName="target" value="toTarget.pieceOfKnowledge" userID="SYL" flexoID="759" />
+            </AssignableAction_AddFlexoConceptInstance>
+          </ControlGraph2_AssignationAction>
+          <ControlGraph1_ExpressionAction id="SYL-2432" expression="this.init(fromTarget,toTarget)" ownerContext="controlGraph1" userID="SYL" flexoID="2432" />
+        </ControlGraph2_Sequence>
         <ControlGraph1_AssignationAction id="SYL-732" assign="connector" ownerContext="controlGraph1" userID="SYL" flexoID="732">
           <AssignableAction_AddConnector id="SYL-733" fromShape="fromTarget.shape" toShape="toTarget.shape" receiver="diagram" userID="SYL" flexoID="733" />
         </ControlGraph1_AssignationAction>
@@ -343,17 +409,20 @@
   <FlexoConcept id="SYL-704" isAbstract="true" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#RelationGR" name="ProduceGR" userID="SYL" flexoID="704">
     <Inspector id="SYL-700" inspectorTitle="Produce relation" userID="SYL" flexoID="700" />
     <ConnectorRole id="SYL-734" exampleLabel="produce" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_16" cloningStrategy="Clone" cardinality="ZeroOne" name="connector" userID="SYL" flexoID="734">
-      <GRSpec id="SYL-2136" featureName="label" readOnly="true" value="relation.name" userID="SYL" flexoID="2136" />
+      <GRSpec id="SYL-2392" featureName="label" readOnly="true" value="relation.name" userID="SYL" flexoID="2392" />
     </ConnectorRole>
     <FlexoConceptInstanceRole id="SYL-735" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Produce" cloningStrategy="Reference" cardinality="ZeroOne" name="relation" userID="SYL" flexoID="735" />
     <LinkScheme id="SYL-705" northDirectionSupported="true" eastDirectionSupported="true" fromTarget="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR" toTarget="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR" westDirectionSupported="true" isAvailableWithFloatingPalette="true" southDirectionSupported="true" name="createProduceGR" width="800" label="create_produce_relation" height="600" userID="SYL" flexoID="705">
       <BehaviourControlGraph_Sequence id="SYL-736" userID="SYL" flexoID="736">
-        <ControlGraph2_AssignationAction id="SYL-737" assign="relation" ownerContext="controlGraph2" userID="SYL" flexoID="737">
-          <AssignableAction_AddFlexoConceptInstance id="SYL-738" creationSchemeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Produce.create(source,target)" receiver="model" userID="SYL" flexoID="738">
-            <AddFlexoConceptInstanceParameter id="SYL-763" paramName="source" value="fromTarget.pieceOfKnowledge" userID="SYL" flexoID="763" />
-            <AddFlexoConceptInstanceParameter id="SYL-764" paramName="target" value="toTarget.pieceOfKnowledge" userID="SYL" flexoID="764" />
-          </AssignableAction_AddFlexoConceptInstance>
-        </ControlGraph2_AssignationAction>
+        <ControlGraph2_Sequence id="SYL-2439" ownerContext="controlGraph2" userID="SYL" flexoID="2439">
+          <ControlGraph2_AssignationAction id="SYL-737" assign="relation" ownerContext="controlGraph2" userID="SYL" flexoID="737">
+            <AssignableAction_AddFlexoConceptInstance id="SYL-738" creationSchemeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Produce.create(source,target)" receiver="model" userID="SYL" flexoID="738">
+              <AddFlexoConceptInstanceParameter id="SYL-763" paramName="source" value="fromTarget.pieceOfKnowledge" userID="SYL" flexoID="763" />
+              <AddFlexoConceptInstanceParameter id="SYL-764" paramName="target" value="toTarget.pieceOfKnowledge" userID="SYL" flexoID="764" />
+            </AssignableAction_AddFlexoConceptInstance>
+          </ControlGraph2_AssignationAction>
+          <ControlGraph1_ExpressionAction id="SYL-2433" expression="this.init(fromTarget,toTarget)" ownerContext="controlGraph1" userID="SYL" flexoID="2433" />
+        </ControlGraph2_Sequence>
         <ControlGraph1_AssignationAction id="SYL-739" assign="connector" ownerContext="controlGraph1" userID="SYL" flexoID="739">
           <AssignableAction_AddConnector id="SYL-740" fromShape="fromTarget.shape" toShape="toTarget.shape" receiver="diagram" userID="SYL" flexoID="740" />
         </ControlGraph1_AssignationAction>
@@ -363,17 +432,20 @@
   <FlexoConcept id="SYL-710" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#RelationGR" name="MaintainGR" userID="SYL" flexoID="710">
     <Inspector id="SYL-706" inspectorTitle="Maintain relation" userID="SYL" flexoID="706" />
     <ConnectorRole id="SYL-741" exampleLabel="maintain" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_18" cloningStrategy="Clone" cardinality="ZeroOne" name="connector" userID="SYL" flexoID="741">
-      <GRSpec id="SYL-2137" featureName="label" value="relation.name" userID="SYL" flexoID="2137" />
+      <GRSpec id="SYL-2393" featureName="label" value="relation.name" userID="SYL" flexoID="2393" />
     </ConnectorRole>
     <FlexoConceptInstanceRole id="SYL-742" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Maintain" cloningStrategy="Reference" cardinality="ZeroOne" name="relation" userID="SYL" flexoID="742" />
     <LinkScheme id="SYL-711" northDirectionSupported="true" eastDirectionSupported="true" fromTarget="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR" toTarget="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR" westDirectionSupported="true" isAvailableWithFloatingPalette="true" southDirectionSupported="true" name="createMaintainGR" width="800" label="create_maintain_relation" height="600" userID="SYL" flexoID="711">
       <BehaviourControlGraph_Sequence id="SYL-743" userID="SYL" flexoID="743">
-        <ControlGraph2_AssignationAction id="SYL-744" assign="relation" ownerContext="controlGraph2" userID="SYL" flexoID="744">
-          <AssignableAction_AddFlexoConceptInstance id="SYL-745" creationSchemeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Maintain.create(source,target)" receiver="model" userID="SYL" flexoID="745">
-            <AddFlexoConceptInstanceParameter id="SYL-768" paramName="source" value="fromTarget.pieceOfKnowledge" userID="SYL" flexoID="768" />
-            <AddFlexoConceptInstanceParameter id="SYL-769" paramName="target" value="toTarget.pieceOfKnowledge" userID="SYL" flexoID="769" />
-          </AssignableAction_AddFlexoConceptInstance>
-        </ControlGraph2_AssignationAction>
+        <ControlGraph2_Sequence id="SYL-2440" ownerContext="controlGraph2" userID="SYL" flexoID="2440">
+          <ControlGraph2_AssignationAction id="SYL-744" assign="relation" ownerContext="controlGraph2" userID="SYL" flexoID="744">
+            <AssignableAction_AddFlexoConceptInstance id="SYL-745" creationSchemeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Maintain.create(source,target)" receiver="model" userID="SYL" flexoID="745">
+              <AddFlexoConceptInstanceParameter id="SYL-768" paramName="source" value="fromTarget.pieceOfKnowledge" userID="SYL" flexoID="768" />
+              <AddFlexoConceptInstanceParameter id="SYL-769" paramName="target" value="toTarget.pieceOfKnowledge" userID="SYL" flexoID="769" />
+            </AssignableAction_AddFlexoConceptInstance>
+          </ControlGraph2_AssignationAction>
+          <ControlGraph1_ExpressionAction id="SYL-2434" expression="this.init(fromTarget,toTarget)" ownerContext="controlGraph1" userID="SYL" flexoID="2434" />
+        </ControlGraph2_Sequence>
         <ControlGraph1_AssignationAction id="SYL-746" assign="connector" ownerContext="controlGraph1" userID="SYL" flexoID="746">
           <AssignableAction_AddConnector id="SYL-747" fromShape="fromTarget.shape" toShape="toTarget.shape" receiver="diagram" userID="SYL" flexoID="747" />
         </ControlGraph1_AssignationAction>
@@ -383,7 +455,7 @@
   <FlexoConcept id="SYL-876" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ResourceGR" name="BasicResourceGR" userID="SYL" flexoID="876">
     <Inspector id="SYL-872" inspectorTitle="BasicResource" userID="SYL" flexoID="872" />
     <ShapeRole id="SYL-924" previewHeight="64.0" previewY="68.0" previewX="93.0" previewWidth="64.0" exampleLabel="Resource" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_19" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="924">
-      <GRSpec id="SYL-2138" featureName="label" value="resource.name" userID="SYL" flexoID="2138" />
+      <GRSpec id="SYL-2394" featureName="label" value="resource.name" userID="SYL" flexoID="2394" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-928" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#BasicResource" cloningStrategy="Reference" cardinality="ZeroOne" name="resource" userID="SYL" flexoID="928" />
     <DropScheme id="SYL-877" target="top" name="dropBasicResourceGRAtTopLevel" width="800" label="dropBasicResourceGRAtTopLevel" height="600" userID="SYL" flexoID="877">
@@ -414,7 +486,7 @@
   <FlexoConcept id="SYL-882" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ResourceGR" name="InstructionsGR" userID="SYL" flexoID="882">
     <Inspector id="SYL-878" inspectorTitle="Instructions" userID="SYL" flexoID="878" />
     <ShapeRole id="SYL-944" previewHeight="50.0" previewY="75.0" previewX="100.0" exampleLabel="Instructions" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_20" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="944">
-      <GRSpec id="SYL-2139" featureName="label" value="resource.name" userID="SYL" flexoID="2139" />
+      <GRSpec id="SYL-2395" featureName="label" value="resource.name" userID="SYL" flexoID="2395" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-945" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Instructions" cloningStrategy="Reference" cardinality="ZeroOne" name="resource" userID="SYL" flexoID="945" />
     <DropScheme id="SYL-883" target="top" name="dropInstructionsGRAtTopLevel" width="800" label="dropInstructionsGRAtTopLevel" height="600" userID="SYL" flexoID="883">
@@ -445,7 +517,7 @@
   <FlexoConcept id="SYL-888" parentFlexoConceptsList="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ResourceGR" name="PassportGR" userID="SYL" flexoID="888">
     <Inspector id="SYL-884" inspectorTitle="Passport" userID="SYL" flexoID="884" />
     <ShapeRole id="SYL-901" previewHeight="50.0" previewY="75.0" previewX="100.0" exampleLabel="Passport" metamodelElementReference="http://ensta-bretagne.fr/cyber/pimca/PimCADiagramSpecification/ExampleDiagram.diagram#SYL_21" cloningStrategy="Clone" cardinality="ZeroOne" name="shape" userID="SYL" flexoID="901">
-      <GRSpec id="SYL-2140" featureName="label" value="resource.name" userID="SYL" flexoID="2140" />
+      <GRSpec id="SYL-2396" featureName="label" value="resource.name" userID="SYL" flexoID="2396" />
     </ShapeRole>
     <FlexoConceptInstanceRole id="SYL-953" virtualModelInstance="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Passeport" cloningStrategy="Reference" cardinality="ZeroOne" name="resource" userID="SYL" flexoID="953" />
     <DropScheme id="SYL-889" target="top" name="dropPassportGRAtTopLevel" width="800" label="dropPassportGRAtTopLevel" height="600" userID="SYL" flexoID="889">
@@ -550,4 +622,67 @@
     <GenericBehaviourParameter id="SYL-1969" widget="TEXT_FIELD" name="diagramTitle" type="java.lang.String" userID="SYL" flexoID="1969" />
     <GenericBehaviourParameter id="SYL-11" container="container" widget="CUSTOM_WIDGET" name="model" type="org.openflexo.foundation.fml.VirtualModelInstanceType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml&gt;" userID="SYL" flexoID="11" />
   </CreationScheme>
+  <ActionScheme id="SYL-2288" name="representRequiredRelationships" width="800" label="representRequiredRelationships" height="600" userID="SYL" flexoID="2288">
+    <BehaviourControlGraph_IterationAction id="SYL-2372" iteratorName="elementGR" userID="SYL" flexoID="2372">
+      <Iteration_SelectFlexoConceptInstance id="SYL-2374" container="this" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR" receiver="this" ownerContext="iterationControlGraph" userID="SYL" flexoID="2374" />
+      <ControlGraph_IterationAction id="SYL-2376" iteratorName="relation" ownerContext="controlGraph" userID="SYL" flexoID="2376">
+        <Iteration_SelectFlexoConceptInstance id="SYL-2378" container="model" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Relation" receiver="model" ownerContext="iterationControlGraph" userID="SYL" flexoID="2378">
+          <Condition id="SYL-2379" condition="(selected.source = elementGR.pieceOfKnowledge)" userID="SYL" flexoID="2379" />
+        </Iteration_SelectFlexoConceptInstance>
+        <ControlGraph_Sequence id="SYL-2417" ownerContext="controlGraph" userID="SYL" flexoID="2417">
+          <ControlGraph2_Sequence id="SYL-2418" ownerContext="controlGraph2" userID="SYL" flexoID="2418">
+            <ControlGraph2_ConditionalAction id="SYL-2414" condition="(targetGR != null)" ownerContext="controlGraph2" userID="SYL" flexoID="2414">
+              <ThenControlGraph_Sequence id="SYL-2423" ownerContext="thenControlGraph" userID="SYL" flexoID="2423">
+                <ControlGraph2_Sequence id="SYL-2441" ownerContext="controlGraph2" userID="SYL" flexoID="2441">
+                  <ControlGraph2_ConditionalAction id="SYL-2425" condition="(relationGR = null)" ownerContext="controlGraph2" userID="SYL" flexoID="2425">
+                    <ThenControlGraph_Sequence id="SYL-2474" ownerContext="thenControlGraph" userID="SYL" flexoID="2474">
+                      <ControlGraph2_ExpressionAction id="SYL-2473" expression="this.makeRelationGR(relation,elementGR,targetGR)" ownerContext="controlGraph2" userID="SYL" flexoID="2473" />
+                      <ControlGraph1_LogAction id="SYL-2427" logLevel="INFO" logString="&quot;Faut creer le lien graphique&quot;" ownerContext="controlGraph1" userID="SYL" flexoID="2427" />
+                    </ThenControlGraph_Sequence>
+                  </ControlGraph2_ConditionalAction>
+                  <ControlGraph1_DeclarationAction id="SYL-2422" variable="relationGR" ownerContext="controlGraph1" userID="SYL" flexoID="2422">
+                    <AssignableAction_SelectUniqueFlexoConceptInstance id="SYL-2420" container="this" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#RelationGR" receiver="this" ownerContext="controlGraph2" userID="SYL" flexoID="2420">
+                      <Condition id="SYL-2421" condition="(selected.relation = relation)" userID="SYL" flexoID="2421" />
+                    </AssignableAction_SelectUniqueFlexoConceptInstance>
+                  </ControlGraph1_DeclarationAction>
+                </ControlGraph2_Sequence>
+                <ControlGraph1_LogAction id="SYL-2416" logLevel="INFO" logString="&quot;Oui on doit le voir&quot;" ownerContext="controlGraph1" userID="SYL" flexoID="2416" />
+              </ThenControlGraph_Sequence>
+            </ControlGraph2_ConditionalAction>
+            <ControlGraph1_DeclarationAction id="SYL-2412" variable="targetGR" ownerContext="controlGraph1" userID="SYL" flexoID="2412">
+              <AssignableAction_SelectUniqueFlexoConceptInstance id="SYL-2410" container="this" flexoConceptTypeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR" receiver="this" ownerContext="controlGraph2" userID="SYL" flexoID="2410">
+                <Condition id="SYL-2411" condition="(selected.pieceOfKnowledge = relation.target)" userID="SYL" flexoID="2411" />
+              </AssignableAction_SelectUniqueFlexoConceptInstance>
+            </ControlGraph1_DeclarationAction>
+          </ControlGraph2_Sequence>
+          <ControlGraph1_LogAction id="SYL-2381" logLevel="INFO" logString="((&quot;Dois je representer la relation &quot; + relation) + &quot; ?&quot;)" ownerContext="controlGraph1" userID="SYL" flexoID="2381" />
+        </ControlGraph_Sequence>
+      </ControlGraph_IterationAction>
+    </BehaviourControlGraph_IterationAction>
+  </ActionScheme>
+  <ActionScheme id="SYL-2428" name="makeRelationGR" width="800" label="makeRelationGR" height="600" userID="SYL" flexoID="2428">
+    <BehaviourControlGraph_Sequence id="SYL-2475" userID="SYL" flexoID="2475">
+      <ControlGraph2_ConditionalAction id="SYL-2466" condition="parameters.relation.concept.name.equals(&quot;Swap&quot;)" ownerContext="controlGraph2" userID="SYL" flexoID="2466">
+        <ThenControlGraph_ReturnStatement id="SYL-2471" ownerContext="thenControlGraph" userID="SYL" flexoID="2471">
+          <AssignableAction_AddFlexoConceptInstance id="SYL-2470" creationSchemeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#SwapGR.representSwap(sourceElementGR,targetElementGR,relation)" receiver="this" ownerContext="thenControlGraph" userID="SYL" flexoID="2470">
+            <AddFlexoConceptInstanceParameter id="SYL-2467" paramName="sourceElementGR" value="parameters.sourceElementGR" userID="SYL" flexoID="2467" />
+            <AddFlexoConceptInstanceParameter id="SYL-2468" paramName="targetElementGR" value="parameters.targetElementGR" userID="SYL" flexoID="2468" />
+            <AddFlexoConceptInstanceParameter id="SYL-2469" paramName="relation" value="($org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Swap&gt;)parameters.relation" userID="SYL" flexoID="2469" />
+          </AssignableAction_AddFlexoConceptInstance>
+        </ThenControlGraph_ReturnStatement>
+      </ControlGraph2_ConditionalAction>
+      <ControlGraph1_ConditionalAction id="SYL-2459" condition="parameters.relation.concept.name.equals(&quot;Swap&quot;)" ownerContext="controlGraph1" userID="SYL" flexoID="2459">
+        <ThenControlGraph_ReturnStatement id="SYL-2465" ownerContext="thenControlGraph" userID="SYL" flexoID="2465">
+          <AssignableAction_AddFlexoConceptInstance id="SYL-2461" creationSchemeURI="http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#SwapGR.representSwap(sourceElementGR,targetElementGR,relation)" receiver="this" ownerContext="thenControlGraph" userID="SYL" flexoID="2461">
+            <AddFlexoConceptInstanceParameter id="SYL-2462" paramName="sourceElementGR" value="parameters.sourceElementGR" userID="SYL" flexoID="2462" />
+            <AddFlexoConceptInstanceParameter id="SYL-2463" paramName="targetElementGR" value="parameters.targetElementGR" userID="SYL" flexoID="2463" />
+            <AddFlexoConceptInstanceParameter id="SYL-2464" paramName="relation" value="parameters.relation" userID="SYL" flexoID="2464" />
+          </AssignableAction_AddFlexoConceptInstance>
+        </ThenControlGraph_ReturnStatement>
+      </ControlGraph1_ConditionalAction>
+    </BehaviourControlGraph_Sequence>
+    <GenericBehaviourParameter id="SYL-2443" container="model" isRequired="true" widget="CUSTOM_WIDGET" name="relation" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCAModel.fml#Relation&gt;" userID="SYL" flexoID="2443" />
+    <GenericBehaviourParameter id="SYL-2444" container="this" widget="CUSTOM_WIDGET" name="sourceElementGR" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR&gt;" userID="SYL" flexoID="2444" />
+    <GenericBehaviourParameter id="SYL-2445" container="" widget="CUSTOM_WIDGET" name="targetElementGR" type="org.openflexo.foundation.fml.FlexoConceptInstanceType&lt;http://ensta-bretagne.fr/cyber/pimca/PimCA.fml/PimCADiagram.fml#ElementGR&gt;" userID="SYL" flexoID="2445" />
+  </ActionScheme>
 </VirtualModel>
