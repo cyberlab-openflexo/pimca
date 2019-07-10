@@ -26,6 +26,10 @@ public class PimCAModel {
   public class Machinery extends PieceOfKnowledge  {  
   
     public MachineryType kind;  
+    @GetSetProperty(value="swapRelations", access=get)    
+    public List<FlexoConceptInstanceType<Swap>> getSwapRelations {    
+      return container.SelectFlexoConceptInstance(type=Swap,where=where=((selected.source = this) | (selected.target = this)));    
+    }  
   
     @CreationScheme    
     Machinery:create(String name, FlexoEnumType<MachineryType> kind) {    
@@ -66,6 +70,14 @@ public class PimCAModel {
     @GetSetProperty(value="relations", access=get)    
     public List<FlexoConceptInstanceType<Relation>> getRelations {    
       return container.SelectFlexoConceptInstance(type=Relation,where=where=((selected.source = this) | (selected.target = this)));    
+    }  
+    @GetSetProperty(value="incomingRelations", access=get)    
+    public List<FlexoConceptInstanceType<Relation>> getIncomingRelations {    
+      return container.SelectFlexoConceptInstance(type=Relation,where=where=(selected.target = this));    
+    }  
+    @GetSetProperty(value="outgoingRelations", access=get)    
+    public List<FlexoConceptInstanceType<Relation>> getOutgoingRelations {    
+      return container.SelectFlexoConceptInstance(type=Relation,where=where=(selected.source = this));    
     }  
   }  
 

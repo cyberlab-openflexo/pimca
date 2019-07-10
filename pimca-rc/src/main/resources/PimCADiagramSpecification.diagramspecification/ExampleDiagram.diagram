@@ -246,7 +246,7 @@
       <TextStyle id="192" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
     </ShapeGraphicalRepresentation>
   </Shape>
-  <DrawingGraphicalRepresentation id="193" backgroundColor="255,255,255" drawWorkingArea="false" focusColor="255,0,0" selectionColor="0,0,255" rectangleSelectingSelectionColor="0,0,255" dimensionConstraints="FREELY_RESIZABLE" identifier="4db3941f">
+  <DrawingGraphicalRepresentation id="193" drawWorkingArea="false" backgroundColor="255,255,255" focusColor="255,0,0" selectionColor="0,0,255" rectangleSelectingSelectionColor="0,0,255" dimensionConstraints="FREELY_RESIZABLE" identifier="4db3941f">
     <TextStyle id="194" backgroundColor="255,255,255" color="0,0,0" font="Lucida Sans,0,11" />
   </DrawingGraphicalRepresentation>
 </Diagram>
